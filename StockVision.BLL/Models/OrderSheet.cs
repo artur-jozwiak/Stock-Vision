@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace StockVision.BLL.Models
 {
-    public class OrderSheet
+    public abstract class OrderSheet
     {
-        public decimal Price { get; set; }
-        public int Volume { get; set; }
-        public decimal OrdersValue { get; set; }
-        public int Quantity { get; set; }
-        public decimal SharePercentage { get; set; }
+        public Company Company { get; set; }
+        public ICollection<Order> Orders { get; }
+
     }
 }

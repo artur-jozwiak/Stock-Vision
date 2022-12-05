@@ -11,7 +11,7 @@ namespace StockVision.BLL.Models
         public int id { get; set; } 
         public string Name { get; set; }
         public string Symbol { get; set; }
-        public ICollection<BuyOrderSheet> BuyOrders { get; set; }
-        public ICollection<SaleOrderSheet> SaleOrders { get; set; }
+        public BuyOrderSheet BuyOrders { get; set; }
+        public SaleOrderSheet SaleOrders { get; set; }
     }
 }

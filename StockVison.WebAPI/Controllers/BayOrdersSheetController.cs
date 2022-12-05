@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using StockVision.BLL.Models;
 using StockVison.Scraper;
 
 namespace StockVison.WebAPI.Controllers
@@ -13,11 +14,12 @@ namespace StockVison.WebAPI.Controllers
 
         [HttpGet(Name = "GetBayOredersSheet")]
         //public async  Task<IEnumerable<List<string>>> GetBayOredersSheet()
-        public async Task<IEnumerable<string>> GetBayOredersSheet()
+        public async Task<ICollection<Order>> GetBayOredersSheet()
 
         {
             scraper = new SheetScraper();
-            return await scraper.GetBayOrderSheet();
+            var buyOrdersSheet = await scraper.GetBayOrderSheet();
+           return  scraper.MapToBuyOrderSheet(buyOrdersSheet);
         }
         
 

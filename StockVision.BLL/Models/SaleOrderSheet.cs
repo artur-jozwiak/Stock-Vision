@@ -8,6 +8,6 @@ namespace StockVision.BLL.Models
 {
     public class SaleOrderSheet : OrderSheet
     {
-        public IEnumerable<OrderSheet> SaleOrderSheets { get; set; }
+ 
     }
 }
