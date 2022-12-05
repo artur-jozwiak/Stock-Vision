@@ -15,47 +15,57 @@ namespace StockVison.Scraper
     public class SheetScraper
     {
         private static readonly Regex whiteSpace = new Regex(@"\s+");
-        //public async  Task<IEnumerable<List<string>>> GetBayOrderSheet()
-        public async Task<IEnumerable<IEnumerable<string>>> GetBayOrderSheet()
 
+        public async Task<IEnumerable<IEnumerable<string>>> GetBuyOrderSheet(string companySymbol, bool saleSheet)
         {
-            string url = "https://gragieldowa.pl/spolka_arkusz_zl/spolka/cdr";
+            string sheetType = String.Empty;
+
+            if(saleSheet)
+            {
+                sheetType = "arkusz_right";
+            }
+            else
+            {
+                sheetType = "arkusz_left";
+            }
+
+            string url = $"https://gragieldowa.pl/spolka_arkusz_zl/spolka/{companySymbol}";
             using (var client = new HttpClient())
             {
                 var html = await client.GetStringAsync(url);
                 var doc = new HtmlAgilityPack.HtmlDocument();
                 doc.LoadHtml(html);
 
-                var table = doc.DocumentNode.SelectSingleNode("//table[@id='arkusz_left']");
+                var table = doc.DocumentNode.SelectSingleNode($"//table[@id='{sheetType}']");
                 var sheet = table.Descendants("tr")
-                            .Skip(1)
-                            .Select(tr => tr.Descendants("td")
+                                 .Skip(1)
+                                 .Select(tr => tr.Descendants("td")
                                             .Select(td => WebUtility.HtmlDecode(td.InnerText))
                                             .ToList());
-                return sheet; 
+                return sheet;
             }
-            return null;
         }
 
-        public ICollection<Order> MapToBuyOrderSheet(IEnumerable<IEnumerable<string>> sheet)
+        public ICollection<Order> MapToOrderList(IEnumerable<IEnumerable<string>> sheet)
         {
-            // BuyOrderSheet buyOrderSheet = new BuyOrderSheet();
             ICollection<Order> buyOrderSheet = new List<Order>();
-            Order order = new Order();
-            foreach (var sheetItem in sheet.SkipLast(1))
+            sheet = sheet.SkipLast(1);
+
+            foreach (var sheetItem in sheet)
             {
-               var sheetItemArray = sheetItem.ToArray();
-
-                order.Price = decimal.Parse(sheetItemArray[0]);
-                order.Volume = Convert.ToInt32(whiteSpace.Replace(sheetItemArray[1],""));
-                order.OrdersValue = decimal.Parse(sheetItemArray[2]);
-                order.Quantity = Convert.ToInt32(whiteSpace.Replace(sheetItemArray[3], ""));
-                order.SharePercentage = decimal.Parse(whiteSpace.Replace(sheetItemArray[4].Replace("%",""),""));
-
+                var sheetItemArray = sheetItem.ToArray();
+                Order order = new Order
+                {
+                    Price = decimal.Parse(sheetItemArray[0]),
+                    Volume = Convert.ToInt32(whiteSpace.Replace(sheetItemArray[1], "")),
+                    OrdersValue = decimal.Parse(sheetItemArray[2]),
+                    Quantity = Convert.ToInt32(whiteSpace.Replace(sheetItemArray[3], "")),
+                    SharePercentage = decimal.Parse(whiteSpace.Replace(sheetItemArray[4].Replace("%", ""), ""))
+                };
                 buyOrderSheet.Add(order);
             }
             return buyOrderSheet;
-         }
+        }
     }
 }
 

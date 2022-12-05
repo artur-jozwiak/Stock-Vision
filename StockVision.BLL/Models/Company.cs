@@ -8,10 +8,10 @@ namespace StockVision.BLL.Models
 {
     public class Company
     {
-        public int id { get; set; } 
+        public int Id { get; set; } 
         public string Name { get; set; }
         public string Symbol { get; set; }
-        public BuyOrderSheet BuyOrders { get; set; }
-        public SaleOrderSheet SaleOrders { get; set; }
+        public BuyOrderSheet? BuyOrders { get; set; }
+        public SaleOrderSheet? SaleOrders { get; set; }
     }
 }

@@ -13,15 +13,24 @@ namespace StockVison.WebAPI.Controllers
 
 
         [HttpGet(Name = "GetBayOredersSheet")]
-        //public async  Task<IEnumerable<List<string>>> GetBayOredersSheet()
-        public async Task<ICollection<Order>> GetBayOredersSheet()
 
+        public async Task<ICollection<Order>> GetBuyOredersSheet(string companyName, bool saleSheet)
         {
             scraper = new SheetScraper();
-            var buyOrdersSheet = await scraper.GetBayOrderSheet();
-           return  scraper.MapToBuyOrderSheet(buyOrdersSheet);
+            var buyOrdersSheet = await scraper.GetBuyOrderSheet(companyName, saleSheet);
+            return  scraper.MapToOrderList(buyOrdersSheet);
         }
-        
+
+
+
+
+        [HttpPost(Name = "GetCompanySymbol")]
+
+        public string GetCompanySymbol(string companySymbol)
+        {
+            return companySymbol;
+        }
+
 
     }
 }
