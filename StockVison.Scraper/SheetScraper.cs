@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualBasic;
-using StockVision.BLL.Models;
+using StockVision.Core.Models;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -29,6 +29,12 @@ namespace StockVison.Scraper
                 sheetType = "arkusz_left";
             }
 
+            //const string baseurl = $"https://gragieldowa.pl/spolka_arkusz_zl/spolka/";
+            //string endpoint = companySymbol;
+            //string host = "";
+            //string key = "";
+
+
             string url = $"https://gragieldowa.pl/spolka_arkusz_zl/spolka/{companySymbol}";
             using (var client = new HttpClient())
             {
@@ -39,6 +45,7 @@ namespace StockVison.Scraper
                 var table = doc.DocumentNode.SelectSingleNode($"//table[@id='{sheetType}']");
                 var sheet = table.Descendants("tr")
                                  .Skip(1)
+                                 .SkipLast(400)
                                  .Select(tr => tr.Descendants("td")
                                             .Select(td => WebUtility.HtmlDecode(td.InnerText))
                                             .ToList());

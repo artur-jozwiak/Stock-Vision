@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockVision.BLL.Models
+namespace StockVision.Core.Models
 {
     public class Company
     {

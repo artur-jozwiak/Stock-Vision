@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace StockVision.BLL.Models
 {
-    public class BuyOrderSheet : OrderSheet
+    public abstract class OrderBook
     {
+        public Company Company { get; set; }
+        public ICollection<Order> Orders { get; }
 
     }
 }

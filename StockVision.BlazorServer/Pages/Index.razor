@@ -1,0 +1,74 @@
+﻿@page "/"
+@using C1.Chart
+@using C1.Blazor.Chart
+@using StockVision.Core.Models
+@using StockVision.Service.Interfaces
+@inject IOrderBookService OrderBookService
+
+
+<PageTitle>Crypto News</PageTitle>
+<h1>Crypto News</h1>
+<br />
+<FlexChart ItemsSource="Orders" Class="chart" BindingX="Price" ChartType="ChartType.SplineSymbols" HeaderContent="5-days forecast" HeaderStyle="font-size:24px">
+    <SeriesCollection>
+        <Series Binding="Volume" />
+    </SeriesCollection>
+    <AxisCollection>
+        <Axis AxisType="AxisType.X" Position="Position.Bottom" AxisLine="false"  MajorTickMarks="TickMark.None"/>
+        <Axis AxisType="AxisType.Y" Position="Position.Left" Title="Volume" AxisLine="false" MajorTickMarks="TickMark.None" MajorGrid="true" />
+    </AxisCollection>
+</FlexChart>
+<div>
+    @if (Orders == null)
+    {
+        <p><em>Loading Order Book...</em></p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Price</th>
+                    <th>Volume</th>
+                    <th>Value</th>
+                    <th>Quantity</th>
+                    <th>Share Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var Item in Orders)
+                {
+                    <tr>
+                        <td>@Item.Price</td>
+                        <td>@Item.Volume</td>
+                        <td>@Item.OrdersValue</td>
+                        <td>@Item.Quantity</td>
+                        <td>@Item.SharePercentage</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
+
+@if (!string.IsNullOrEmpty(Error))
+{
+    <p>@Error</p>
+}
+
+@code {
+    public ICollection<Order> Orders { get; set; }
+    public string Error { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Orders = await OrderBookService.GetAskOrderBook();
+        }
+        catch (Exception e)
+        {
+            Error = e.Message;
+        }
+    }
+}

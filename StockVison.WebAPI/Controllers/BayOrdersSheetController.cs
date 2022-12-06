@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using StockVision.BLL.Models;
+using StockVision.Core.Models;
 using StockVison.Scraper;
 
 namespace StockVison.WebAPI.Controllers
@@ -16,21 +16,10 @@ namespace StockVison.WebAPI.Controllers
 
         public async Task<ICollection<Order>> GetBuyOredersSheet(string companyName, bool saleSheet)
         {
+           // saleSheet = true;
             scraper = new SheetScraper();
             var buyOrdersSheet = await scraper.GetBuyOrderSheet(companyName, saleSheet);
             return  scraper.MapToOrderList(buyOrdersSheet);
         }
-
-
-
-
-        [HttpPost(Name = "GetCompanySymbol")]
-
-        public string GetCompanySymbol(string companySymbol)
-        {
-            return companySymbol;
-        }
-
-
     }
 }
