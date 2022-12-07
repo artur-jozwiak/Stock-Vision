@@ -19,6 +19,7 @@ namespace StockVison.WebAPI.Controllers
         [HttpGet(Name = "GetOrderBook")]
         public async Task<FullOrderBook> GetOrderBook(string companyName, int skipLast)
         {
+            companyName = "cdr";
             return await _scrapper.GetOrderbook(companyName, skipLast);
         }
 
@@ -34,10 +35,6 @@ namespace StockVison.WebAPI.Controllers
         //    return _scrapper.MapResponseToOrderSheet(buyOrdersSheet);
         //}
 
-        //[HttpGet(Name = "GetOrderBook")]
-        //public async Task<FullOrderBook> GetOrderBook(string companyName, string orderBookType, int skipLast)
-        //{
-        //    return await _scrapper.GetOrderbook(companyName, orderBookType, skipLast);
-        //}
+     
     }
 }

@@ -17,37 +17,26 @@ namespace StockVision.Service.Services
         const string _baseUrl = "https://localhost:7015/BayOrdersSheet?companyName=cdr";
         private string _companySymbolEndpoint = string.Empty;
 
-        public OrderbookService(/*HttpClient httpClient*/)
+
+
+        public async Task<FullOrderBook> GetOrderBook()
         {
-           // _httpClient = httpClient;
-        }
-
-        //public async Task<ICollection<Order>> GetOrderBook()//Ma zwracać cały arkusz
-        //{
-
-        //}
-
-        public async Task<List<Order>> GetAskOrderBook()//Ma zwracać ask
-        {
-            //ConfigureHttpClient();
             HttpClient httpClient = new HttpClient();
-            //var response = await httpClient.GetAsync(_companySymbolEndpoint);
             var response = await httpClient.GetAsync(_baseUrl);
             response.EnsureSuccessStatusCode();
+            var orderBook = await response.Content.ReadFromJsonAsync<FullOrderBook>();
+            return orderBook;
+        }
 
+        public async Task<List<Order>> GetAskOrderBook()
+        {
+            HttpClient httpClient = new HttpClient();
+            var response = await httpClient.GetAsync(_baseUrl);
+            response.EnsureSuccessStatusCode();
             var order = await response.Content.ReadFromJsonAsync<List<Order>>();
-            //using var stream = await response.Content.ReadAsStreamAsync();
-
-            // var vehicleResponse = await response.Content.ReadFromJsonAsync<VehicleApiResponse>();
-
-            //var order = await JsonSerializer.DeserializeAsync<OrderBook>(stream);
-
             return order;
         }
 
-        //public void ConfigureHttpClient()
-        //{
-        //    _httpClient.BaseAddress = new Uri(_baseUrl);
-        //}
+       
     }
 }
