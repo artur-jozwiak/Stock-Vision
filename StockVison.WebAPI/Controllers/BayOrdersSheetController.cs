@@ -9,17 +9,35 @@ namespace StockVison.WebAPI.Controllers
     [Route("[controller]")]
     public class BayOrdersSheetController : ControllerBase
     {
-        private SheetScraper scraper;
 
-
-        [HttpGet(Name = "GetBayOredersSheet")]
-
-        public async Task<ICollection<Order>> GetBuyOredersSheet(string companyName, bool saleSheet)
+        private ISheetScrapper _scrapper;
+        public BayOrdersSheetController(ISheetScrapper scrapper)
         {
-           // saleSheet = true;
-            scraper = new SheetScraper();
-            var buyOrdersSheet = await scraper.GetBuyOrderSheet(companyName, saleSheet);
-            return  scraper.MapToOrderList(buyOrdersSheet);
+            _scrapper = scrapper;
         }
+
+        [HttpGet(Name = "GetOrderBook")]
+        public async Task<FullOrderBook> GetOrderBook(string companyName, int skipLast)
+        {
+            return await _scrapper.GetOrderbook(companyName, skipLast);
+        }
+
+        //[HttpGet(Name = "GetBuyOredersSheet")]
+
+        //public async Task<ICollection<Order>> GetBuyOredersSheet(string companySymbol, string orderBookType, int skipLast)
+        //{
+        //    orderBookType = "bid";
+        //    companySymbol = "cdr";
+        //    skipLast = 300;
+
+        //    var buyOrdersSheet = await _scrapper.GetSheet(companySymbol, orderBookType, skipLast);
+        //    return _scrapper.MapResponseToOrderSheet(buyOrdersSheet);
+        //}
+
+        //[HttpGet(Name = "GetOrderBook")]
+        //public async Task<FullOrderBook> GetOrderBook(string companyName, string orderBookType, int skipLast)
+        //{
+        //    return await _scrapper.GetOrderbook(companyName, orderBookType, skipLast);
+        //}
     }
 }

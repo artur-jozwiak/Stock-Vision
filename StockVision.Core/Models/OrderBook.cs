@@ -8,8 +8,8 @@ namespace StockVision.Core.Models
 {
     public abstract class OrderBook
     {
-        public Company Company { get; set; }
-        public ICollection<Order> Orders { get; }
+
+        public ICollection<Order> Orders { get; set; } = new List<Order>();
 
     }
 }

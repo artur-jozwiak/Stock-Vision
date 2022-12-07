@@ -12,15 +12,68 @@ using System.Threading.Tasks;
 
 namespace StockVison.Scraper
 {
-    public class SheetScraper
+    public class SheetScraper : ISheetScrapper
     {
         private static readonly Regex whiteSpace = new Regex(@"\s+");
+        private static string askOrderBook = "arkusz_left";
+        private static string bidOrderBook = "arkusz_right";
+        private static string[] orderBookType = new string[2] { askOrderBook, bidOrderBook };
+
+
+
+
+        public async Task<FullOrderBook> GetOrderbook(string companySymbol, int skipLast)
+        {
+            FullOrderBook orderBook = new FullOrderBook();
+
+            var askSheet = await GetSheet(companySymbol, "ask", skipLast);
+            var askOrders =  MapResponseToOrderSheet(askSheet);
+
+            var bidSheet = await GetSheet(companySymbol, "bid", skipLast);
+            var bidOrders = MapResponseToOrderSheet(bidSheet);
+            
+            
+            orderBook.AskOrderBook.Orders = askOrders;
+            orderBook.BidOrderBook.Orders = bidOrders;
+            return orderBook;
+        }
+
+        public async Task<IEnumerable<IEnumerable<string>>> GetSheet(string companySymbol, string orderBookType,int skipLast)
+        {
+            string sheetType = string.Empty;
+            if (orderBookType == "ask")
+            {
+                sheetType = "arkusz_left";
+            }
+
+            if (orderBookType == "bid")
+            {
+                sheetType = "arkusz_right";
+            }
+
+            string url = $"https://gragieldowa.pl/spolka_arkusz_zl/spolka/{companySymbol}";
+            using (var client = new HttpClient())
+            {
+                var html = await client.GetStringAsync(url);
+                var doc = new HtmlAgilityPack.HtmlDocument();
+                doc.LoadHtml(html);
+
+                var table = doc.DocumentNode.SelectSingleNode($"//table[@id='{sheetType}']");
+                var sheet = table.Descendants("tr")
+                                 .Skip(1)
+                                 .SkipLast(skipLast)
+                                 .Select(tr => tr.Descendants("td")
+                                            .Select(td => WebUtility.HtmlDecode(td.InnerText))
+                                            .ToList());
+                return sheet;
+            }
+        }
 
         public async Task<IEnumerable<IEnumerable<string>>> GetBuyOrderSheet(string companySymbol, bool saleSheet)
         {
             string sheetType = String.Empty;
 
-            if(saleSheet)
+            if (saleSheet)
             {
                 sheetType = "arkusz_right";
             }
@@ -45,7 +98,7 @@ namespace StockVison.Scraper
                 var table = doc.DocumentNode.SelectSingleNode($"//table[@id='{sheetType}']");
                 var sheet = table.Descendants("tr")
                                  .Skip(1)
-                                 .SkipLast(400)
+                                 .SkipLast(500)
                                  .Select(tr => tr.Descendants("td")
                                             .Select(td => WebUtility.HtmlDecode(td.InnerText))
                                             .ToList());
@@ -53,7 +106,7 @@ namespace StockVison.Scraper
             }
         }
 
-        public ICollection<Order> MapToOrderList(IEnumerable<IEnumerable<string>> sheet)
+        public ICollection<Order> MapResponseToOrderSheet(IEnumerable<IEnumerable<string>> sheet)
         {
             ICollection<Order> buyOrderSheet = new List<Order>();
             sheet = sheet.SkipLast(1);
