@@ -16,12 +16,12 @@ namespace StockVison.WebAPI.Controllers
             _scrapper = scrapper;
         }
 
-        [HttpGet(Name = "GetOrderBoooook")]
-        public async Task<OrderBook> GetOrderBook(string companyName, int skipLast)
-        {
-            companyName = "cdr";
-            return await _scrapper.GetOrderbook(companyName, skipLast);
-        }
+        //[HttpGet(Name = "GetOrderBoooook")]
+        //public async Task<OrderBook> GetOrderBook(string companyName, int skipLast)
+        //{
+        //    companyName = "cdr";
+        //    return await _scrapper.GetOrderbook(companyName, skipLast);
+        //}
 
         //[HttpGet(Name = "GetBuyOredersSheet")]
 

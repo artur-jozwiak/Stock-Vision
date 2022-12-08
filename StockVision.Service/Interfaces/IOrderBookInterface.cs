@@ -12,7 +12,9 @@ namespace StockVision.Service.Interfaces
     public interface IOrderBookService
     {
         Task<List<Order>> GetAskOrderBook();
-        Task<OrderBook> GetOrderBook();
+        Task<OrderBook> GetOrderBookAPI();
+        Task<OrderBook?> GetOrderBookDb();
+
 
     }
 }

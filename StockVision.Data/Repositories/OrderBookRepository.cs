@@ -27,6 +27,16 @@ namespace StockVision.Data.Repositories
                 .FirstOrDefaultAsync();
         }
 
+        public async Task<OrderBook?> GetFirstWithAskBidOrderBook()
+        {
+            return await StockVisionContext.OrderBooks
+                .Include(a => a.AskOrderBook)
+                    .ThenInclude(o => o.Orders)
+                .Include(b => b.BidOrderBook)
+                    .ThenInclude(o => o.Orders)
+                .FirstOrDefaultAsync();
+        }
+
         public StockVisionContext StockVisionContext
         {
             get { return Context as StockVisionContext; }
