@@ -1,21 +1,23 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.EntityFrameworkCore;
 using StockVision.BlazorServer.Data;
+using StockVision.Data.Data;
 using StockVision.Service;
 using StockVision.Service.Interfaces;
 using StockVision.Service.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
-
-
 builder.Services.AddScoped<IOrderBookService, OrderbookService>();
-
-
+var conectionString = builder.Configuration["ConnectionStrings:StockVisionConnectionString"];
+builder.Services.AddDbContext<StockVisionDbContext>(options =>
+    options
+    // .UseLazyLoadingProxies()
+    .UseSqlServer(conectionString));
 
 var app = builder.Build();
 
@@ -23,7 +25,6 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 

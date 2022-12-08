@@ -8,6 +8,7 @@ namespace StockVision.Core.Models
 {
     public class Order
     {
+        public Guid Id { get; set; }
         public decimal Price { get; set; }
         public int Volume { get; set; }
         public decimal OrdersValue { get; set; } 

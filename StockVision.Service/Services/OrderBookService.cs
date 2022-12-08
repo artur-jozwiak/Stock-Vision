@@ -14,10 +14,8 @@ namespace StockVision.Service.Services
     public class OrderbookService : IOrderBookService
     {
        // private readonly HttpClient _httpClient;
-        const string _baseUrl = "https://localhost:7015/BayOrdersSheet?companyName=cdr";
+        const string _baseUrl = "https://localhost:7015/OrderBook?companyName=cdr";
         private string _companySymbolEndpoint = string.Empty;
-
-
 
         public async Task<FullOrderBook> GetOrderBook()
         {

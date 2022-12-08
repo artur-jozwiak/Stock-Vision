@@ -1,20 +1,20 @@
-﻿@page "/orderbook"
+﻿@page "/"
 @using C1.Chart
 @using C1.Blazor.Chart
 @using StockVision.Core.Models
 @using StockVision.Service.Interfaces
 @inject IOrderBookService OrderBookService
 
-
 <PageTitle>Order Book</PageTitle>
 <h1>Order Book</h1>
 <br />
-<FlexChart ItemsSource="Orders" Class="chart" BindingX="Price" ChartType="ChartType.SplineSymbols" HeaderContent="5-days forecast" HeaderStyle="font-size:24px">
+<FlexChart ItemsSource="FullOrderBook.AskOrderBook.Orders"  Class="chart" BindingX="Price" ChartType="ChartType.SplineSymbols" HeaderContent="Order Book" HeaderStyle="font-size:24px">
+
     <SeriesCollection>
         <Series Binding="Volume" />
     </SeriesCollection>
     <AxisCollection>
-        <Axis AxisType="AxisType.X" Position="Position.Bottom" AxisLine="false"  MajorTickMarks="TickMark.None"/>
+        <Axis AxisType="AxisType.X" Position="Position.Bottom" AxisLine="false"   MajorTickMarks="TickMark.None"/>
         <Axis AxisType="AxisType.Y" Position="Position.Left" Title="Volume" AxisLine="false" MajorTickMarks="TickMark.None" MajorGrid="true" />
     </AxisCollection>
 </FlexChart>
@@ -114,7 +114,6 @@ th, td {
         </div>
     }
         </div>
-  
 
 @if (!string.IsNullOrEmpty(Error))
 {
