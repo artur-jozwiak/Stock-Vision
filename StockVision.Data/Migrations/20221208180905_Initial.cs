@@ -34,7 +34,7 @@ namespace StockVision.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "FullOrderBooks",
+                name: "OrderBooks",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -101,7 +101,7 @@ namespace StockVision.Data.Migrations
                     table.ForeignKey(
                         name: "FK_Companies_FullOrderBooks_FullOrderBookId",
                         column: x => x.FullOrderBookId,
-                        principalTable: "FullOrderBooks",
+                        principalTable: "OrderBooks",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -109,18 +109,18 @@ namespace StockVision.Data.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Companies_FullOrderBookId",
                 table: "Companies",
-                column: "FullOrderBookId",
+                column: "OrderBookId",
                 unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_FullOrderBooks_AskOrderBookId",
-                table: "FullOrderBooks",
+                table: "OrderBooks",
                 column: "AskOrderBookId",
                 unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_FullOrderBooks_BidOrderBookId",
-                table: "FullOrderBooks",
+                table: "OrderBooks",
                 column: "BidOrderBookId",
                 unique: true);
 
@@ -145,7 +145,7 @@ namespace StockVision.Data.Migrations
                 name: "Orders");
 
             migrationBuilder.DropTable(
-                name: "FullOrderBooks");
+                name: "OrderBooks");
 
             migrationBuilder.DropTable(
                 name: "AskOrderBooks");

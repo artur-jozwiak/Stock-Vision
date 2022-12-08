@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StockVision.Core.Models
 {
-    public class FullOrderBook 
+    public class OrderBook 
     {
         public Guid Id { get; set; }
 

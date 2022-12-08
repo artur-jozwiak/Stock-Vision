@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\StockVision.Data\StockVision.Data.csproj" />
     <ProjectReference Include="..\StockVison.Scraper\StockVison.Scraper.csproj" />
   </ItemGroup>
 

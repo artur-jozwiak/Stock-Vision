@@ -10,6 +10,5 @@ namespace StockVision.Core.Models
     {
         public Guid Id { get; set; }
         public virtual ICollection<Order>? Orders { get; set; } = new List<Order>();
-
     }
 }

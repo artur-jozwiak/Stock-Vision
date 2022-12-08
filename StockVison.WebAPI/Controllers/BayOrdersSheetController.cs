@@ -17,7 +17,7 @@ namespace StockVison.WebAPI.Controllers
         }
 
         [HttpGet(Name = "GetOrderBoooook")]
-        public async Task<FullOrderBook> GetOrderBook(string companyName, int skipLast)
+        public async Task<OrderBook> GetOrderBook(string companyName, int skipLast)
         {
             companyName = "cdr";
             return await _scrapper.GetOrderbook(companyName, skipLast);

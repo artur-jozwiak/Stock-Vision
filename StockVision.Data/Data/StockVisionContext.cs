@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace StockVision.Data.Data
 {
-    public class StockVisionDbContext : DbContext
+    public class StockVisionContext : DbContext
     {
-        public StockVisionDbContext()
+        public StockVisionContext()
         {
 
         }
-        public StockVisionDbContext(DbContextOptions<StockVisionDbContext> options) : base(options)
+        public StockVisionContext(DbContextOptions<StockVisionContext> options) : base(options)
         {
 
         }
@@ -28,7 +28,7 @@ namespace StockVision.Data.Data
             //optionsBuilder.LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
         }
 
-        public DbSet<FullOrderBook> FullOrderBooks { get; set; }
+        public DbSet<OrderBook> OrderBooks { get; set; }
         public DbSet<AskOrderBook> AskOrderBooks { get; set; }
         public DbSet<BidOrderBook> BidOrderBooks { get; set; }
         public DbSet<Order> Orders{ get; set; }
@@ -37,14 +37,14 @@ namespace StockVision.Data.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            var fullOrderBook = modelBuilder.Entity<FullOrderBook>();
+            var fullOrderBook = modelBuilder.Entity<OrderBook>();
             var askOrderBook = modelBuilder.Entity<AskOrderBook>();
             var bidOrderBook = modelBuilder.Entity<BidOrderBook>();
             var order = modelBuilder.Entity<Order>();
             var company = modelBuilder.Entity<Company>();
 
-            fullOrderBook.HasOne(f => f.AskOrderBook).WithOne().HasForeignKey<FullOrderBook>(a => a.AskOrderBookId);
-            fullOrderBook.HasOne(f => f.BidOrderBook ).WithOne().HasForeignKey<FullOrderBook>(a => a.BidOrderBookId);
+            fullOrderBook.HasOne(f => f.AskOrderBook).WithOne().HasForeignKey<OrderBook>(a => a.AskOrderBookId);
+            fullOrderBook.HasOne(f => f.BidOrderBook ).WithOne().HasForeignKey<OrderBook>(a => a.BidOrderBookId);
 
             order.Property(o => o.Price).HasPrecision(9,4);
             order.Property(o => o.OrdersValue).HasPrecision(13, 4);
@@ -52,7 +52,7 @@ namespace StockVision.Data.Data
 
             company.Property(c => c.Name).HasMaxLength(50);
             company.Property(c => c.Symbol).HasMaxLength(10);
-            company.HasOne(c => c.FullOrderBook).WithOne().HasForeignKey<Company>(a => a.FullOrderBookId);
+            company.HasOne(c => c.OrderBook).WithOne().HasForeignKey<Company>(a => a.OrderBookId);
 
 
 

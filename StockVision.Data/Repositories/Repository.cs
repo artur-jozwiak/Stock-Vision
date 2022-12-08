@@ -12,15 +12,15 @@ namespace StockVision.Data.Repositories
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        protected readonly StockVisionDbContext Context;
-        public Repository(StockVisionDbContext context)
+        protected readonly StockVisionContext Context;
+        public Repository(StockVisionContext context)
         {
             Context = context;
         }
 
-        public TEntity Get(int id)
+        public virtual async Task<TEntity?> Get(int id)
         {
-            return Context.Set<TEntity>().Find(id);
+            return await Context.Set<TEntity>().FindAsync(id);
         }
 
         public async Task<IEnumerable<TEntity>> GetAll()

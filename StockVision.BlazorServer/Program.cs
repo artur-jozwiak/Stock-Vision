@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.EntityFrameworkCore;
 using StockVision.BlazorServer.Data;
+using StockVision.Core.Interfaces;
 using StockVision.Data.Data;
 using StockVision.Service;
 using StockVision.Service.Interfaces;
@@ -13,10 +14,10 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddScoped<IOrderBookService, OrderbookService>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 var conectionString = builder.Configuration["ConnectionStrings:StockVisionConnectionString"];
-builder.Services.AddDbContext<StockVisionDbContext>(options =>
-    options
-    // .UseLazyLoadingProxies()
+builder.Services.AddDbContext<StockVisionContext>(options => options
+    //.UseLazyLoadingProxies()
     .UseSqlServer(conectionString));
 
 var app = builder.Build();

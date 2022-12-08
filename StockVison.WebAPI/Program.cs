@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using StockVision.Core.Interfaces;
+using StockVision.Data.Data;
 using StockVison.Scraper;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +12,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ISheetScrapper, SheetScraper>();
+
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+var conectionString = builder.Configuration["ConnectionStrings:StockVisionConnectionString"];
+builder.Services.AddDbContext<StockVisionContext>(options => options
+    //.UseLazyLoadingProxies()
+    .UseSqlServer(conectionString));
 
 var app = builder.Build();
 

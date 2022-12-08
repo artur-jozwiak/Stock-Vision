@@ -17,12 +17,12 @@ namespace StockVision.Service.Services
         const string _baseUrl = "https://localhost:7015/OrderBook?companyName=cdr";
         private string _companySymbolEndpoint = string.Empty;
 
-        public async Task<FullOrderBook> GetOrderBook()
+        public async Task<OrderBook> GetOrderBook()
         {
             HttpClient httpClient = new HttpClient();
             var response = await httpClient.GetAsync(_baseUrl);
             response.EnsureSuccessStatusCode();
-            var orderBook = await response.Content.ReadFromJsonAsync<FullOrderBook>();
+            var orderBook = await response.Content.ReadFromJsonAsync<OrderBook>();
             return orderBook;
         }
 

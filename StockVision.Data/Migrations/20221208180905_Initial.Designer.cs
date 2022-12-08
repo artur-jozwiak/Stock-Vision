@@ -11,7 +11,7 @@ using StockVision.Data.Data;
 
 namespace StockVision.Data.Migrations
 {
-    [DbContext(typeof(StockVisionDbContext))]
+    [DbContext(typeof(StockVisionContext))]
     [Migration("20221208180905_Initial")]
     partial class Initial
     {
@@ -53,7 +53,7 @@ namespace StockVision.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("FullOrderBookId")
+                    b.Property<Guid>("OrderBookId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
@@ -66,13 +66,13 @@ namespace StockVision.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("FullOrderBookId")
+                    b.HasIndex("OrderBookId")
                         .IsUnique();
 
                     b.ToTable("Companies");
                 });
 
-            modelBuilder.Entity("StockVision.Core.Models.FullOrderBook", b =>
+            modelBuilder.Entity("StockVision.Core.Models.OrderBook", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -92,7 +92,7 @@ namespace StockVision.Data.Migrations
                     b.HasIndex("BidOrderBookId")
                         .IsUnique();
 
-                    b.ToTable("FullOrderBooks");
+                    b.ToTable("OrderBooks");
                 });
 
             modelBuilder.Entity("StockVision.Core.Models.Order", b =>
@@ -136,26 +136,26 @@ namespace StockVision.Data.Migrations
 
             modelBuilder.Entity("StockVision.Core.Models.Company", b =>
                 {
-                    b.HasOne("StockVision.Core.Models.FullOrderBook", "FullOrderBook")
+                    b.HasOne("StockVision.Core.Models.OrderBook", "OrderBook")
                         .WithOne()
-                        .HasForeignKey("StockVision.Core.Models.Company", "FullOrderBookId")
+                        .HasForeignKey("StockVision.Core.Models.Company", "OrderBookId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("FullOrderBook");
+                    b.Navigation("OrderBook");
                 });
 
-            modelBuilder.Entity("StockVision.Core.Models.FullOrderBook", b =>
+            modelBuilder.Entity("StockVision.Core.Models.OrderBook", b =>
                 {
                     b.HasOne("StockVision.Core.Models.AskOrderBook", "AskOrderBook")
                         .WithOne()
-                        .HasForeignKey("StockVision.Core.Models.FullOrderBook", "AskOrderBookId")
+                        .HasForeignKey("StockVision.Core.Models.OrderBook", "AskOrderBookId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("StockVision.Core.Models.BidOrderBook", "BidOrderBook")
                         .WithOne()
-                        .HasForeignKey("StockVision.Core.Models.FullOrderBook", "BidOrderBookId")
+                        .HasForeignKey("StockVision.Core.Models.OrderBook", "BidOrderBookId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

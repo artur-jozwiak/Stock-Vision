@@ -22,9 +22,9 @@ namespace StockVison.Scraper
 
 
 
-        public async Task<FullOrderBook> GetOrderbook(string companySymbol, int skipLast)
+        public async Task<OrderBook> GetOrderbook(string companySymbol, int skipLast)
         {
-            FullOrderBook orderBook = new FullOrderBook();
+            OrderBook orderBook = new OrderBook();
 
             var askSheet = await GetSheet(companySymbol, "ask", skipLast);
             var askOrders =  MapResponseToOrderSheet(askSheet);

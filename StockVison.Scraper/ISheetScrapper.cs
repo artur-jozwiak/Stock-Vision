@@ -9,7 +9,7 @@ namespace StockVison.Scraper
 {
     public interface ISheetScrapper
     {
-        Task<FullOrderBook> GetOrderbook(string companySymbol, int skipLast);
+        Task<OrderBook> GetOrderbook(string companySymbol, int skipLast);
         Task<IEnumerable<IEnumerable<string>>> GetSheet(string companySymbol, string orderBookType, int skipLast);
         ICollection<Order> MapResponseToOrderSheet(IEnumerable<IEnumerable<string>> sheet);
     }
