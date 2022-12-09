@@ -8,8 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="C1.Blazor.Chart" Version="6.0.20223.374" />
-    <PackageReference Include="Chart.js" Version="3.7.1" />
-    <PackageReference Include="ChartJs.Blazor" Version="1.1.0" />
+    <PackageReference Include="ChartJs.Blazor.Fork" Version="2.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
       <PrivateAssets>all</PrivateAssets>
@@ -20,6 +19,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="20.3.0.60" />
   </ItemGroup>
 
   <ItemGroup>

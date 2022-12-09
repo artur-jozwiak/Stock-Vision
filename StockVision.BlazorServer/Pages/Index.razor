@@ -9,7 +9,7 @@
 <PageTitle>Crypto News</PageTitle>
 <h1>Crypto News</h1>
 <br />
-<FlexChart ItemsSource="Orders" Class="chart" BindingX="Price" ChartType="ChartType.SplineSymbols" HeaderContent="5-days forecast" HeaderStyle="font-size:24px">
+@*<FlexChart ItemsSource="Orders" Class="chart" BindingX="Price" ChartType="ChartType.SplineSymbols" HeaderContent="5-days forecast" HeaderStyle="font-size:24px">
     <SeriesCollection>
         <Series Binding="Volume" />
     </SeriesCollection>
@@ -17,7 +17,7 @@
         <Axis AxisType="AxisType.X" Position="Position.Bottom" AxisLine="false"  MajorTickMarks="TickMark.None"/>
         <Axis AxisType="AxisType.Y" Position="Position.Left" Title="Volume" AxisLine="false" MajorTickMarks="TickMark.None" MajorGrid="true" />
     </AxisCollection>
-</FlexChart>
+</FlexChart>*@
 <div>
     @if (Orders == null)
     {

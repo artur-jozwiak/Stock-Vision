@@ -21,6 +21,7 @@ namespace StockVison.WebAPI.Controllers
         public async Task<OrderBook> GetOrderBook(string companyName, int skipLast)
         {
             companyName = "cdr";
+            skipLast = 350;
             OrderBook orderBook = await _scrapper.GetOrderbook(companyName, skipLast);
             await _unitOfWork.OrderBooks.Add(orderBook);
             await _unitOfWork.Save();

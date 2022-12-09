@@ -4,20 +4,13 @@
 @using StockVision.Core.Models
 @using StockVision.Service.Interfaces
 @inject IOrderBookService OrderBookService
+@using ChartJs.Blazor.LineChart
 
+<Chart Config="_config"></Chart>
 <PageTitle>Order Book</PageTitle>
 <h1>Order Book</h1>
 <br />
-@*<FlexChart ItemsSource="FullOrderBook.AskOrderBook.Orders"  Class="chart" BindingX="Price" ChartType="ChartType.SplineSymbols" HeaderContent="Order Book" HeaderStyle="font-size:24px">
 
-    <SeriesCollection>
-        <Series Binding="Volume" />
-    </SeriesCollection>
-    <AxisCollection>
-        <Axis AxisType="AxisType.X" Position="Position.Bottom" AxisLine="false"   MajorTickMarks="TickMark.None"/>
-        <Axis AxisType="AxisType.Y" Position="Position.Left" Title="Volume" AxisLine="false" MajorTickMarks="TickMark.None" MajorGrid="true" />
-    </AxisCollection>
-</FlexChart>*@
 
 <!DOCTYPE html>
 
@@ -59,7 +52,7 @@ th, td {
     }
     else
     {
-             <FlexChart ItemsSource="FullOrderBook.AskOrderBook.Orders"  Class="chart" BindingX="Price" ChartType="ChartType.SplineSymbols" HeaderContent="Order Book" HeaderStyle="font-size:24px">
+@*             <FlexChart ItemsSource="FullOrderBook.AskOrderBook.Orders"  Class="chart" BindingX="Price" ChartType="ChartType.Line" HeaderContent="Order Book" HeaderStyle="font-size:24px">
                  <SeriesCollection>
                       <Series Binding="Volume" />
                  </SeriesCollection>
@@ -68,27 +61,37 @@ th, td {
                       <Axis AxisType="AxisType.Y" Position="Position.Left" Title="Volume" AxisLine="false" MajorTickMarks="TickMark.None" MajorGrid="true" />
                  </AxisCollection>
                </FlexChart>
+                 <FlexChart ItemsSource="FullOrderBook.BidOrderBook.Orders"  Class="chart" BindingX="Price" ChartType="ChartType.Line" HeaderContent="Order Book" HeaderStyle="font-size:24px">
+                 <SeriesCollection>
+                      <Series Binding="Volume" />
+                 </SeriesCollection>
+                 <AxisCollection>
+                      <Axis AxisType="AxisType.X" Position="Position.Bottom" AxisLine="false"   MajorTickMarks="TickMark.None"/>
+                      <Axis AxisType="AxisType.Y" Position="Position.Left"  Title="Volume" AxisLine="false" MajorTickMarks="TickMark.None" MajorGrid="true" />
+                 </AxisCollection>
+               </FlexChart>*@
+               
   <div class="row">
   <div class="column">
         <table >
             <thead>
                 <tr>
-                    <th>Price</th>
-                    <th>Volume</th>
-                    <th>Value</th>
-                    <th>Quantity</th>
-                    <th>Share Percentage</th>
+                       <th>Share Percentage</th>
+                       <th>Quantity</th>
+                       <th>Value</th>
+                       <th>Volume</th>
+                       <th>Price</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var Item in FullOrderBook.AskOrderBook.Orders)
                 {
                     <tr>
-                        <td>@Item.Price</td>
-                        <td>@Item.Volume</td>
-                        <td>@Item.OrdersValue</td>
-                        <td>@Item.Quantity</td>
                         <td>@Item.SharePercentage</td>
+                        <td>@Item.Quantity</td>
+                        <td>@Item.OrdersValue</td>
+                        <td>@Item.Volume</td>
+                        <td>@Item.Price</td>
                     </tr>
                 }
             </tbody>
@@ -129,22 +132,49 @@ th, td {
     <p>@Error</p>
 }
 
-@code {
+    @code {
     public Core.Models.OrderBook FullOrderBook { get; set; }
     public string Error { get; set; }
+    private LineConfig _config;
 
     protected override async Task OnInitializedAsync()
     {
+
         try
         {
             //FullOrderBook = await OrderBookService.GetOrderBookAPI();
-            FullOrderBook = await OrderBookService.GetOrderBookDb();
+             FullOrderBook = await OrderBookService.GetOrderBookDb();
 
         }
         catch (Exception e)
         {
             Error = e.Message;
         }
+
+        _config = new LineConfig
+            {
+                Options = new LineOptions
+                {
+                    Responsive = true,
+                    Title = new ChartJs.Blazor.Common.OptionsTitle
+					{
+                        Display = true,
+                        Text = "ChartJs.Blazor Pie Chart"
+                    }
+                }
+            };
+
+        foreach (string color in new[] { "Red", "Yellow", "Green", "Blue" })
+        {
+            _config.Data.Labels.Add(color);
+        }
+
+        LineDataset<int> dataset = new LineDataset<int>(new[] { 6, 5, 3, 7 })
+            {
+
+            };
+
+        _config.Data.Datasets.Add(dataset);
     }
 }
 }

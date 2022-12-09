@@ -24,7 +24,8 @@ Scrapper
     -bankier ???
     -->
 
-
+    Pomysły:
+    -Oblicznie liczby kupujących, sprzedających + wykres (Wzrost liczby kupujących = wzrost ceny)
 
 
     Propercje:
