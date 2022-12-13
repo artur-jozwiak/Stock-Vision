@@ -19,9 +19,6 @@ namespace StockVison.Scraper
         private static string bidOrderBook = "arkusz_right";
         private static string[] orderBookType = new string[2] { askOrderBook, bidOrderBook };
 
-
-
-
         public async Task<OrderBook> GetOrderbook(string companySymbol, int skipLast)
         {
             OrderBook orderBook = new OrderBook();
@@ -32,11 +29,33 @@ namespace StockVison.Scraper
             var bidSheet = await GetSheet(companySymbol, "bid", skipLast);
             var bidOrders = MapResponseToOrderSheet(bidSheet);
             
-            
             orderBook.AskOrderBook.Orders = askOrders;
             orderBook.BidOrderBook.Orders = bidOrders;
             return orderBook;
         }
+
+        public ICollection<Order> MapResponseToOrderSheet(IEnumerable<IEnumerable<string>> sheet)
+        {
+            ICollection<Order> orderSheet = new List<Order>();
+            sheet = sheet.SkipLast(1);
+
+            foreach (var sheetItem in sheet)
+            {
+                var sheetItemArray = sheetItem.ToArray();
+                Order order = new Order
+                {
+                    Price = decimal.Parse(sheetItemArray[0]),
+                    Volume = Convert.ToInt32(whiteSpace.Replace(sheetItemArray[1], "")),
+                    OrdersValue = decimal.Parse(sheetItemArray[2]),
+                    Quantity = Convert.ToInt32(whiteSpace.Replace(sheetItemArray[3], "")),
+                    SharePercentage = decimal.Parse(whiteSpace.Replace(sheetItemArray[4].Replace("%", ""), ""))
+                };
+                orderSheet.Add(order);
+            }
+            return orderSheet;
+        }
+
+
 
         public async Task<IEnumerable<IEnumerable<string>>> GetSheet(string companySymbol, string orderBookType,int skipLast)
         {
@@ -68,6 +87,8 @@ namespace StockVison.Scraper
                 return sheet;
             }
         }
+
+
 
         public async Task<IEnumerable<IEnumerable<string>>> GetBuyOrderSheet(string companySymbol, bool saleSheet)
         {
@@ -106,26 +127,6 @@ namespace StockVison.Scraper
             }
         }
 
-        public ICollection<Order> MapResponseToOrderSheet(IEnumerable<IEnumerable<string>> sheet)
-        {
-            ICollection<Order> buyOrderSheet = new List<Order>();
-            sheet = sheet.SkipLast(1);
-
-            foreach (var sheetItem in sheet)
-            {
-                var sheetItemArray = sheetItem.ToArray();
-                Order order = new Order
-                {
-                    Price = decimal.Parse(sheetItemArray[0]),
-                    Volume = Convert.ToInt32(whiteSpace.Replace(sheetItemArray[1], "")),
-                    OrdersValue = decimal.Parse(sheetItemArray[2]),
-                    Quantity = Convert.ToInt32(whiteSpace.Replace(sheetItemArray[3], "")),
-                    SharePercentage = decimal.Parse(whiteSpace.Replace(sheetItemArray[4].Replace("%", ""), ""))
-                };
-                buyOrderSheet.Add(order);
-            }
-            return buyOrderSheet;
-        }
     }
 }
 

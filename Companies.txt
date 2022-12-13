@@ -1,0 +1,834 @@
+11 BIT STUDIOS SPÓŁKA AKCYJNA (11B)
+Główny Rynek | WIG140, WIG-gry, WIGtechTR, WIG-ESG, WIGtech, WIG.GAMES5, mWIG40TR, WIG-Poland, mWIG40, WIG, CEEplus | Gry	560,0000	+1,82%
+3R GAMES SPÓŁKA AKCYJNA (3RG)
+Główny Rynek | WIG-gry, WIGtechTR, WIGtech, WIG-Poland, WIG | Gry	0,3400	0,00%
+AB INTER RAO LIETUVA (IRL)
+Główny Rynek | energetyka	11,5400	0,00%
+AB NOVATURAS (NTU)
+Główny Rynek | WIG-CEE, WIG | biura podróży	14,5200	0,00%
+AB SPÓŁKA AKCYJNA (ABE)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG | komputery i elektronika	51,3000	-0,39%
+AC SPÓŁKA AKCYJNA (ACG)
+Główny Rynek | WIG140, INNOVATOR, sWIG80TR, WIG-motoryzacja, WIGdiv, WIG-Poland, sWIG80, WIG | części samochodowe	28,7000	-1,03%
+ACTION SPÓŁKA AKCYJNA (ACT)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG, CEEplus | komputery i elektronika	15,1000	+0,27%
+ADIUVO INVESTMENTS SPÓŁKA AKCYJNA (ADV)
+Główny Rynek | WIG-Poland, WIG | Sprzęt i Materiały Medyczne	0,7020	-3,31%
+AGORA SPÓŁKA AKCYJNA (AGO)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, WIG-media, sWIG80, WIG | wydawnictwa	4,7300	-1,36%
+AGROTON PUBLIC LIMITED (AGT)
+Główny Rynek | WIG-CEE, WIG-Ukraine, WIG-spożywczy, WIG | produkcja rolna i rybołówstwo	3,3500	-1,62%
+AILLERON SPÓŁKA AKCYJNA (ALL)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG-informatyka, WIG | oprogramowanie	15,9000	+4,95%
+AIRWAY MEDIX SPÓŁKA AKCYJNA (AWM)
+Główny Rynek | WIG-Poland, WIG | Sprzęt i Materiały Medyczne	0,2600	-1,52%
+ALIOR BANK SPÓŁKA AKCYJNA (ALR)
+Główny Rynek | WIG140, WIG-ESG, WIG.MS-FIN, mWIG40TR, WIG30TR, WIG30, WIG-Poland, WIG-banki, mWIG40, WIG, CEEplus | banki komercyjne	34,9300	+2,13%
+ALL IN! GAMES SPÓŁKA AKCYJNA (ALG)
+Główny Rynek | WIG-gry, WIGtechTR, WIGtech, WIG-Poland, WIG | Gry	1,6400	-4,09%
+ALLEGRO.EU S.A. (ALE)
+Główny Rynek | WIG140, WIG-ESG, WIG30TR, WIG30, WIG20TR, WIG-Poland, WIG20, WIG, CEEplus | Handel Internetowy	25,8800	+3,35%
+ALTA SPÓŁKA AKCYJNA (AAT)
+Główny Rynek | WIG-Poland, WIG-nieruchomości, WIG | sprzedaż nieruchomości	1,4700	+6,91%
+ALTUS SPÓŁKA AKCYJNA (ALI)
+Główny Rynek | WIG-Poland, WIG | zarządzanie aktywami	1,3450	-0,74%
+ALUMETAL SPÓŁKA AKCYJNA (AML)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG, CEEplus | hutnictwo metali nieżelaznych	72,7000	-0,27%
+AMBRA SPÓŁKA AKCYJNA (AMB)
+Główny Rynek | WIG140, sWIG80TR, WIGdiv, WIG-Poland, WIG-spożywczy, sWIG80, WIG | napoje	20,0500	+0,75%
+AMICA SPÓŁKA AKCYJNA (AMC)
+Główny Rynek | WIG140, sWIG80TR, WIGdiv, WIG-Poland, sWIG80, WIG, CEEplus | sprzęt elektryczny i elektroniczny	85,0000	+1,55%
+AILLERON SPÓŁKA AKCYJNA (ALL)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG-informatyka, WIG | oprogramowanie	15,9000	+4,95%
+AIRWAY MEDIX SPÓŁKA AKCYJNA (AWM)
+Główny Rynek | WIG-Poland, WIG | Sprzęt i Materiały Medyczne	0,2600	-1,52%
+ALIOR BANK SPÓŁKA AKCYJNA (ALR)
+Główny Rynek | WIG140, WIG-ESG, WIG.MS-FIN, mWIG40TR, WIG30TR, WIG30, WIG-Poland, WIG-banki, mWIG40, WIG, CEEplus | banki komercyjne	34,9300	+2,13%
+ALL IN! GAMES SPÓŁKA AKCYJNA (ALG)
+Główny Rynek | WIG-gry, WIGtechTR, WIGtech, WIG-Poland, WIG | Gry	1,6400	-4,09%
+ALLEGRO.EU S.A. (ALE)
+Główny Rynek | WIG140, WIG-ESG, WIG30TR, WIG30, WIG20TR, WIG-Poland, WIG20, WIG, CEEplus | Handel Internetowy	25,8800	+3,35%
+ALTA SPÓŁKA AKCYJNA (AAT)
+Główny Rynek | WIG-Poland, WIG-nieruchomości, WIG | sprzedaż nieruchomości	1,4700	+6,91%
+ALTUS SPÓŁKA AKCYJNA (ALI)
+Główny Rynek | WIG-Poland, WIG | zarządzanie aktywami	1,3450	-0,74%
+ALUMETAL SPÓŁKA AKCYJNA (AML)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG, CEEplus | hutnictwo metali nieżelaznych	72,7000	-0,27%
+AMBRA SPÓŁKA AKCYJNA (AMB)
+Główny Rynek | WIG140, sWIG80TR, WIGdiv, WIG-Poland, WIG-spożywczy, sWIG80, WIG | napoje	20,0500	+0,75%
+AMICA SPÓŁKA AKCYJNA (AMC)
+Główny Rynek | WIG140, sWIG80TR, WIGdiv, WIG-Poland, sWIG80, WIG, CEEplus | sprzęt elektryczny i elektroniczny	85,0000	+1,55%
+AMPLI SPÓŁKA AKCYJNA (APL)
+Główny Rynek | artykuły elektryczne	1,0600	-11,67%
+AMREST HOLDINGS SE (EAT)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG30TR, WIG30, WIG-Poland, mWIG40, WIG, CEEplus | hotele i restauracje	20,0000	0,00%
+ANSWEAR.COM SPÓŁKA AKCYJNA (ANR)
+Główny Rynek | WIG-Poland, WIG | Handel Internetowy	24,1000	+0,84%
+APATOR SPÓŁKA AKCYJNA (APT)
+Główny Rynek | WIG140, sWIG80TR, WIGdiv, WIG-Poland, sWIG80, WIG | urządzenia elektryczne	14,6800	-0,68%
+APLISENS SPÓŁKA AKCYJNA (APN)
+Główny Rynek | WIG-Poland, WIG | urządzenia elektryczne	14,2000	+0,71%
+APS ENERGIA SPÓŁKA AKCYJNA (APE)
+Główny Rynek | WIG-Poland, WIG | urządzenia elektryczne	3,2400	-4,71%
+ARCHICOM SPÓŁKA AKCYJNA (ARH)
+Główny Rynek | WIG140, sWIG80TR, WIGdiv, WIG-Poland, WIG-nieruchomości, sWIG80, WIG | sprzedaż nieruchomości	18,1000	0,00%
+ARCTIC PAPER SPÓŁKA AKCYJNA (ATC)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG, CEEplus | papier i opakowania	20,9000	-1,18%
+ARTERIA SPÓŁKA AKCYJNA (ARR)
+Główny Rynek | WIG-Poland, WIG | Usługi dla Przedsiębiorstw	8,8600	0,00%
+ARTIFEX MUNDI SPÓŁKA AKCYJNA (ART)
+Główny Rynek | WIG-gry, WIGtechTR, WIGtech, WIG-Poland, WIG | Gry	5,7800	-3,67%
+ATLANTIS SE (ATS)
+Główny Rynek | Działalność Inwestycyjna	1,0300	0,00%
+ATLAS ESTATES LIMITED (ATL)
+Główny Rynek | wynajem nieruchomości	1,2500	0,00%
+ATM GRUPA SPÓŁKA AKCYJNA (ATG)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, WIG-media, sWIG80, WIG | radio i telewizja	3,3900	-2,02%
+ATREM SPÓŁKA AKCYJNA (ATR)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | instalacje budowlane i telekomunikacyjne	3,6100	-0,28%
+AUTO PARTNER SPÓŁKA AKCYJNA (APR)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG-motoryzacja, WIG-Poland, mWIG40, WIG, CEEplus | części samochodowe	13,3800	+1,83%
+BALTIC BRIDGE SPÓŁKA AKCYJNA (WIS)
+Główny Rynek | Działalność Inwestycyjna	0,2500	0,00%
+BANCO SANTANDER S.A. (SAN)
+Główny Rynek | WIG-banki, WIG | banki komercyjne	13,0500	+0,38%
+BANK HANDLOWY W WARSZAWIE SPÓŁKA AKCYJNA (BHW)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG-Poland, WIG-banki, mWIG40, WIG, CEEplus | banki komercyjne	71,7000	+0,70%
+BANK MILLENNIUM SPÓŁKA AKCYJNA (MIL)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG30TR, WIG30, WIG-Poland, WIG-banki, mWIG40, WIG, CEEplus | banki komercyjne	4,5460	+2,39%
+BANK OCHRONY ŚRODOWISKA SPÓŁKA AKCYJNA (BOS)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, WIG-banki, sWIG80, WIG | banki komercyjne	8,6800	-1,36%
+BANK POLSKA KASA OPIEKI SPÓŁKA AKCYJNA (PEO)
+Główny Rynek | WIG140, WIG-ESG, WIG.MS-FIN, WIG30TR, WIG30, WIG20TR, WIG-Poland, WIG-banki, WIG20, WIG, CEEplus | banki komercyjne	85,6400	+1,30%
+BBI DEVELOPMENT SPÓŁKA AKCYJNA (BBD)
+Główny Rynek | WIG-Poland, WIG-nieruchomości, WIG | sprzedaż nieruchomości	3,8700	-2,27%
+BENEFIT SYSTEMS SPÓŁKA AKCYJNA (BFT)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG-Poland, mWIG40, WIG, CEEplus | rekreacja i wypoczynek - pozostałe	666,0000	+2,46%
+BERLING SPÓŁKA AKCYJNA (BRG)
+Główny Rynek | artykuły elektryczne	6,8500	0,00%
+BEST SPÓŁKA AKCYJNA (BST)
+Główny Rynek | Wierzytelności	19,9000	0,00%
+BETACOM SPÓŁKA AKCYJNA (BCM)
+Główny Rynek | INNOVATOR | oprogramowanie	6,9000	0,00%
+BIG CHEESE STUDIO SPÓŁKA AKCYJNA (BCS)
+Główny Rynek | WIG-gry, WIGtechTR, WIGtech, WIG-Poland, WIG | Gry	41,5000	+3,23%
+BIO PLANET SPÓŁKA AKCYJNA (BIP)
+Główny Rynek | artykuły codziennego użytku	8,9000	-0,22%
+BIOCELTIX SPÓŁKA AKCYJNA (BCX)
+Główny Rynek | WIG-Poland, WIG | Biotechnologia	38,6000	+0,26%
+BIOMAXIMA SPÓŁKA AKCYJNA (BMX)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG, CEEplus | Biotechnologia	24,9000	-2,92%
+BIOMED-LUBLIN WYTWÓRNIA SUROWIC I SZCZEPIONEK SPÓŁKA AKCYJNA (BML)
+Główny Rynek | WIG140, sWIG80TR, WIG-leki, WIG-Poland, sWIG80, WIG, CEEplus | Produkcja Leków	5,8100	-2,16%
+BIOTON SPÓŁKA AKCYJNA (BIO)
+Główny Rynek | WIG140, sWIG80TR, WIG-leki, WIG-Poland, sWIG80, WIG | Produkcja Leków	3,4550	-2,81%
+BLUGO SPÓŁKA AKCYJNA (YOL)
+Główny Rynek | Pośrednictwo Finansowe	0,3620	-1,90%
+BNP PARIBAS BANK POLSKA SPÓŁKA AKCYJNA (BNP)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, WIG-banki, sWIG80, WIG, CEEplus | banki komercyjne	58,2000	-1,02%
+BOOMBIT SPÓŁKA AKCYJNA (BBT)
+Główny Rynek | WIG-gry, WIGtechTR, WIGtech, WIG-Poland, WIG | Gry	11,8400	+0,17%
+BORYSZEW SPÓŁKA AKCYJNA (BRS)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG | hutnictwo metali nieżelaznych	4,7150	-3,48%
+BOWIM SPÓŁKA AKCYJNA (BOW)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG, CEEplus | wyroby hutnicze	10,1800	+3,46%
+BRAND 24 SPÓŁKA AKCYJNA (B24)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG-informatyka, WIG | oprogramowanie	23,0000	-2,13%
+BRASTER SPÓŁKA AKCYJNA (BRA)
+Główny Rynek | Sprzęt i Materiały Medyczne	0,7800	0,00%
+BRITISH AUTOMOTIVE HOLDING SPÓŁKA AKCYJNA (BAH)
+Główny Rynek | WIG-motoryzacja, WIG-Poland, WIG | motoryzacja - pozostałe	0,5380	-3,41%
+BUDIMEX SPÓŁKA AKCYJNA (BDX)
+Główny Rynek | WIG140, INNOVATOR, WIG-ESG, mWIG40TR, WIG30TR, WIG30, WIGdiv, WIG-Poland, WIG-budownictwo, mWIG40, WIG, CEEplus | budownictwo ogólne	285,5000	+0,18%
+BUMECH SPÓŁKA AKCYJNA (BMC)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG-Poland, mWIG40, WIG, CEEplus | urządzenia mechaniczne	63,7000	-0,47%
+CAPITAL PARK SPÓŁKA AKCYJNA (CPG)
+Główny Rynek | wynajem nieruchomości	8,8400	+3,51%
+CAPITAL PARTNERS SPÓŁKA AKCYJNA (CPA)
+Główny Rynek | Działalność Inwestycyjna	1,1000	0,00%
+CAPITEA SPÓŁKA AKCYJNA (GBK)
+Główny Rynek | Wierzytelności	3,7500	0,00%
+CAPTOR THERAPEUTICS SPÓŁKA AKCYJNA (CTX)
+Główny Rynek | WIG140, WIGtechTR, WIGtech, sWIG80TR, WIG-Poland, sWIG80, WIG | Biotechnologia	168,5000	+2,43%
+CASPAR ASSET MANAGEMENT SPÓŁKA AKCYJNA (CSR)
+Główny Rynek | WIG-Poland, WIG | zarządzanie aktywami	15,9000	0,00%
+CAVATINA HOLDING SPÓŁKA AKCYJNA (CAV)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, WIG-nieruchomości, sWIG80, WIG | wynajem nieruchomości	21,5000	0,00%
+CCC SPÓŁKA AKCYJNA (CCC)
+Główny Rynek | WIG140, INNOVATOR, WIG-ESG, WIG-odzież, WIG30TR, WIG30, WIG20TR, WIG-Poland, WIG20, WIG, CEEplus | odzież i obuwie	38,6200	+1,71%
+CD PROJEKT SPÓŁKA AKCYJNA (CDR)
+Główny Rynek | WIG140, WIG-gry, WIGtechTR, WIG-ESG, WIGtech, WIG.GAMES5, WIG30TR, WIG30, WIG20TR, WIG-Poland, WIG20, WIG, CEEplus | Gry	137,0200	+1,86%
+CDRL SPÓŁKA AKCYJNA (CDL)
+Główny Rynek | WIG-odzież, WIG-Poland, WIG | odzież i obuwie	16,9500	+1,50%
+CELON PHARMA SPÓŁKA AKCYJNA (CLN)
+Główny Rynek | WIG140, WIG-ESG, sWIG80TR, WIG-leki, WIGdiv, WIG-Poland, sWIG80, WIG, CEEplus | Produkcja Leków	16,1000	+1,26%
+CENTRUM MEDYCZNE ENEL-MED SPÓŁKA AKCYJNA (ENE)
+Główny Rynek | WIG-Poland, WIG | Szpitale i Przychodnie	15,7000	0,00%
+CENTRUM NOWOCZESNYCH TECHNOLOGII SPÓŁKA AKCYJNA (CNT)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | inżynieria lądowa i wodna	14,1000	-0,35%
+ČEZ. A.S. (CEZ)
+Główny Rynek | WIG-CEE, WIG-energia, WIG, CEEplus | energetyka	151,1000	+3,21%
+CFI HOLDING SPÓŁKA AKCYJNA (CFI)
+Główny Rynek | hotele i restauracje	0,2540	0,00%
+CI GAMES SPÓŁKA AKCYJNA (CIG)
+Główny Rynek | WIG140, WIG-gry, WIGtechTR, WIGtech, WIG.GAMES5, sWIG80TR, WIG-Poland, sWIG80, WIG, CEEplus | Gry	2,6950	-1,10%
+CIECH SPÓŁKA AKCYJNA (CIE)
+Główny Rynek | WIG140, WIG-ESG, WIG.MS-PET, mWIG40TR, WIG-Poland, WIG-chemia, mWIG40, WIG, CEEplus | chemia podstawowa	42,4800	+2,86%
+CITY SERVICE SE (CTS)
+Główny Rynek | WIG-CEE, WIG | Usługi dla Przedsiębiorstw	4,9690	-7,83%
+CLEAN&CARBON ENERGY SPÓŁKA AKCYJNA (CCE)
+Główny Rynek | nieruchomości - pozostałe	0,4100	-2,38%
+CLOUD TECHNOLOGIES SPÓŁKA AKCYJNA (CLD)
+Główny Rynek | Nowe Technologie	36,1000	-2,17%
+COAL ENERGY S.A. (CLE)
+Główny Rynek | WIG-CEE, WIG-Ukraine, WIG-górnictwo, WIG, CEEplus | górnictwo węgla	1,6940	+0,71%
+COGNOR HOLDING SPÓŁKA AKCYJNA (COG)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG, CEEplus | hutnictwo żelaza i stali	4,2400	+4,18%
+COMARCH SPÓŁKA AKCYJNA (CMR)
+Główny Rynek | WIG140, WIGtechTR, WIG-ESG, WIGtech, mWIG40TR, WIGdiv, WIG-Poland, WIG-informatyka, mWIG40, WIG, CEEplus | systemy informatyczne	176,8000	+2,79%
+COMP SPÓŁKA AKCYJNA (CMP)
+Główny Rynek | WIG140, WIGtechTR, WIGtech, sWIG80TR, WIG-Poland, WIG-informatyka, sWIG80, WIG | oprogramowanie	44,9000	0,00%
+COMPERIA.PL SPÓŁKA AKCYJNA (CPL)
+Główny Rynek | WIG-Poland, WIG-media, WIG | portale internetowe	7,0000	-4,11%
+COMPREMUM SPÓŁKA AKCYJNA (CPR)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | materiały budowlane	2,6150	-1,69%
+CPD SPÓŁKA AKCYJNA (CPD)
+Główny Rynek | WIG-Poland, WIG-nieruchomości, WIG | wynajem nieruchomości	9,7400	-1,02%
+CPI FIM SA (OPG)
+Główny Rynek | wynajem nieruchomości	2,5890	+5,22%
+CREEPY JAR SPÓŁKA AKCYJNA (CRJ)
+Główny Rynek | WIG140, WIG-gry, WIGtechTR, WIGtech, sWIG80TR, WIG-Poland, sWIG80, WIG, CEEplus | Gry	722,0000	+2,85%
+CREOTECH INSTRUMENTS SPÓŁKA AKCYJNA (CRI)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG | Nowe Technologie	117,0000	+1,74%
+CYFROWY POLSAT SPÓŁKA AKCYJNA (CPS)
+Główny Rynek | WIG140, WIGtechTR, WIG-ESG, WIGtech, WIG30TR, WIG30, WIG20TR, WIG-Poland, WIG20, WIG, CEEplus | Telekomunikacja	18,5800	+1,47%
+CZERWONA TOREBKA SPÓŁKA AKCYJNA (CZT)
+Główny Rynek | wynajem nieruchomości	0,5700	-1,72%
+DADELO SPÓŁKA AKCYJNA (DAD)
+Główny Rynek | WIG-Poland, WIG | Handel Internetowy	10,1500	+1,00%
+DATAWALK SPÓŁKA AKCYJNA (DAT)
+Główny Rynek | WIG140, WIGtechTR, WIG-ESG, WIGtech, mWIG40TR, WIG-Poland, WIG-informatyka, mWIG40, WIG, CEEplus | oprogramowanie	99,4000	+1,83%
+DECORA SPÓŁKA AKCYJNA (DCR)
+Główny Rynek | WIG140, sWIG80TR, WIGdiv, WIG-Poland, WIG-budownictwo, sWIG80, WIG | materiały budowlane	32,0000	0,00%
+DEKPOL SPÓŁKA AKCYJNA (DEK)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | budownictwo - pozostałe	25,8000	-2,27%
+DELKO SPÓŁKA AKCYJNA (DEL)
+Główny Rynek | WIG-Poland, WIG | artykuły spożywcze i szybko zbywalne	18,5000	-0,54%
+DEVELIA SPÓŁKA AKCYJNA (DVL)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIGdiv, WIG-Poland, WIG-nieruchomości, mWIG40, WIG, CEEplus | sprzedaż nieruchomości	2,4500	+2,94%
+DGA SPÓŁKA AKCYJNA (DGA)
+Główny Rynek | Usługi dla Przedsiębiorstw	7,4000	-3,27%
+DIGITAL NETWORK SPÓŁKA AKCYJNA (DIG)
+Główny Rynek | WIG-Poland, WIG-media, WIG | reklama i marketing	12,8500	0,00%
+DIGITREE GROUP SPÓŁKA AKCYJNA (DTR)
+Główny Rynek | oprogramowanie	15,4000	0,00%
+DINO POLSKA SPÓŁKA AKCYJNA (DNP)
+Główny Rynek | WIG140, WIG-ESG, WIG30TR, WIG30, WIG20TR, WIG-Poland, WIG20, WIG, CEEplus | artykuły codziennego użytku	377,5000	-0,13%
+DOM DEVELOPMENT SPÓŁKA AKCYJNA (DOM)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIGdiv, WIG-Poland, WIG-nieruchomości, mWIG40, WIG, CEEplus | sprzedaż nieruchomości	89,5000	+1,13%
+DREWEX SPÓŁKA AKCYJNA W RESTRUKTURYZACJI (DRE)
+Główny Rynek | drewno	0,5500	0,00%
+DROZAPOL-PROFIL SPÓŁKA AKCYJNA (DPL)
+Główny Rynek | WIG-Poland, WIG | wyroby hutnicze	5,5200	-1,43%
+ECHO INVESTMENT SPÓŁKA AKCYJNA (ECH)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, WIG-nieruchomości, sWIG80, WIG | wynajem nieruchomości	3,1850	+1,11%
+ED INVEST SPÓŁKA AKCYJNA (EDI)
+Główny Rynek | WIG-Poland, WIG-nieruchomości, WIG | sprzedaż nieruchomości	3,3200	+0,61%
+EKO EXPORT SPÓŁKA AKCYJNA (EEX)
+Główny Rynek | WIG-Poland, WIG | Recykling	1,5500	-1,27%
+ELEKTROCIEPŁOWNIA BĘDZIN SPÓŁKA AKCYJNA (BDZ)
+Główny Rynek | energetyka	5,7000	+0,88%
+ELEKTROTIM SPÓŁKA AKCYJNA (ELT)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | instalacje budowlane i telekomunikacyjne	7,1000	-2,47%
+ELKOP SE (EKP)
+Główny Rynek | WIG-Poland, WIG-nieruchomości, WIG | wynajem nieruchomości	0,3950	-0,13%
+EMC INSTYTUT MEDYCZNY SPÓŁKA AKCYJNA (EMC)
+Główny Rynek | Szpitale i Przychodnie	10,9000	-0,91%
+ENEA SPÓŁKA AKCYJNA (ENA)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG30TR, WIG30, WIG-energia, WIG-Poland, mWIG40, WIG, CEEplus | energetyka	5,9600	-0,25%
+ENEFI VAGYONKEZELŐ NYRT. (EST)
+Główny Rynek | energia odnawialna	1,3300	0,00%
+ENERGA SPÓŁKA AKCYJNA (ENG)
+Główny Rynek | energetyka	6,8800	-0,86%
+ENERGOAPARATURA SPÓŁKA AKCYJNA (ENP)
+Główny Rynek | budownictwo przemysłowe	1,9800	0,00%
+ENERGOINSTAL SPÓŁKA AKCYJNA (ENI)
+Główny Rynek | instalacje budowlane i telekomunikacyjne	0,6600	+1,54%
+ENTER AIR SPÓŁKA AKCYJNA (ENT)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG | transport	26,5000	+3,11%
+ERBUD SPÓŁKA AKCYJNA (ERB)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, WIG-budownictwo, sWIG80, WIG | budownictwo przemysłowe	35,2000	-1,12%
+ERG SPÓŁKA AKCYJNA (ERG)
+Główny Rynek | WIG-Poland, WIG | tworzywa sztuczne	50,0000	0,00%
+ESOTIQ & HENDERSON SPÓŁKA AKCYJNA (EAH)
+Główny Rynek | WIG-odzież, WIG-Poland, WIG | odzież i obuwie	23,0000	+0,88%
+EUROCASH SPÓŁKA AKCYJNA (EUR)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG-Poland, mWIG40, WIG, CEEplus | artykuły codziennego użytku	13,8500	+0,95%
+EUROHOLD BULGARIA AD (EHG)
+Główny Rynek | WIG-CEE, WIG | ubezpieczenia - pozostałe	5,3300	-0,86%
+EUROPEJSKIE CENTRUM ODSZKODOWAŃ SPÓŁKA AKCYJNA W RESTRUKTURYZACJI (EUC)
+Główny Rynek | ubezpieczenia - pozostałe	0,8160	+2,26%
+EUROTEL SPÓŁKA AKCYJNA (ETL)
+Główny Rynek | WIG-Poland, WIG | elektronika użytkowa	63,0000	0,00%
+FABRYKA FARB I LAKIERÓW ŚNIEŻKA SPÓŁKA AKCYJNA (SKA)
+Główny Rynek | WIG140, sWIG80TR, WIGdiv, WIG-Poland, WIG-budownictwo, sWIG80, WIG | materiały budowlane	61,6000	-0,65%
+FABRYKA OBRABIAREK RAFAMET SPÓŁKA AKCYJNA (RAF)
+Główny Rynek | urządzenia mechaniczne	15,5000	+3,33%
+FABRYKI MEBLI FORTE SPÓŁKA AKCYJNA (FTE)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG | meble i dywany	20,9000	-0,48%
+FABRYKI SPRZĘTU I NARZĘDZI GÓRNICZYCH GRUPA KAPITAŁOWA FASING SPÓŁKA AKCYJNA (FSG)
+Główny Rynek | WIG-Poland, WIG | urządzenia mechaniczne	13,1500	+1,15%
+FAMUR SPÓŁKA AKCYJNA (FMF)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG-Poland, mWIG40, WIG, CEEplus | urządzenia mechaniczne	3,2400	-0,31%
+FAST FINANCE SPÓŁKA AKCYJNA W RESTRUKTURYZACJI (FFI)
+Główny Rynek | Działalność Inwestycyjna	0,6350	-7,97%
+FEERUM SPÓŁKA AKCYJNA (FEE)
+Główny Rynek | WIG-Poland, WIG | urządzenia mechaniczne	5,4000	0,00%
+FERRO SPÓŁKA AKCYJNA (FRO)
+Główny Rynek | WIG140, sWIG80TR, WIGdiv, WIG-Poland, WIG-budownictwo, sWIG80, WIG | materiały budowlane	23,0000	0,00%
+FERRUM SPÓŁKA AKCYJNA (FER)
+Główny Rynek | WIG-Poland, WIG | hutnictwo żelaza i stali	3,2200	+1,26%
+FIRMA OPONIARSKA DĘBICA SPÓŁKA AKCYJNA (DBC)
+Główny Rynek | WIG-motoryzacja, WIGdiv, WIG-Poland, WIG | części samochodowe	52,8000	+5,18%
+FON SE (FON)
+Główny Rynek | WIG-Poland, WIG | Pośrednictwo Finansowe	4,2900	0,00%
+GAMES OPERATORS SPÓŁKA AKCYJNA (GOP)
+Główny Rynek | WIG-gry, WIGtechTR, WIGtech, WIG-Poland, WIG | Gry	8,8600	-0,23%
+GAMING FACTORY SPÓŁKA AKCYJNA (GIF)
+Główny Rynek | WIG-gry, WIGtechTR, WIGtech, WIG-Poland, WIG | Gry	5,6200	-4,10%
+GETIN HOLDING SPÓŁKA AKCYJNA (GTN)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, WIG-banki, sWIG80, WIG | banki komercyjne	0,4100	+4,86%
+GI GROUP POLAND SPÓŁKA AKCYJNA (GIG)
+Główny Rynek | Usługi dla Przedsiębiorstw	1,4800	+2,07%
+GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE SPÓŁKA AKCYJNA (GPW)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIGdiv, WIG-Poland, mWIG40, WIG, CEEplus | giełdy i biura maklerskie	35,7600	+0,45%
+GIEŁDA PRAW MAJĄTKOWYCH VINDEXUS SPÓŁKA AKCYJNA (VIN)
+Główny Rynek | WIG-Poland, WIG | Wierzytelności	6,1600	+0,33%
+GLOBAL COSMED SPÓŁKA AKCYJNA (GLC)
+Główny Rynek | kosmetyki i chemia gospodarcza	2,1200	-1,40%
+GLOBE TRADE CENTRE SPÓŁKA AKCYJNA (GTC)
+Główny Rynek | WIG-Poland, WIG-nieruchomości, WIG | wynajem nieruchomości	6,1200	0,00%
+GOBARTO SPÓŁKA AKCYJNA (GOB)
+Główny Rynek | WIG-Poland, WIG-spożywczy, WIG | żywność	7,7000	+0,65%
+GREENX METALS LIMITED (GRX)
+Główny Rynek | WIG-górnictwo, WIG | górnictwo węgla	1,6260	-1,57%
+GRODNO SPÓŁKA AKCYJNA (GRN)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG, CEEplus | artykuły elektryczne	14,0000	+0,14%
+GRUPA AZOTY SPÓŁKA AKCYJNA (ATT)
+Główny Rynek | WIG140, INNOVATOR, WIG-ESG, WIG.MS-PET, mWIG40TR, WIG30TR, WIG30, WIG-Poland, WIG-chemia, mWIG40, WIG, CEEplus | chemia podstawowa	36,0000	+2,56%
+GRUPA AZOTY ZAKŁADY AZOTOWE PUŁAWY SPÓŁKA AKCYJNA (ZAP)
+Główny Rynek | chemia podstawowa	73,0000	0,00%
+GRUPA AZOTY ZAKŁADY CHEMICZNE POLICE SPÓŁKA AKCYJNA (PCE)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, WIG-chemia, sWIG80, WIG | chemia podstawowa	10,4000	-2,80%
+GRUPA KAPITAŁOWA IMMOBILE SPÓŁKA AKCYJNA (GKI)
+Główny Rynek | WIG-Poland, WIG | Działalność Inwestycyjna	2,0100	-1,47%
+GRUPA KĘTY SPÓŁKA AKCYJNA (KTY)
+Główny Rynek | WIG140, WIG-ESG, WIG30TR, WIG30, WIG20TR, WIGdiv, WIG-Poland, WIG20, WIG, CEEplus | hutnictwo metali nieżelaznych	554,0000	-1,25%
+GRUPA PRACUJ SPÓŁKA AKCYJNA (GPP)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG-Poland, WIG-media, mWIG40, WIG, CEEplus | portale internetowe	45,7500	-0,54%
+GRUPA ŻYWIEC SPÓŁKA AKCYJNA (ZWC)
+Główny Rynek | napoje	484,0000	+0,21%
+HARPER HYGIENICS SPÓŁKA AKCYJNA (HRP)
+Główny Rynek | WIG-odzież, WIG-Poland, WIG | kosmetyki i chemia gospodarcza	5,2600	+0,19%
+HELIO SPÓŁKA AKCYJNA (HEL)
+Główny Rynek | WIG-Poland, WIG-spożywczy, WIG | żywność	11,0000	0,00%
+HERKULES SPÓŁKA AKCYJNA (HRS)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | budownictwo - pozostałe	0,8300	-0,72%
+HM INWEST SPÓŁKA AKCYJNA (HMI)
+Główny Rynek | sprzedaż nieruchomości	8,4000	-0,47%
+HOLLYWOOD SPÓŁKA AKCYJNA (HLD)
+Główny Rynek | Handel i Usługi - Pozostałe	0,9860	0,00%
+HUUUGE. INC. (HUG)
+Główny Rynek | WIG140, WIG-gry, WIGtechTR, WIG-ESG, WIGtech, WIG.GAMES5, mWIG40TR, mWIG40, WIG, CEEplus | Gry	22,7000	+1,34%
+IDM SPÓŁKA AKCYJNA (IDM)
+Główny Rynek | rynek kapitałowy - pozostałe	0,7050	-0,70%
+IFIRMA SPÓŁKA AKCYJNA (IFI)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG-informatyka, WIG | oprogramowanie	19,5500	+0,77%
+IMC S.A. (IMC)
+Główny Rynek | WIG140, sWIG80TR, WIG-CEE, WIG-Ukraine, WIG-spożywczy, sWIG80, WIG | produkcja rolna i rybołówstwo	16,6000	+0,61%
+IMMOFINANZ AG (IIA)
+Główny Rynek | WIG-nieruchomości, WIG | wynajem nieruchomości	58,5500	0,00%
+IMPERIO ALTERNATYWNA SPÓŁKA INWESTYCYJNA SPÓŁKA AKCYJNA (IMP)
+Główny Rynek | WIG-Poland, WIG | Działalność Inwestycyjna	1,5000	-4,15%
+IMS SPÓŁKA AKCYJNA (IMS)
+Główny Rynek | WIG-Poland, WIG-media, WIG | media - pozostałe	2,4300	0,00%
+INC SPÓŁKA AKCYJNA (INC)
+Główny Rynek | WIG-Poland, WIG | Działalność Inwestycyjna	1,9180	-2,64%
+INDYGOTECH MINERALS SPÓŁKA AKCYJNA W LIKWIDACJI (IDG)
+Główny Rynek | Działalność Inwestycyjna	0,2500	0,00%
+ING BANK ŚLĄSKI SPÓŁKA AKCYJNA (ING)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG-Poland, WIG-banki, mWIG40, WIG, CEEplus | banki komercyjne	159,8000	+1,78%
+INPRO SPÓŁKA AKCYJNA (INP)
+Główny Rynek | WIG-Poland, WIG-nieruchomości, WIG | sprzedaż nieruchomości	5,1000	+4,51%
+INSTAL KRAKÓW SPÓŁKA AKCYJNA (INK)
+Główny Rynek | WIG140, sWIG80TR, WIGdiv, WIG-Poland, WIG-budownictwo, sWIG80, WIG | budownictwo przemysłowe	29,5000	+0,68%
+INTER CARS SPÓŁKA AKCYJNA (CAR)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG-motoryzacja, WIG-Poland, mWIG40, WIG, CEEplus | części samochodowe	470,0000	+3,98%
+INTERBUD-LUBLIN SPÓŁKA AKCYJNA (ITB)
+Główny Rynek | sprzedaż nieruchomości	0,9850	0,00%
+INTERSPORT POLSKA SPÓŁKA AKCYJNA (IPO)
+Główny Rynek | WIG-odzież, WIG-Poland, WIG | odzież i obuwie	0,8700	+1,16%
+INTROL SPÓŁKA AKCYJNA (INL)
+Główny Rynek | WIG-Poland, WIG | urządzenia mechaniczne	4,8800	+0,41%
+INVESTMENT FRIENDS CAPITAL SE (IFC)
+Główny Rynek | Pośrednictwo Finansowe	1,0250	0,00%
+INVESTMENT FRIENDS SE (IFR)
+Główny Rynek | Pośrednictwo Finansowe	2,4500	+0,82%
+IPOPEMA SECURITIES SPÓŁKA AKCYJNA (IPE)
+Główny Rynek | WIG-Poland, WIG | giełdy i biura maklerskie	2,0400	0,00%
+IZOBLOK SPÓŁKA AKCYJNA (IZB)
+Główny Rynek | tworzywa sztuczne	37,2000	+0,54%
+IZOLACJA-JAROCIN SPÓŁKA AKCYJNA (IZO)
+Główny Rynek | materiały budowlane	2,1500	-6,52%
+IZOSTAL SPÓŁKA AKCYJNA (IZS)
+Główny Rynek | WIG-Poland, WIG | wyroby metalowe	2,3500	-1,67%
+JASTRZĘBSKA SPÓŁKA WĘGLOWA SPÓŁKA AKCYJNA (JSW)
+Główny Rynek | WIG140, WIG-ESG, WIG.MS-BAS, WIG30TR, WIG30, WIG20TR, WIG-górnictwo, WIG-Poland, WIG20, WIG, CEEplus | górnictwo węgla	58,3000	-0,17%
+JWW INVEST SPÓŁKA AKCYJNA (JWW)
+Główny Rynek | urządzenia mechaniczne	1,6400	0,00%
+K2 HOLDING SPÓŁKA AKCYJNA (K2H)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG-informatyka, WIG | oprogramowanie	26,7000	+0,38%
+KCI SPÓŁKA AKCYJNA (KCI)
+Główny Rynek | WIG-Poland, WIG-media, WIG | wydawnictwa	0,8600	+2,38%
+KDM SHIPPING PUBLIC LIMITED (KDM)
+Główny Rynek | transport	1,4000	0,00%
+KERNEL HOLDING S.A. (KER)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG-CEE, WIG-Ukraine, WIGdiv, WIG-spożywczy, mWIG40, WIG, CEEplus | żywność	18,0000	-1,15%
+KGHM POLSKA MIEDŹ SPÓŁKA AKCYJNA (KGH)
+Główny Rynek | WIG140, WIG-ESG, WIG.MS-BAS, WIG30TR, WIG30, WIG20TR, WIG-górnictwo, WIG-Poland, WIG20, WIG, CEEplus | górnictwo metali	127,8000	+6,06%
+KGL SPÓŁKA AKCYJNA (KGL)
+Główny Rynek | chemikalia	9,4800	0,00%
+KINO POLSKA TV SPÓŁKA AKCYJNA (KPL)
+Główny Rynek | WIG-Poland, WIG-media, WIG | radio i telewizja	12,1000	-1,63%
+KOMPUTRONIK SPÓŁKA AKCYJNA W RESTRUKTURYZACJI (KOM)
+Główny Rynek | elektronika użytkowa	4,5000	+0,90%
+KORPORACJA GOSPODARCZA EFEKT SPÓŁKA AKCYJNA (EFK)
+Główny Rynek | Usługi dla Przedsiębiorstw	6,9000	-0,72%
+KOSZALIŃSKIE PRZEDSIĘBIORSTWO PRZEMYSŁU DRZEWNEGO SPÓŁKA AKCYJNA (KPD)
+Główny Rynek | WIG-Poland, WIG | drewno	68,8000	0,00%
+KRAKCHEMIA SPÓŁKA AKCYJNA (KCH)
+Główny Rynek | chemikalia	0,5000	-4,76%
+KREDYT INKASO SPÓŁKA AKCYJNA (KRI)
+Główny Rynek | Wierzytelności	9,4500	+3,28%
+KRKA. TOVARNA ZDRAVIL. D.D.. NOVO MESTO (KRK)
+Główny Rynek | WIG-leki, WIG-CEE, WIG, CEEplus | Produkcja Leków	440,0000	-0,90%
+KRUK SPÓŁKA AKCYJNA (KRU)
+Główny Rynek | WIG140, WIG-ESG, WIG30TR, WIG30, WIG20TR, WIG-Poland, WIG20, WIG, CEEplus | Wierzytelności	291,2000	+5,58%
+KRYNICA VITAMIN SPÓŁKA AKCYJNA (KVT)
+Główny Rynek | WIG-Poland, WIG-spożywczy, WIG | napoje	13,2800	+2,00%
+KSG AGRO S.A. (KSG)
+Główny Rynek | WIG-CEE, WIG-Ukraine, WIG-spożywczy, WIG | produkcja rolna i rybołówstwo	2,2700	+2,48%
+LABO PRINT SPÓŁKA AKCYJNA (LAB)
+Główny Rynek | Usługi dla Przedsiębiorstw	14,5000	+0,69%
+LARK.PL SPÓŁKA AKCYJNA (LRK)
+Główny Rynek | sprzęt informatyczny	0,1500	0,00%
+LARQ SPÓŁKA AKCYJNA (LRQ)
+Główny Rynek | WIG-Poland, WIG-media, WIG | reklama i marketing	1,4450	+0,70%
+LENA LIGHTING SPÓŁKA AKCYJNA (LEN)
+Główny Rynek | WIG-Poland, WIG | urządzenia elektryczne	3,8300	0,00%
+LENTEX SPÓŁKA AKCYJNA (LTX)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | materiały budowlane	7,8800	+0,25%
+LESS SPÓŁKA AKCYJNA (LES)
+Główny Rynek | WIG-Poland, WIG | Handel Internetowy	0,5530	-1,25%
+LIBET SPÓŁKA AKCYJNA (LBT)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | materiały budowlane	1,5700	0,00%
+LIVECHAT SOFTWARE SPÓŁKA AKCYJNA (LVC)
+Główny Rynek | WIG140, WIGtechTR, WIG-ESG, WIGtech, mWIG40TR, WIGdiv, WIG-Poland, WIG-informatyka, mWIG40, WIG, CEEplus | oprogramowanie	111,8000	-0,71%
+LOKUM DEWELOPER SPÓŁKA AKCYJNA (LKD)
+Główny Rynek | WIG-Poland, WIG-nieruchomości, WIG | sprzedaż nieruchomości	14,8500	+4,95%
+LPP SPÓŁKA AKCYJNA (LPP)
+Główny Rynek | WIG140, WIG-ESG, WIG-odzież, WIG30TR, WIG30, WIG20TR, WIG-Poland, WIG20, WIG, CEEplus | odzież i obuwie	9 855,0000	+0,87%
+LSI SOFTWARE SPÓŁKA AKCYJNA (LSI)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG-informatyka, WIG | oprogramowanie	11,9500	+6,70%
+LUBAWA SPÓŁKA AKCYJNA (LBW)
+Główny Rynek | WIG140, INNOVATOR, sWIG80TR, WIG-odzież, WIG-Poland, sWIG80, WIG, CEEplus | odzież i kosmetyki - pozostałe	2,2900	-1,29%
+LUBELSKI WĘGIEL BOGDANKA SPÓŁKA AKCYJNA (LWB)
+Główny Rynek | WIG140, WIG-ESG, WIG.MS-BAS, mWIG40TR, WIG30TR, WIG30, WIG-górnictwo, WIG-Poland, mWIG40, WIG, CEEplus | górnictwo węgla	39,5200	-2,90%
+M.W. TRADE SPÓŁKA AKCYJNA (MWT)
+Główny Rynek | Leasing i Faktoring	4,6400	-1,28%
+MABION SPÓŁKA AKCYJNA (MAB)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG-leki, WIG-Poland, mWIG40, WIG, CEEplus | Produkcja Leków	23,8900	+3,46%
+MAGNA POLONIA SPÓŁKA AKCYJNA (06N)
+Główny Rynek | WIG-Poland, WIG | Działalność Inwestycyjna	4,0700	+4,36%
+MAKARONY POLSKIE SPÓŁKA AKCYJNA (MAK)
+Główny Rynek | WIG-Poland, WIG-spożywczy, WIG | żywność	8,0000	-0,50%
+MANGATA HOLDING SPÓŁKA AKCYJNA (MGT)
+Główny Rynek | WIG-Poland, WIG | wyroby metalowe	71,6000	-0,56%
+MANYDEV STUDIO SE (MAN)
+Główny Rynek | Gry	1,0000	0,00%
+MARIE BRIZARD WINE & SPIRITS (MBW)
+Główny Rynek | WIG-spożywczy, WIG | napoje	10,7000	+6,47%
+MARVIPOL DEVELOPMENT SPÓŁKA AKCYJNA (MVP)
+Główny Rynek | WIG-Poland, WIG-nieruchomości, WIG | wynajem nieruchomości	5,6000	-0,36%
+MAXCOM SPÓŁKA AKCYJNA (MXC)
+Główny Rynek | WIG-Poland, WIG | sprzęt elektryczny i elektroniczny	9,5000	-2,66%
+MBANK SPÓŁKA AKCYJNA (MBK)
+Główny Rynek | WIG140, WIG-ESG, WIG30TR, WIG30, WIG20TR, WIG-Poland, WIG-banki, WIG20, WIG, CEEplus | banki komercyjne	290,0000	+0,21%
+MCI CAPITAL ALTERNATYWNA SPÓŁKA INWESTYCYJNA SPÓŁKA AKCYJNA (MCI)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG | Działalność Inwestycyjna	16,1000	0,00%
+MDI ENERGIA SPÓŁKA AKCYJNA (MDI)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | inżynieria lądowa i wodna	1,8000	+0,84%
+MEDICALGORITHMICS SPÓŁKA AKCYJNA (MDG)
+Główny Rynek | WIG-Poland, WIG | Sprzęt i Materiały Medyczne	12,8000	+2,40%
+MEDINICE SPÓŁKA AKCYJNA (ICE)
+Główny Rynek | WIG-Poland, WIG | Ochrona Zdrowia - Pozostałe	13,2600	+0,45%
+MEGARON SPÓŁKA AKCYJNA (MEG)
+Główny Rynek | materiały budowlane	11,0000	0,00%
+MENNICA POLSKA SPÓŁKA AKCYJNA (MNC)
+Główny Rynek | WIGdiv, WIG-Poland, WIG | hutnictwo metali nieżelaznych	17,5000	-0,57%
+MERCATOR MEDICAL SPÓŁKA AKCYJNA (MRC)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG30TR, WIG30, WIG-Poland, mWIG40, WIG, CEEplus | Sprzęt i Materiały Medyczne	49,0000	+2,13%
+MERCOR SPÓŁKA AKCYJNA (MCR)
+Główny Rynek | INNOVATOR, WIG-Poland, WIG-budownictwo, WIG | materiały budowlane	13,7500	-0,36%
+MEX POLSKA SPÓŁKA AKCYJNA (MEX)
+Główny Rynek | WIG-Poland, WIG | hotele i restauracje	2,2600	0,00%
+MFO SPÓŁKA AKCYJNA (MFO)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, WIG-budownictwo, sWIG80, WIG | materiały budowlane	31,3000	+2,96%
+MIRACULUM SPÓŁKA AKCYJNA (MIR)
+Główny Rynek | WIG-odzież, WIG-Poland, WIG | kosmetyki i chemia gospodarcza	1,2400	+0,81%
+MIRBUD SPÓŁKA AKCYJNA (MRB)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, WIG-budownictwo, sWIG80, WIG, CEEplus | budownictwo ogólne	4,2700	+0,35%
+ML SYSTEM SPÓŁKA AKCYJNA (MLS)
+Główny Rynek | WIG140, sWIG80TR, WIG-energia, WIG-Poland, sWIG80, WIG, CEEplus | energia odnawialna	56,3500	+0,18%
+MLK FOODS PUBLIC COMPANY LTD (MLK)
+Główny Rynek | WIG-CEE, WIG-Ukraine, WIG-spożywczy, WIG, CEEplus | żywność	0,8300	-0,95%
+MLP GROUP SPÓŁKA AKCYJNA (MLG)
+Główny Rynek | WIG-Poland, WIG-nieruchomości, WIG | wynajem nieruchomości	71,0000	-3,79%
+MO-BRUK SPÓŁKA AKCYJNA (MBR)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG-Poland, mWIG40, WIG, CEEplus | Recykling	281,5000	+0,18%
+MOJ SPÓŁKA AKCYJNA (MOJ)
+Główny Rynek | WIG-Poland, WIG | urządzenia mechaniczne	1,8000	-4,76%
+MOL MAGYAR OLAJ - ES GAZIPARI NYILVANOSAN MUKODO RESZVENYTARSASAG (MOL)
+Główny Rynek | WIG-CEE, WIG-paliwa, WIG, CEEplus | wydobycie i produkcja	30,6600	+3,93%
+MOLECURE SPÓŁKA AKCYJNA (MOC)
+Główny Rynek | WIG140, WIGtechTR, WIGtech, sWIG80TR, WIG-Poland, sWIG80, WIG | Biotechnologia	15,6200	-2,25%
+MONNARI TRADE SPÓŁKA AKCYJNA (MON)
+Główny Rynek | WIG-odzież, WIG-Poland, WIG | odzież i obuwie	5,0800	+0,40%
+MOSTOSTAL PŁOCK SPÓŁKA AKCYJNA (MSP)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | budownictwo przemysłowe	18,3500	+2,23%
+MOSTOSTAL WARSZAWA SPÓŁKA AKCYJNA (MSW)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | budownictwo przemysłowe	5,7000	+3,26%
+MOSTOSTAL ZABRZE SPÓŁKA AKCYJNA (MSZ)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | budownictwo przemysłowe	1,9600	0,00%
+MUZA SPÓŁKA AKCYJNA (MZA)
+Główny Rynek | WIG-Poland, WIG-media, WIG | wydawnictwa	6,3000	-0,79%
+NANOGROUP SPÓŁKA AKCYJNA (NNG)
+Główny Rynek | Biotechnologia	0,0000	0,00%
+NANOGROUP SPÓŁKA AKCYJNA (NNG)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG | Biotechnologia	1,2000	-2,44%
+NEUCA SPÓŁKA AKCYJNA (NEU)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIGdiv, WIG-Poland, mWIG40, WIG, CEEplus | Dystrybucja Leków	628,0000	-0,32%
+NEW TECH CAPITAL SPÓŁKA AKCYJNA (NTC)
+Główny Rynek | WIG-Poland, WIG | Działalność Inwestycyjna	0,9520	0,00%
+NEWAG SPÓŁKA AKCYJNA (NWG)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG | środki transportu	15,9500	0,00%
+NEXITY GLOBAL SPÓŁKA AKCYJNA (NXG)
+Główny Rynek | WIG-Poland, WIG | Usługi dla Przedsiębiorstw	2,7400	+3,79%
+NOBLE FINANCIALS SPÓŁKA AKCYJNA (IBS)
+Główny Rynek | sprzedaż nieruchomości	59,0000	0,00%
+NOVAVIS GROUP SPÓŁKA AKCYJNA (NVG)
+Główny Rynek | WIG-energia, WIG-Poland, WIG | energia odnawialna	1,4900	0,00%
+NOVITA SPÓŁKA AKCYJNA (NVT)
+Główny Rynek | zaopatrzenie przedsiębiorstw - pozostałe	91,6000	-0,22%
+NPL NOVA SPÓŁKA AKCYJNA (PRI)
+Główny Rynek | WIG-Poland, WIG | Wierzytelności	3,1000	0,00%
+NTT SYSTEM SPÓŁKA AKCYJNA (NTT)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG-informatyka, WIG | sprzęt informatyczny	4,8700	+1,88%
+OCTAVA SPÓŁKA AKCYJNA (08N)
+Główny Rynek | sprzedaż nieruchomości	1,0200	0,00%
+ODLEWNIE POLSKIE SPÓŁKA AKCYJNA (ODL)
+Główny Rynek | WIG-Poland, WIG | hutnictwo żelaza i stali	7,2600	+0,55%
+OEX SPÓŁKA AKCYJNA (OEX)
+Główny Rynek | WIG-Poland, WIG | Handel i Usługi - Pozostałe	30,0000	0,00%
+ONDE SPÓŁKA AKCYJNA (OND)
+Główny Rynek | WIG140, sWIG80TR, WIG-energia, WIG-Poland, sWIG80, WIG, CEEplus | energia odnawialna	11,8600	+4,22%
+ONE SPÓŁKA AKCYJNA (FMG)
+Główny Rynek | Działalność Inwestycyjna	35,0000	-11,62%
+OPEN FINANCE SPÓŁKA AKCYJNA W UPADŁOŚCI (OPF)
+Główny Rynek | Pośrednictwo Finansowe	0,1150	+22,34%
+OPONEO.PL SPÓŁKA AKCYJNA (OPN)
+Główny Rynek | WIG140, sWIG80TR, WIGdiv, WIG-Poland, sWIG80, WIG | Handel Internetowy	36,7000	+0,55%
+OPTEAM SPÓŁKA AKCYJNA (OPM)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG-informatyka, WIG | oprogramowanie	7,8000	+0,65%
+ORANGE POLSKA SPÓŁKA AKCYJNA (OPL)
+Główny Rynek | WIG140, WIGtechTR, WIG-ESG, WIGtech, WIG30TR, WIG30, WIG20TR, WIG-Poland, WIG20, WIG, CEEplus | Telekomunikacja	6,3000	+1,78%
+ORZEŁ BIAŁY SPÓŁKA AKCYJNA (OBL)
+Główny Rynek | Recykling	25,9000	+1,57%
+OT LOGISTICS SPÓŁKA AKCYJNA (OTS)
+Główny Rynek | WIG-Poland, WIG | transport	16,0000	+2,89%
+OVOSTAR UNION PUBLIC COMPANY LIMITED (OVO)
+Główny Rynek | WIG-CEE, WIG-Ukraine, WIG-spożywczy, WIG | żywność	44,0000	-3,51%
+P.A. NOVA SPÓŁKA AKCYJNA (NVA)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | budownictwo ogólne	11,5000	+2,68%
+PAMAPOL SPÓŁKA AKCYJNA (PMP)
+Główny Rynek | WIG-Poland, WIG-spożywczy, WIG | żywność	3,6900	-1,86%
+PATENTUS SPÓŁKA AKCYJNA (PAT)
+Główny Rynek | WIG-Poland, WIG | urządzenia mechaniczne	1,4300	-1,38%
+PBG SPÓŁKA AKCYJNA W RESTRUKTURYZACJI I LIKWIDACJI Z SIEDZIBĄ W WYSOGOTOWIE (PBG)
+Główny Rynek | budownictwo przemysłowe	0,0154	0,00%
+PBS FINANSE SPÓŁKA AKCYJNA (PBF)
+Główny Rynek | Pośrednictwo Finansowe	0,4760	0,00%
+PC GUARD SPÓŁKA AKCYJNA (PCG)
+Główny Rynek | oprogramowanie	1,1700	0,00%
+PCC EXOL SPÓŁKA AKCYJNA (PCX)
+Główny Rynek | chemia specjalistyczna	3,2300	-0,92%
+PCC ROKITA SPÓŁKA AKCYJNA (PCR)
+Główny Rynek | WIG140, sWIG80TR, WIGdiv, WIG-Poland, WIG-chemia, sWIG80, WIG, CEEplus | chemia podstawowa	98,4000	+0,92%
+PCF GROUP SPÓŁKA AKCYJNA (PCF)
+Główny Rynek | WIG140, WIG-gry, WIGtechTR, WIGtech, sWIG80TR, WIG-Poland, sWIG80, WIG, CEEplus | Gry	40,5000	+1,25%
+PEPCO GROUP N.V. (PCO)
+Główny Rynek | WIG140, WIG-ESG, WIG30TR, WIG30, WIG20TR, WIG20, WIG, CEEplus | artykuły codziennego użytku	39,1600	-0,41%
+PGE POLSKA GRUPA ENERGETYCZNA SPÓŁKA AKCYJNA (PGE)
+Główny Rynek | WIG140, INNOVATOR, WIG-ESG, WIG.MS-BAS, WIG30TR, WIG30, WIG20TR, WIG-energia, WIG-Poland, WIG20, WIG, CEEplus | energetyka	6,8300	-2,01%
+PGF POLSKA GRUPA FOTOWOLTAICZNA SPÓŁKA AKCYJNA (PGV)
+Główny Rynek | WIG-Poland, WIG | Działalność Inwestycyjna	0,4140	-0,72%
+PHARMENA SPÓŁKA AKCYJNA (PHR)
+Główny Rynek | Produkcja Leków	5,0000	-0,40%
+PHOTON ENERGY N.V. (PEN)
+Główny Rynek | WIG140, sWIG80TR, WIG-CEE, WIG-energia, sWIG80, WIG | energia odnawialna	12,2900	-0,24%
+PJP MAKRUM SPÓŁKA AKCYJNA (PJP)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | budownictwo przemysłowe	12,0000	-4,76%
+PKP CARGO SPÓŁKA AKCYJNA (PKP)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG-Poland, mWIG40, WIG, CEEplus | transport	16,4400	+1,80%
+PLAYWAY SPÓŁKA AKCYJNA (PLW)
+Główny Rynek | WIG140, WIG-gry, WIGtechTR, WIGtech, sWIG80TR, WIG-Poland, sWIG80, WIG, CEEplus | Gry	363,0000	+5,68%
+PLAZA CENTERS N.V. (PLZ)
+Główny Rynek | WIG-nieruchomości, WIG | wynajem nieruchomości	1,6900	-3,43%
+PMPG POLSKIE MEDIA SPÓŁKA AKCYJNA (PGM)
+Główny Rynek | WIG-Poland, WIG-media, WIG | wydawnictwa	2,9000	-0,68%
+POLENERGIA SPÓŁKA AKCYJNA (PEP)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG-energia, WIG-Poland, mWIG40, WIG, CEEplus | energetyka	90,5000	+1,91%
+POLIMEX MOSTOSTAL SPÓŁKA AKCYJNA (PXM)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, WIG-budownictwo, sWIG80, WIG, CEEplus | budownictwo przemysłowe	4,9000	+6,52%
+POLSKI HOLDING NIERUCHOMOŚCI SPÓŁKA AKCYJNA (PHN)
+Główny Rynek | WIG140, sWIG80TR, WIGdiv, WIG-Poland, WIG-nieruchomości, sWIG80, WIG | wynajem nieruchomości	12,9000	0,00%
+POLSKI KONCERN NAFTOWY ORLEN SPÓŁKA AKCYJNA (PKN)
+Główny Rynek | WIG140, INNOVATOR, WIG-ESG, WIG.MS-PET, WIG30TR, WIG30, WIG20TR, WIGdiv, WIG-Poland, WIG-paliwa, WIG20, WIG, CEEplus | wydobycie i produkcja	63,9400	+0,31%
+POLTREG SPÓŁKA AKCYJNA (PTG)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG | Biotechnologia	46,0000	+1,32%
+POLWAX SPÓŁKA AKCYJNA (PWX)
+Główny Rynek | INNOVATOR, WIG-Poland, WIG-chemia, WIG | chemia specjalistyczna	3,0000	+0,33%
+POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI SPÓŁKA AKCYJNA (PKO)
+Główny Rynek | WIG140, WIG-ESG, WIG.MS-FIN, WIG30TR, WIG30, WIG20TR, WIG-Poland, WIG-banki, WIG20, WIG, CEEplus | banki komercyjne	29,4400	+1,52%
+POWSZECHNY ZAKŁAD UBEZPIECZEŃ SPÓŁKA AKCYJNA (PZU)
+Główny Rynek | WIG140, WIG-ESG, WIG.MS-FIN, WIG30TR, WIG30, WIG20TR, WIG-Poland, WIG20, WIG, CEEplus | firmy ubezpieczeniowe	33,9100	+3,32%
+POZNAŃSKA KORPORACJA BUDOWLANA PEKABEX SPÓŁKA AKCYJNA (PBX)
+Główny Rynek | WIG140, sWIG80TR, WIGdiv, WIG-Poland, WIG-budownictwo, sWIG80, WIG | materiały budowlane	15,3500	-1,60%
+PRIMA MODA SPÓŁKA AKCYJNA (PMA)
+Główny Rynek | odzież i obuwie	0,8700	+8,75%
+PRIMETECH SPÓŁKA AKCYJNA (PTH)
+Główny Rynek | urządzenia mechaniczne	0,9650	-5,39%
+PROCHEM SPÓŁKA AKCYJNA (PRM)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | budownictwo przemysłowe	33,4000	-1,18%
+PROTEKTOR SPÓŁKA AKCYJNA (PRT)
+Główny Rynek | WIG-odzież, WIG-Poland, WIG, CEEplus | odzież i obuwie	2,1800	0,00%
+PRZEDSIĘBIORSTWO HYDRAULIKI SIŁOWEJ HYDROTOR S.A. (HDR)
+Główny Rynek | WIG-Poland, WIG | urządzenia mechaniczne	41,0000	-0,49%
+PRZEDSIĘBIORSTWO PRODUKCYJNO HANDLOWE KOMPAP SPÓŁKA AKCYJNA (KMP)
+Główny Rynek | WIG-Poland, WIG | papier i opakowania	16,8000	-2,33%
+PRZEDSIĘBIORSTWO PRZEMYSŁU SPOŻYWCZEGO PEPEES SPÓŁKA AKCYJNA (PPS)
+Główny Rynek | WIG-Poland, WIG-spożywczy, WIG | napoje	1,4000	0,00%
+PUNKPIRATES SPÓŁKA AKCYJNA (PUN)
+Główny Rynek | WIG-gry, WIGtechTR, WIGtech, WIG-Poland, WIG | Gry	0,2930	-2,01%
+PURE BIOLOGICS SPÓŁKA AKCYJNA (PUR)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG | Biotechnologia	35,5000	-1,39%
+PZ CORMAY SPÓŁKA AKCYJNA (CRM)
+Główny Rynek | WIG-leki, WIG-Poland, WIG | Produkcja Leków	0,8980	+1,58%
+QUANTUM SOFTWARE SPÓŁKA AKCYJNA (QNT)
+Główny Rynek | systemy informatyczne	28,0000	0,00%
+QUERCUS TOWARZYSTWO FUNDUSZY INWESTYCYJNYCH SPÓŁKA AKCYJNA (QRS)
+Główny Rynek | WIG-Poland, WIG | zarządzanie aktywami	3,3000	-2,08%
+R22 SPÓŁKA AKCYJNA (R22)
+Główny Rynek | WIG140, WIGtechTR, WIGtech, sWIG80TR, WIG-Poland, sWIG80, WIG | Nowe Technologie	43,5000	+4,57%
+RAFAKO SPÓŁKA AKCYJNA (RFK)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, WIG-budownictwo, sWIG80, WIG, CEEplus | budownictwo przemysłowe	1,6000	+3,76%
+RAINBOW TOURS SPÓŁKA AKCYJNA (RBW)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG | biura podróży	19,0000	+0,96%
+RANK PROGRESS SPÓŁKA AKCYJNA (RNK)
+Główny Rynek | WIG-Poland, WIG-nieruchomości, WIG | wynajem nieruchomości	1,8050	+2,27%
+RAWLPLUG SPÓŁKA AKCYJNA (RWL)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG | wyroby metalowe	13,9000	-0,71%
+REDAN SPÓŁKA AKCYJNA (RDN)
+Główny Rynek | odzież i obuwie	0,1465	+0,69%
+REGNON SPÓŁKA AKCYJNA W LIKWIDACJI (REG)
+Główny Rynek | informatyka - pozostałe	0,7950	0,00%
+REINHOLD EUROPE AB (RHD)
+Główny Rynek | wynajem nieruchomości	0,0950	0,00%
+REINO CAPITAL SPÓŁKA AKCYJNA (RNC)
+Główny Rynek | Działalność Inwestycyjna	1,3200	+1,54%
+RELPOL SPÓŁKA AKCYJNA (RLP)
+Główny Rynek | WIG-Poland, WIG | urządzenia elektryczne	5,7000	0,00%
+REMAK-ENERGOMONTAŻ SPÓŁKA AKCYJNA (RMK)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | budownictwo przemysłowe	12,6000	+8,62%
+RESBUD SE (RES)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | budownictwo ogólne	0,5100	-1,92%
+RYVU THERAPEUTICS SPÓŁKA AKCYJNA (RVU)
+Główny Rynek | WIG140, WIGtechTR, WIGtech, sWIG80TR, WIG-Poland, sWIG80, WIG | Biotechnologia	58,1000	-2,35%
+SADOVAYA GROUP S.A. (SGR)
+Główny Rynek | górnictwo węgla	0,1200	0,00%
+SANOK RUBBER COMPANY SPÓŁKA AKCYJNA (SNK)
+Główny Rynek | WIG140, sWIG80TR, WIG-motoryzacja, WIG-Poland, sWIG80, WIG | części samochodowe	14,3600	-0,28%
+SANTANDER BANK POLSKA SPÓŁKA AKCYJNA (SPL)
+Główny Rynek | WIG140, WIG-ESG, WIG.MS-FIN, WIG30TR, WIG30, WIG20TR, WIG-Poland, WIG-banki, WIG20, WIG, CEEplus | banki komercyjne	268,0000	+2,92%
+SANWIL HOLDING SPÓŁKA AKCYJNA (SNW)
+Główny Rynek | WIG-odzież, WIG-Poland, WIG | odzież i obuwie	1,1350	+0,44%
+SATIS GROUP SPÓŁKA AKCYJNA (STS)
+Główny Rynek | WIG-Poland, WIG | Usługi dla Przedsiębiorstw	0,4450	-0,22%
+SECO/WARWICK SPÓŁKA AKCYJNA (SWG)
+Główny Rynek | WIG-Poland, WIG | urządzenia mechaniczne	22,4000	0,00%
+SEKO SPÓŁKA AKCYJNA (SEK)
+Główny Rynek | WIG-Poland, WIG-spożywczy, WIG | żywność	6,4000	0,00%
+SELENA FM SPÓŁKA AKCYJNA (SEL)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | materiały budowlane	24,1000	-0,41%
+SELVITA SPÓŁKA AKCYJNA (SLV)
+Główny Rynek | WIG140, WIGtechTR, WIG-ESG, WIGtech, mWIG40TR, WIG-Poland, mWIG40, WIG, CEEplus | Biotechnologia	84,8000	+2,05%
+SERINUS ENERGY PLC (SEN)
+Główny Rynek | WIG140, WIG.MS-PET, sWIG80TR, WIG-paliwa, sWIG80, WIG, CEEplus | wydobycie i produkcja	5,2500	+1,94%
+SESCOM SPÓŁKA AKCYJNA (SES)
+Główny Rynek | WIG-Poland, WIG | Usługi dla Przedsiębiorstw	28,5000	0,00%
+SFINKS POLSKA SPÓŁKA AKCYJNA (SFS)
+Główny Rynek | WIG-Poland, WIG | hotele i restauracje	0,3700	-2,12%
+SHOPER SPÓŁKA AKCYJNA (SHO)
+Główny Rynek | WIG140, WIGtechTR, WIGtech, sWIG80TR, WIG-Poland, WIG-informatyka, sWIG80, WIG, CEEplus | oprogramowanie	28,9000	-1,87%
+SILVAIR. INC. (SVRS)
+Główny Rynek | WIGtechTR, WIGtech, WIG-informatyka, WIG | oprogramowanie	5,4500	0,00%
+SIMFABRIC SPÓŁKA AKCYJNA (SIM)
+Główny Rynek | WIG-gry, WIGtechTR, WIGtech, WIG-Poland, WIG | Gry	3,7800	+1,34%
+SKARBIEC HOLDING SPÓLKA AKCYJNA (SKH)
+Główny Rynek | WIG-Poland, WIG | zarządzanie aktywami	20,1000	+0,75%
+SKOTAN SPÓŁKA AKCYJNA (SKT)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG | Biotechnologia	1,1400	+1,06%
+SKYLINE INVESTMENT SPÓŁKA AKCYJNA (SKL)
+Główny Rynek | WIG-Poland, WIG | Działalność Inwestycyjna	0,6600	-5,71%
+SLEEPZ AG (SLZ)
+Główny Rynek | Handel Internetowy	0,2100	-3,67%
+SOHO DEVELOPMENT SPÓŁKA AKCYJNA (SHD)
+Główny Rynek | sprzedaż nieruchomości	0,5800	-0,85%
+SOLAR COMPANY SPÓŁKA AKCYJNA (SOL)
+Główny Rynek | odzież i obuwie	5,1600	+1,18%
+SONEL SPÓŁKA AKCYJNA (SON)
+Główny Rynek | WIG-Poland, WIG | urządzenia elektryczne	9,6000	0,00%
+SOPHARMA AD (SPH)
+Główny Rynek | WIG-leki, WIG-CEE, WIG | Produkcja Leków	9,9500	0,00%
+SPYROSOFT SPÓŁKA AKCYJNA (SPR)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG-informatyka, WIG | oprogramowanie	417,0000	+0,48%
+STALEXPORT AUTOSTRADY SPÓŁKA AKCYJNA (STX)
+Główny Rynek | WIG140, sWIG80TR, WIGdiv, WIG-Poland, sWIG80, WIG | transport i logistyka - pozostałe	2,6700	-0,19%
+STALPRODUKT SPÓŁKA AKCYJNA (STP)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG, CEEplus | hutnictwo żelaza i stali	243,5000	-0,61%
+STALPROFIL SPÓŁKA AKCYJNA (STF)
+Główny Rynek | WIG-Poland, WIG | wyroby hutnicze	10,5000	+0,57%
+STARHEDGE SPÓŁKA AKCYJNA (SHG)
+Główny Rynek | Działalność Inwestycyjna	0,3590	+2,87%
+STS HOLDING SPÓŁKA AKCYJNA (STH)
+Główny Rynek | WIG140, mWIG40TR, WIG-Poland, mWIG40, WIG, CEEplus | rekreacja i wypoczynek - pozostałe	17,8000	0,00%
+SUNEX SPÓŁKA AKCYJNA (SNX)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG | urządzenia elektryczne	22,0000	-1,79%
+SUWARY SPÓŁKA AKCYJNA (SUW)
+Główny Rynek | tworzywa sztuczne	33,0000	0,00%
+SYGNITY SPÓŁKA AKCYJNA (SGN)
+Główny Rynek | WIG140, WIGtechTR, WIGtech, sWIG80TR, WIG-Poland, WIG-informatyka, sWIG80, WIG | systemy informatyczne	22,8000	+3,64%
+SYNEKTIK SPÓŁKA AKCYJNA (SNT)
+Główny Rynek | WIG140, WIGtechTR, WIGtech, sWIG80TR, WIG-Poland, sWIG80, WIG | Biotechnologia	33,1000	-0,45%
+T-BULL SPÓŁKA AKCYJNA (TBL)
+Główny Rynek | Gry	7,5200	0,00%
+TALEX SPÓŁKA AKCYJNA (TLX)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG-informatyka, WIG | systemy informatyczne	13,9000	0,00%
+TARCZYŃSKI SPÓŁKA AKCYJNA (TAR)
+Główny Rynek | WIG-Poland, WIG-spożywczy, WIG | żywność	36,8000	-5,15%
+TATRY MOUNTAIN RESORTS. A.S. (TMR)
+Główny Rynek | WIG-CEE, WIG | hotele i restauracje	132,6000	0,00%
+TAURON POLSKA ENERGIA SPÓŁKA AKCYJNA (TPE)
+Główny Rynek | WIG140, INNOVATOR, WIG-ESG, WIG.MS-BAS, mWIG40TR, WIG30TR, WIG30, WIG-energia, WIG-Poland, mWIG40, WIG, CEEplus | energetyka	2,1200	+0,14%
+TEN SQUARE GAMES SPÓŁKA AKCYJNA (TEN)
+Główny Rynek | WIG140, WIG-gry, WIGtechTR, WIG-ESG, WIGtech, WIG.GAMES5, mWIG40TR, WIG30TR, WIG30, WIGdiv, WIG-Poland, mWIG40, WIG, CEEplus | Gry	139,9000	+1,38%
+TENDERHUT SPÓŁKA AKCYJNA (THG)
+Główny Rynek | WIG-Poland, WIG | Nowe Technologie	36,4000	-3,70%
+TERMO-REX SPÓŁKA AKCYJNA (TRR)
+Główny Rynek | dystrybucja paliw i gazu	0,6300	0,00%
+TESGAS SPÓŁKA AKCYJNA (TSG)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | inżynieria lądowa i wodna	3,5000	-1,69%
+TIM SPÓŁKA AKCYJNA (TIM)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG, CEEplus | artykuły elektryczne	28,6000	+0,18%
+TORPOL SPÓŁKA AKCYJNA (TOR)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, WIG-budownictwo, sWIG80, WIG, CEEplus | inżynieria lądowa i wodna	18,0600	-0,77%
+TOWER INVESTMENTS SPÓŁKA AKCYJNA (TOW)
+Główny Rynek | WIG-Poland, WIG-nieruchomości, WIG | sprzedaż nieruchomości	9,7000	-3,96%
+TOYA SPÓŁKA AKCYJNA (TOA)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG | handel hurtowy - pozostałe	5,1400	+1,18%
+TRAKCJA SPÓŁKA AKCYJNA (TRK)
+Główny Rynek | inżynieria lądowa i wodna	1,6100	+0,25%
+TRANS POLONIA SPÓŁKA AKCYJNA (TRN)
+Główny Rynek | WIG-Poland, WIG | transport	2,9600	-0,67%
+TRITON DEVELOPMENT SPÓŁKA AKCYJNA (TRI)
+Główny Rynek | sprzedaż nieruchomości	4,0800	0,00%
+TXM SPÓŁKA AKCYJNA (TXM)
+Główny Rynek | odzież i obuwie	0,1000	0,00%
+ULMA CONSTRUCCION POLSKA SPÓŁKA AKCYJNA (ULM)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | materiały budowlane	57,0000	0,00%
+ULTIMATE GAMES SPÓŁKA AKCYJNA (ULG)
+Główny Rynek | WIG-gry, WIGtechTR, WIGtech, WIG-Poland, WIG | Gry	15,9800	+1,14%
+UNFOLD.VC ASI SPÓŁKA AKCYJNA (UNF)
+Główny Rynek | WIG-Poland, WIG | Działalność Inwestycyjna	2,5000	0,00%
+UNIBEP SPÓŁKA AKCYJNA (UNI)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | budownictwo ogólne	8,1800	+0,99%
+UNICREDIT S.P.A. (UCG)
+Główny Rynek | WIG-banki, WIG | banki komercyjne	59,0000	0,00%
+UNIMA 2000 SYSTEMY TELEINFORMATYCZNE SPÓŁKA AKCYJNA (U2K)
+Główny Rynek | systemy informatyczne	5,8400	+0,69%
+UNIMOT SPÓŁKA AKCYJNA (UNT)
+Główny Rynek | WIG140, WIG.MS-PET, sWIG80TR, WIG-Poland, WIG-paliwa, sWIG80, WIG, CEEplus | dystrybucja paliw i gazu	92,5000	+0,87%
+VERCOM SPÓŁKA AKCYJNA (VRC)
+Główny Rynek | WIG140, WIGtechTR, WIGtech, sWIG80TR, WIG-Poland, WIG-informatyka, sWIG80, WIG | systemy informatyczne	43,6000	+3,07%
+VIGO PHOTONICS SPÓŁKA AKCYJNA (VGO)
+Główny Rynek | WIG140, INNOVATOR, WIGtechTR, WIGtech, sWIG80TR, WIG-Poland, sWIG80, WIG | Nowe Technologie	473,0000	-5,78%
+VISTAL GDYNIA SPÓŁKA AKCYJNA (VTL)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | inżynieria lądowa i wodna	0,7140	+0,56%
+VIVID GAMES SPÓŁKA AKCYJNA (VVD)
+Główny Rynek | WIG-gry, WIGtechTR, WIGtech, WIG-Poland, WIG | Gry	0,9420	-2,89%
+VOTUM SPÓŁKA AKCYJNA (VOT)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG | ubezpieczenia - pozostałe	47,6000	+0,21%
+VOXEL SPÓŁKA AKCYJNA (VOX)
+Główny Rynek | WIG140, sWIG80TR, WIGdiv, WIG-Poland, sWIG80, WIG | Sprzęt i Materiały Medyczne	43,5000	+0,23%
+VRG SPÓŁKA AKCYJNA (VRG)
+Główny Rynek | WIG140, sWIG80TR, WIG-odzież, WIG-Poland, sWIG80, WIG | odzież i obuwie	3,3500	+3,72%
+WARIMPEX FINANZ- UND BETEILIGUNGS AG (WXF)
+Główny Rynek | WIG-nieruchomości, WIG | wynajem nieruchomości	3,0400	-4,10%
+WASKO SPÓŁKA AKCYJNA (WAS)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG-informatyka, WIG | systemy informatyczne	1,5000	0,00%
+WAWEL SPÓŁKA AKCYJNA (WWL)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, WIG-spożywczy, sWIG80, WIG | żywność	436,0000	+0,93%
+WIELTON SPÓŁKA AKCYJNA (WLT)
+Główny Rynek | WIG140, sWIG80TR, WIG-Poland, sWIG80, WIG, CEEplus | środki transportu	7,0000	+2,64%
+WIKANA SPÓŁKA AKCYJNA (WIK)
+Główny Rynek | WIG-Poland, WIG-nieruchomości, WIG | sprzedaż nieruchomości	3,1200	-1,58%
+WIRTUALNA POLSKA HOLDING SPÓŁKA AKCYJNA (WPL)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIG-Poland, WIG-media, mWIG40, WIG, CEEplus | portale internetowe	97,2000	+8,00%
+WITTCHEN SPÓŁKA AKCYJNA (WTN)
+Główny Rynek | WIG-odzież, WIG-Poland, WIG | odzież i obuwie	26,6000	+4,31%
+WOJAS SPÓŁKA AKCYJNA (WOJ)
+Główny Rynek | WIG-odzież, WIG-Poland, WIG | odzież i obuwie	4,9700	0,00%
+XTB SPÓŁKA AKCYJNA (XTB)
+Główny Rynek | WIG140, WIG-ESG, mWIG40TR, WIGdiv, WIG-Poland, mWIG40, WIG, CEEplus | giełdy i biura maklerskie	29,2200	+0,41%
+XTPL SPÓŁKA AKCYJNA (XTP)
+Główny Rynek | INNOVATOR, WIGtechTR, WIGtech, WIG-Poland, WIG | Nowe Technologie	74,4000	-0,80%
+ZAKŁAD BUDOWY MASZYN ZREMB-CHOJNICE SPÓŁKA AKCYJNA (ZRE)
+Główny Rynek | WIG-Poland, WIG, CEEplus | urządzenia mechaniczne	1,9000	0,00%
+ZAKŁADY MAGNEZYTOWE ROPCZYCE SPÓŁKA AKCYJNA (RPC)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | materiały budowlane	30,5000	0,00%
+ZAKŁADY PRZEMYSŁU CUKIERNICZEGO OTMUCHÓW SPÓŁKA AKCYJNA (OTM)
+Główny Rynek | WIG-Poland, WIG-spożywczy, WIG | żywność	2,6200	0,00%
+ZAKŁADY URZĄDZEŃ KOMPUTEROWYCH ELZAB SPÓŁKA AKCYJNA (ELZ)
+Główny Rynek | WIGtechTR, WIGtech, WIG-Poland, WIG-informatyka, WIG | sprzęt informatyczny	1,5500	+0,65%
+ZAKŁADY URZĄDZEŃ KOTŁOWYCH STĄPORKÓW SPÓŁKA AKCYJNA (ZUK)
+Główny Rynek | WIG-Poland, WIG | wyroby metalowe	4,2000	0,00%
+ZAMET SPÓŁKA AKCYJNA (ZMT)
+Główny Rynek | WIG-Poland, WIG | urządzenia mechaniczne	0,9600	0,00%
+ZE PAK SPÓŁKA AKCYJNA (ZEP)
+Główny Rynek | WIG140, mWIG40TR, WIG-energia, WIG-Poland, mWIG40, WIG, CEEplus | energetyka	22,6000	-1,74%
+ZESPÓŁ ELEKTROCIEPŁOWNI WROCŁAWSKICH KOGENERACJA SPÓŁKA AKCYJNA (KGN)
+Główny Rynek | WIG140, sWIG80TR, WIG-energia, WIG-Poland, sWIG80, WIG | energetyka	24,8000	-0,80%
+ZPUE SPÓŁKA AKCYJNA (PUE)
+Główny Rynek | urządzenia elektryczne	374,0000	0,00%
+ZUE SPÓŁKA AKCYJNA (ZUE)
+Główny Rynek | WIG-Poland, WIG-budownictwo, WIG | instalacje budowlane i telekomunikacyjne	4,5000	+0,90%

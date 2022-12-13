@@ -11,7 +11,9 @@ namespace StockVision.Core.Models
         public Guid Id { get; set; } 
         public string? Name { get; set; }
         public string? Symbol { get; set; }
+        public string Branch { get; set; }
         public virtual OrderBook? OrderBook { get; set; }
         public Guid  OrderBookId { get; set; }
+        public List<string> Indexes { get; set; }
     }
 }

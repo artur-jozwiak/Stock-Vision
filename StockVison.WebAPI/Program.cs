@@ -12,6 +12,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ISheetScrapper, SheetScraper>();
+builder.Services.AddScoped<IGPWScrapper, GPWScrapper>();
+
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 var conectionString = builder.Configuration["ConnectionStrings:StockVisionConnectionString"];

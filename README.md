@@ -1,11 +1,24 @@
 <!-- 
+-Przycisk odczytu ostatniego rekordu z bazy
+-przyciśk pobrania arkusza ze strony + pomiar czasu od ostatniego strału
+-dwa wykresy na jednym
+-pobrać liste spółek do bazy
+-wybór spółki z selectlisty dla której należy pobrać arkusz ze strony lub bazy
+-ustawianie zakresu pobieranych danych
+-wykres zmian względem poprzedniego dnia w zakresie 20% odceny aktualnej(suma zleceń kupna , suma zleceń sprzedaży)
+-chartjs/syncfusion
+-wyświetlanie wszystkich informacji po pobraniu danych danej spółki
+
+ -->
+
+<!-- 
 Scrapper
 -Metoda  do pobrania orderbooka (symbol spółki)
 
  -->
  <!-- 
  Controller
- --Metoda pobierająca cały arkusz
+ @Metoda pobierająca cały arkusz
   -->
 
   <!-- 
