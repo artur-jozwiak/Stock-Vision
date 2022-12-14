@@ -27,7 +27,6 @@ namespace StockVison.WebAPI.Controllers
             await _unitOfWork.Save();
 
             return orderBook;
-            //return await _scrapper.GetOrderbook(companyName, skipLast);
         }
     }
 }

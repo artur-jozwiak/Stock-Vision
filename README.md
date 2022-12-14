@@ -1,4 +1,7 @@
 <!-- 
+-Stworzyc klase Index, Branch
+-Dodać wyszukiwanie spółek po branchy i po indexach
+-Wyświetlanie składu indeksów
 -Przycisk odczytu ostatniego rekordu z bazy
 -przyciśk pobrania arkusza ze strony + pomiar czasu od ostatniego strału
 -dwa wykresy na jednym

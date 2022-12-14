@@ -14,6 +14,6 @@ namespace StockVision.Core.Models
         public string Branch { get; set; }
         public virtual OrderBook? OrderBook { get; set; }
         public Guid  OrderBookId { get; set; }
-        public List<string> Indexes { get; set; }
+        //public List<string> Indexes { get; set; }// okreslić relacje i zrobic update-database
     }
 }
