@@ -1,33 +1,31 @@
 ﻿using StockVision.Core.Interfaces;
 using StockVision.Core.Interfaces.Repositories;
 using StockVision.Core.Models;
-using StockVision.Data.Data;
-using StockVision.Service.Services;
 using System;
-using System.Globalization;
-using System.Text.RegularExpressions;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class Program
+namespace StockVision.Service.Services
 {
-    
-  
-    private static void Main(string[] args)
+    public class CompaniesReader
     {
-        StockVisionContext context = new();
-        UnitOfWork uow = new UnitOfWork(context);
-        CompaniesReader companiesReader = new(uow);
-        var list = ReadLinesFromCompaniesTxtFile();
-        var clearList = ClearListOfCompaniesWithIndexesAndSectors(list);
-        var companies = MapDataFromFileToCompaniesList(clearList).AsEnumerable();
-        companiesReader.AddCompaniesToDb(companies);
 
-        List<string> ReadLinesFromCompaniesTxtFile()
+        private readonly IUnitOfWork _unitOfWork;
+        public CompaniesReader(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
+
+
+        public List<string> ReadLinesFromCompaniesTxtFile()
         {
             var lines = File.ReadAllLines("G:\\Moje programy\\Stock Vision\\StockVision\\Companies.txt").ToList();
             return lines;
         }
 
-        string[] ClearListOfCompaniesWithIndexesAndSectors(List<string> lines)
+        public string[] ClearData(List<string> lines)
         {
             List<string> output = new List<string>();
             char[] delimiters = { '(', ')', '|', '\t', };
@@ -37,11 +35,11 @@ public class Program
                 var result = element.Split(delimiters);
                 for (int i = 0; i < result.Count(); i++)
                 {
-                    if (result[i] != "" 
-                        && result[i] != "Główny Rynek " 
+                    if (result[i] != ""
+                        && result[i] != "Główny Rynek "
                         && decimal.TryParse(result[i], out _) == false
                         //&& Regex.IsMatch(result[i], @"^\d") == false 
-                        && result[i].StartsWith('-') == false 
+                        && result[i].StartsWith('-') == false
                         && result[i].StartsWith('+') == false
                         && result[i].StartsWith('0') == false)
                     {
@@ -49,25 +47,19 @@ public class Program
                     }
                 }
             }
-
-            foreach (var line in output)
-            {
-                Console.WriteLine(line);
-            }
-
             return output.ToArray();
         }
 
-         List<Company> MapDataFromFileToCompaniesList(string[] data)
-        {
+        public List<Company> MapDataFromFileToCompaniesList( string[] data)
+        {   
             var companiesList = new List<Company>();
-            for (int i = 0; i <= data.Count() / 4; i++)
+            for (int i = 0; i <= data.Count()/4; i++)
             {
                 Company company = new Company()
                 {
                     Name = data[i],
                     Symbol = data[i + 1],
-                    StockIndexes = GetIndexesFromLine(data[i + 2]),
+                    StockIndexes = GetIndexesFromLine(data[i + 2]),///To lipa chyba
                     Sector = new Sector()
                     {
                         Name = data[3]
@@ -78,11 +70,11 @@ public class Program
             return companiesList;
         }
 
-         ICollection<StockIndex> GetIndexesFromLine(string line)
+        public ICollection<StockIndex> GetIndexesFromLine(string line)
         {
             var indexes = new List<StockIndex>();
             var indexesNames = line.Split(',');
-            foreach (var name in indexesNames)
+            foreach(var name in indexesNames)
             {
                 var index = new StockIndex()
                 {
@@ -91,6 +83,12 @@ public class Program
                 indexes.Add(index);
             }
             return indexes;
+        }
+
+       public async void AddCompaniesToDb(IEnumerable<Company> companies)
+        {
+           await _unitOfWork.Companies.AddRange(companies);
+           await _unitOfWork.Save();
         }
     }
 }

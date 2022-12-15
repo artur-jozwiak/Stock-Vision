@@ -23,7 +23,7 @@ namespace StockVision.Service.Services
         const string _baseUrl = "https://localhost:7015/OrderBook?companyName=cdr";
         private string _companySymbolEndpoint = string.Empty;
 
-        public async Task<OrderBook> GetOrderBookAPI()
+        public async Task<OrderBook> GetOrderBookFromAPI()
         {
             HttpClient httpClient = new HttpClient();
             var response = await httpClient.GetAsync(_baseUrl);
@@ -32,20 +32,20 @@ namespace StockVision.Service.Services
             return orderBook;
         }
 
-        public async Task<OrderBook?> GetOrderBookDb()
+        public async Task<OrderBook?> GetOrderBookFromDb()// to powinno 
         {
             OrderBook orderBook = await _unitOfWork.OrderBooks.GetFirstWithAskBidOrderBook();
             return orderBook;
         }
 
-        public async Task<List<Order>> GetAskOrderBook()
-        {
-            HttpClient httpClient = new HttpClient();
-            var response = await httpClient.GetAsync(_baseUrl);
-            response.EnsureSuccessStatusCode();
-            var order = await response.Content.ReadFromJsonAsync<List<Order>>();
-            return order;
-        }
+        //public async Task<List<Order>> GetAskOrderBook()
+        //{
+        //    HttpClient httpClient = new HttpClient();
+        //    var response = await httpClient.GetAsync(_baseUrl);
+        //    response.EnsureSuccessStatusCode();
+        //    var order = await response.Content.ReadFromJsonAsync<List<Order>>();
+        //    return order;
+        //}
 
        
     }

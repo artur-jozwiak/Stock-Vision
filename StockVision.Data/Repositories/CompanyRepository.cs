@@ -29,6 +29,7 @@ namespace StockVision.Data.Repositories
                 .FirstOrDefaultAsync();
         }
 
+
         public StockVisionContext StockVisionContext
         {
             get { return Context as StockVisionContext; }

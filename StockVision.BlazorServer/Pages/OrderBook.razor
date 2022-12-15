@@ -142,8 +142,8 @@ th, td {
 
         try
         {
-            FullOrderBook = await OrderBookService.GetOrderBookAPI();
-            // FullOrderBook = await OrderBookService.GetOrderBookDb();
+            FullOrderBook = await OrderBookService.GetOrderBookFromAPI();
+            // FullOrderBook = await OrderBookService.GetOrderBookFromDb();
 
         }
         catch (Exception e)

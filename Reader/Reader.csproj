@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StockVision.Core\StockVision.Core.csproj" />
+    <ProjectReference Include="..\StockVision.Data\StockVision.Data.csproj" />
+    <ProjectReference Include="..\StockVision.Service\StockVision.Service.csproj" />
+  </ItemGroup>
+
 </Project>

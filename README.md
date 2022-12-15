@@ -1,4 +1,5 @@
 <!-- 
+-Podpiąć pod przycisk aktualizowanie listy spółek
 -Stworzyc klase Index, Branch
 -Dodać wyszukiwanie spółek po branchy i po indexach
 -Wyświetlanie składu indeksów
