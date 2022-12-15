@@ -8,12 +8,15 @@ namespace StockVision.Core.Models
 {
     public class Company
     {
-        public Guid Id { get; set; } 
+        public int Id { get; set; } 
         public string? Name { get; set; }
         public string? Symbol { get; set; }
-        public string Branch { get; set; }
+        public string? Branch { get; set; }
         public virtual OrderBook? OrderBook { get; set; }
-        public Guid  OrderBookId { get; set; }
-        //public List<string> Indexes { get; set; }// okreslić relacje i zrobic update-database
+        public int  OrderBookId { get; set; }
+        public virtual Sector? Sector { get; set; }
+        public int SectorId { get; set; }
+        public virtual ICollection<StockIndex>? StockIndexes { get; set; }
+        public virtual ICollection<IndexAssignment>? IndexAssignment { get; set; }
     }
 }

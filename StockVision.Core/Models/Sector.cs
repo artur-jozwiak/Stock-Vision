@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace StockVision.Core.Models
 {
-    public class AskOrderBook 
+    public class Sector
     {
         public int Id { get; set; }
-        public virtual ICollection<Order>? Orders { get; set; } = new List<Order>();
+        public string? Name { get; set; }
+        public virtual ICollection<Company>? Companies { get; set; }
     }
 }

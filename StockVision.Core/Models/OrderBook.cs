@@ -8,13 +8,13 @@ namespace StockVision.Core.Models
 {
     public class OrderBook 
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         public virtual AskOrderBook? AskOrderBook { get; set; }  = new AskOrderBook();
-        public Guid AskOrderBookId { get; set; }
+        public int AskOrderBookId { get; set; }
 
         public virtual BidOrderBook? BidOrderBook { get; set; } = new BidOrderBook();
-        public Guid BidOrderBookId { get; set; }
+        public int BidOrderBookId { get; set; }
 
 
     }

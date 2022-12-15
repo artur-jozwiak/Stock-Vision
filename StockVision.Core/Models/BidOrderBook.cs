@@ -8,7 +8,7 @@ namespace StockVision.Core.Models
 {
     public class BidOrderBook 
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public virtual ICollection<Order>? Orders { get; set; } = new List<Order>();
     }
 }

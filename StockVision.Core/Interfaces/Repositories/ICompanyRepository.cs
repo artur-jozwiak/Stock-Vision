@@ -9,6 +9,6 @@ namespace StockVision.Core.Interfaces.Repositories
 {
     public interface ICompanyRepository : IRepository<Company>
     {
-        Task<Company?> GetWithOrderBook(Guid id);
+        Task<Company?> GetWithOrderBook(int id);
     }
 }

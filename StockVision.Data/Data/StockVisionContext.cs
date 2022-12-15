@@ -33,6 +33,9 @@ namespace StockVision.Data.Data
         public DbSet<BidOrderBook> BidOrderBooks { get; set; }
         public DbSet<Order> Orders{ get; set; }
         public DbSet<Company> Companies { get; set; }
+        public DbSet<StockIndex> StockIndexes { get; set; }
+        public DbSet<Sector> Sectors { get; set; }
+        public DbSet<IndexAssignment> IndexAssignment { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -53,9 +56,13 @@ namespace StockVision.Data.Data
             company.Property(c => c.Name).HasMaxLength(50);
             company.Property(c => c.Symbol).HasMaxLength(10);
             company.HasOne(c => c.OrderBook).WithOne().HasForeignKey<Company>(a => a.OrderBookId);
-
-
-
+            company.HasMany(c => c.StockIndexes)
+                   .WithMany(i => i.Companies)
+                   .UsingEntity<IndexAssignment>(
+                    ci => ci.HasOne(ci => ci.StockIndex).WithMany( i => i.IndexAssignment).HasForeignKey(ci => ci.StockIndexId),
+                    ci => ci.HasOne(ci => ci.Company).WithMany(c => c.IndexAssignment).HasForeignKey(ci => ci.CompanyId)
+                    );
+            company.HasOne( c => c.Sector).WithMany(s => s.Companies).HasForeignKey(c => c.SectorId);
         }
     }
 }

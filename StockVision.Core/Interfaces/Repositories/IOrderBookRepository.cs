@@ -9,7 +9,7 @@ namespace StockVision.Core.Interfaces.Repositories
 {
     public interface IOrderBookRepository : IRepository<OrderBook>
     {
-        Task<OrderBook?> GetWithAskBidOrderBook(Guid id);
+        Task<OrderBook?> GetWithAskBidOrderBook(int id);
         Task<OrderBook?> GetFirstWithAskBidOrderBook();
     }
 }

@@ -17,7 +17,7 @@ namespace StockVision.Data.Repositories
 
         }
 
-        public async Task<OrderBook?> GetWithAskBidOrderBook(Guid id)
+        public async Task<OrderBook?> GetWithAskBidOrderBook(int id)
         {
             return await StockVisionContext.OrderBooks.Where(o => o.Id == id)
                 .Include(a => a.AskOrderBook)
