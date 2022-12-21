@@ -49,7 +49,25 @@ namespace StockVision.Service.Services
             }
             return output.ToArray();
         }
-
+        public List<Company> GetCompaniesFromTxtFile(string[] data)
+        {
+            var companies = new List<Company>();
+            for (int i = 0; i <= data.Count(); i = +3)
+            {
+                Company company = new Company()
+                {
+                    Name = data[i],
+                    Symbol = data[i + 1],
+                };
+                companies.Add(company);
+            }
+            return companies;
+        }
+        /// <summary>
+        /// ///////////////
+        /// </summary>
+        /// <param ></param>
+        /// <returns></returns>
         public List<Company> MapDataFromFileToCompaniesList( string[] data)
         {   
             var companiesList = new List<Company>();
@@ -59,7 +77,7 @@ namespace StockVision.Service.Services
                 {
                     Name = data[i],
                     Symbol = data[i + 1],
-                    StockIndexes = GetIndexesFromLine(data[i + 2]),///To lipa chyba
+                    StockIndexes = GetIndexesFromLine(data[i + 2]),
                     Sector = new Sector()
                     {
                         Name = data[3]

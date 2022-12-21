@@ -1,4 +1,6 @@
-﻿using Microsoft.VisualBasic;
+﻿
+using HtmlAgilityPack;
+using Microsoft.VisualBasic;
 using StockVision.Core.Models;
 using System;
 using System.Collections;
@@ -55,8 +57,6 @@ namespace StockVison.Scraper
             return orderSheet;
         }
 
-
-
         public async Task<IEnumerable<IEnumerable<string>>> GetSheet(string companySymbol, string orderBookType,int skipLast)
         {
             string sheetType = string.Empty;
@@ -74,7 +74,7 @@ namespace StockVison.Scraper
             using (var client = new HttpClient())
             {
                 var html = await client.GetStringAsync(url);
-                var doc = new HtmlAgilityPack.HtmlDocument();
+                var doc = new HtmlDocument();
                 doc.LoadHtml(html);
 
                 var table = doc.DocumentNode.SelectSingleNode($"//table[@id='{sheetType}']");
@@ -87,9 +87,6 @@ namespace StockVison.Scraper
                 return sheet;
             }
         }
-
-
-
         public async Task<IEnumerable<IEnumerable<string>>> GetBuyOrderSheet(string companySymbol, bool saleSheet)
         {
             string sheetType = String.Empty;
@@ -113,7 +110,7 @@ namespace StockVison.Scraper
             using (var client = new HttpClient())
             {
                 var html = await client.GetStringAsync(url);
-                var doc = new HtmlAgilityPack.HtmlDocument();
+                var doc = new HtmlDocument();
                 doc.LoadHtml(html);
 
                 var table = doc.DocumentNode.SelectSingleNode($"//table[@id='{sheetType}']");
@@ -126,7 +123,6 @@ namespace StockVison.Scraper
                 return sheet;
             }
         }
-
     }
 }
 

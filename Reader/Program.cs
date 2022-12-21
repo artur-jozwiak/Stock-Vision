@@ -18,8 +18,9 @@ public class Program
         CompaniesReader companiesReader = new(uow);
         var list = ReadLinesFromCompaniesTxtFile();
         var clearList = ClearListOfCompaniesWithIndexesAndSectors(list);
-        var companies = MapDataFromFileToCompaniesList(clearList).AsEnumerable();
-        companiesReader.AddCompaniesToDb(companies);
+       var companies = GetCompaniesFromTxtFile(clearList);
+        //var companies = MapDataFromFileToCompaniesList(clearList).AsEnumerable();
+        //companiesReader.AddCompaniesToDb(companies);
 
         List<string> ReadLinesFromCompaniesTxtFile()
         {
@@ -58,7 +59,22 @@ public class Program
             return output.ToArray();
         }
 
-         List<Company> MapDataFromFileToCompaniesList(string[] data)
+         List<Company> GetCompaniesFromTxtFile(string[] data)
+        {
+            var companies = new List<Company>();
+            for (int i = 0; i <= data.Count(); i = +3)
+            {
+                Company company = new Company()
+                {
+                    Name = data[i],
+                    Symbol = data[i + 1],
+                };
+                companies.Add(company);
+            }
+            return companies;
+        }
+        /////////////
+        List<Company> MapDataFromFileToCompaniesList(string[] data)
         {
             var companiesList = new List<Company>();
             for (int i = 0; i <= data.Count() / 4; i++)

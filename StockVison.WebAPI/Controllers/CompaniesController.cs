@@ -14,7 +14,6 @@ namespace StockVison.WebAPI.Controllers
 
         public CompaniesController(ISheetScrapper scrapper, IUnitOfWork unitOfWork, IGPWScrapper gpwScrapper)
         {
-
             _unitOfWork = unitOfWork;
             _gpwScrapper = gpwScrapper;
         }
@@ -23,8 +22,10 @@ namespace StockVison.WebAPI.Controllers
         public async Task<List<Company>> GetCompanies()
         {
             await _gpwScrapper.GPW();
-            var companies = await _gpwScrapper.GetCompanies();
-            return companies;
+                      var companies = await _gpwScrapper.GetCompanies();
+            //return companies;
+            return null;
+
         }
 
     }

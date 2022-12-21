@@ -11,7 +11,6 @@ namespace StockVision.Core.Models
         public int Id { get; set; } 
         public string? Name { get; set; }
         public string? Symbol { get; set; }
-        public string? Branch { get; set; }
         public virtual OrderBook? OrderBook { get; set; }
         public int  OrderBookId { get; set; }
         public virtual Sector? Sector { get; set; }
