@@ -10,11 +10,8 @@ using System.Threading.Tasks;
 namespace StockVision.Service.Interfaces
 {
     public interface IOrderBookService
-    {
-        //Task<List<Order>> GetAskOrderBook();
+    {  
         Task<OrderBook> GetOrderBookFromAPI();
         Task<OrderBook?> GetOrderBookFromDb();
-
-
     }
 }

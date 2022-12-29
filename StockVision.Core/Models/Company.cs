@@ -16,6 +16,6 @@ namespace StockVision.Core.Models
         public virtual Sector? Sector { get; set; }
         public int SectorId { get; set; }
         public virtual ICollection<StockIndex>? StockIndexes { get; set; }
-        public virtual ICollection<IndexAssignment>? IndexAssignment { get; set; }
+        public virtual ICollection<IndexAssignment>? IndexAssignment { get; set; } = new List<IndexAssignment>();
     }
 }

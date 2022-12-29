@@ -1,6 +1,7 @@
 ﻿using StockVision.Core.Interfaces;
 using StockVision.Core.Interfaces.Repositories;
 using StockVision.Core.Models;
+using StockVision.Service.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,24 +10,19 @@ using System.Threading.Tasks;
 
 namespace StockVision.Service.Services
 {
-    public class CompaniesReader
+    public class GPWCompositionReader : IGPWCompositionReader
     {
 
         private readonly IUnitOfWork _unitOfWork;
-        public CompaniesReader(IUnitOfWork unitOfWork)
+        public GPWCompositionReader(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
 
-
-        public List<string> ReadLinesFromCompaniesTxtFile()
+        public string[] ReadLinesFromTxtFile()
         {
             var lines = File.ReadAllLines("G:\\Moje programy\\Stock Vision\\StockVision\\Companies.txt").ToList();
-            return lines;
-        }
 
-        public string[] ClearData(List<string> lines)
-        {
             List<string> output = new List<string>();
             char[] delimiters = { '(', ')', '|', '\t', };
 
@@ -47,8 +43,13 @@ namespace StockVision.Service.Services
                     }
                 }
             }
+            foreach (var line in output)
+            {
+                Console.WriteLine(line);
+            }
             return output.ToArray();
         }
+
         public List<Company> GetCompaniesFromTxtFile(string[] data)
         {
             var companies = new List<Company>();
@@ -63,6 +64,7 @@ namespace StockVision.Service.Services
             }
             return companies;
         }
+
         /// <summary>
         /// ///////////////
         /// </summary>
@@ -80,6 +82,7 @@ namespace StockVision.Service.Services
                     StockIndexes = GetIndexesFromLine(data[i + 2]),
                     Sector = new Sector()
                     {
+                       
                         Name = data[3]
                     }
                 };

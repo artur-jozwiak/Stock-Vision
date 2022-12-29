@@ -18,14 +18,18 @@ namespace StockVison.Scraper
 {
     public class GPWScrapper : IGPWScrapper
     {
-        private const string BaseUrl = $"https://stooq.pl/t/?i=523";
-       // private const string BaseUrl = $"https://gpw.pl/";
+        //private const string BaseUrl = $"https://stooq.pl/t/?i=523";
+        private const string BaseUrl = $"https://stooq.pl";
+
+        // private const string BaseUrl = $"https://gpw.pl/";
 
 
         public async Task<IEnumerable<IEnumerable<string>>> GetListOfCompaniesFromGPW()
         {
 
-            string url = $"https://stooq.pl/t/?i=523";
+             string url = $"https://stooq.pl";
+
+            // string url = $"https://stooq.pl/t/?i=523";
             // string url = $"https://www.gpw.pl/spolki";
 
 
@@ -35,12 +39,15 @@ namespace StockVison.Scraper
                 var html = await client.GetStringAsync(url);
 
                 var doc = new HtmlAgilityPack.HtmlDocument();
+                //
 
-
+                //
                 doc.LoadHtml(html);
 
-                var table = doc.DocumentNode.SelectSingleNode($"//table[@id='fth1']");
-                //var table = doc.DocumentNode.SelectSingleNode("fth1");
+               var table = doc.DocumentNode.QuerySelector("table");
+
+                
+                //var table = doc.DocumentNode.SelectSingleNode("aqp_6");
       
 
                 // var table = doc.GetElementbyId("fth1");
@@ -88,10 +95,26 @@ namespace StockVison.Scraper
 
         public async Task GPW()
         {
+            HtmlDocument doc = new HtmlDocument();
+            doc.LoadHtml(@"<html><body><p><table id=""tb1""><tr><th>hello</th></tr><tr><td>world</td></tr></table></body></html>");
+            foreach (HtmlNode table in doc.DocumentNode.SelectNodes("//table"))
+            {
+                Console.WriteLine("Found: " + table.Id);
+                foreach (HtmlNode row in table.SelectNodes("tr"))
+                {
+                    Console.WriteLine("row");
+                    foreach (HtmlNode cell in row.SelectNodes("th|td"))
+                    {
+                        Console.WriteLine("cell: " + cell.InnerText);
+                    }
+                }
+            }
             var web = new HtmlWeb();
             var document = web.Load(BaseUrl);
 
-            var tableRows = document.GetElementbyId("fth1");
+            var tableRows = document.GetElementbyId("tb1");
+
+
             // var tableRows = document.QuerySelectorAll("fth1");
             //foreach(var row in tableRows)
             //{

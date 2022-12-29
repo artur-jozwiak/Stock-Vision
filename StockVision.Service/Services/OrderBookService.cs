@@ -32,7 +32,7 @@ namespace StockVision.Service.Services
             return orderBook;
         }
 
-        public async Task<OrderBook?> GetOrderBookFromDb()// to powinno 
+        public async Task<OrderBook?> GetOrderBookFromDb()
         {
             OrderBook orderBook = await _unitOfWork.OrderBooks.GetFirstWithAskBidOrderBook();
             return orderBook;

@@ -15,7 +15,7 @@ public class Program
     {
         StockVisionContext context = new();
         UnitOfWork uow = new UnitOfWork(context);
-        CompaniesReader companiesReader = new(uow);
+        GPWCompositionReader companiesReader = new(uow);
         var list = ReadLinesFromCompaniesTxtFile();
         var clearList = ClearListOfCompaniesWithIndexesAndSectors(list);
        var companies = GetCompaniesFromTxtFile(clearList);

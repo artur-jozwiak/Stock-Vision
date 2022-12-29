@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using StockVision.Core.Interfaces;
 using StockVision.Data.Data;
+using StockVision.Service.Interfaces;
+using StockVision.Service.Services;
 using StockVison.Scraper;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,10 +14,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ISheetScrapper, SheetScraper>();
-builder.Services.AddScoped<IGPWScrapper, GPWScrapper>();
-
-
+builder.Services.AddScoped<IGPWCompositionReader, GPWCompositionReader>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 var conectionString = builder.Configuration["ConnectionStrings:StockVisionConnectionString"];
 builder.Services.AddDbContext<StockVisionContext>(options => options
     //.UseLazyLoadingProxies()
