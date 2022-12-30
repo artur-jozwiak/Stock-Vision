@@ -12,7 +12,7 @@ using StockVision.Data.Data;
 namespace StockVision.Data.Migrations
 {
     [DbContext(typeof(StockVisionContext))]
-    [Migration("20221215191840_Initial")]
+    [Migration("20221230183946_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -58,9 +58,6 @@ namespace StockVision.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Branch")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .HasMaxLength(50)

@@ -14,12 +14,16 @@ namespace StockVision.Data.Data
         private readonly StockVisionContext _context;
         public ICompanyRepository Companies { get; private set; }
         public IOrderBookRepository OrderBooks { get; private set; }
+        public IStockIndexRepository StockIndexes { get; private set; }
+        public ISectorRepository Sectors { get; private set; }
 
         public UnitOfWork(StockVisionContext context)
         {
             _context = context;
             Companies = new CompanyRepository(_context);
             OrderBooks = new OrderBookRepository(_context);
+            StockIndexes = new StockIndexRepository(_context);
+            Sectors = new SectorRepository(_context);
         }
 
         public async Task<int> Save()

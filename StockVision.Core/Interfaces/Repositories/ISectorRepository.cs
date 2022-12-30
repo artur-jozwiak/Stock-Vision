@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace StockVision.Core.Interfaces.Repositories
 {
-    public interface ICompanyRepository : IRepository<Company>
+    public interface ISectorRepository : IRepository<Sector>
     {
-        Task<Company?> GetWithOrderBook(int id);
-        Task<Company?> GetByName(string name);
+   
+        Task<Sector?> GetByName(string name);
     }
 }

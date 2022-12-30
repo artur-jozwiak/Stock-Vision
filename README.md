@@ -43,6 +43,7 @@ Scrapper
 
     Pomysły:
     -Oblicznie liczby kupujących, sprzedających + wykres (Wzrost liczby kupujących = wzrost ceny)
+    -Wyznaczanie odpowiedniego  czasu kupna??
 
 
     Propercje:

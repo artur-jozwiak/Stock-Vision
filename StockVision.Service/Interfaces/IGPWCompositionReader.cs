@@ -11,6 +11,7 @@ namespace StockVision.Service.Interfaces
     public interface IGPWCompositionReader
     {
         string[] ReadLinesFromTxtFile();
+        Task GetCompaniesIndexesSectorsFromTxtFile(string[] data);
         List<Company> GetCompaniesFromTxtFile(string[] data);
         List<Company> MapDataFromFileToCompaniesList(string[] data);
         ICollection<StockIndex> GetIndexesFromLine(string line);

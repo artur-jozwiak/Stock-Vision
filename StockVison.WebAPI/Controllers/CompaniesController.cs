@@ -2,7 +2,9 @@
 using StockVision.Core.Interfaces;
 using StockVision.Core.Models;
 using StockVision.Service.Interfaces;
+using StockVision.Service.Services;
 using StockVison.Scraper;
+using System.Net;
 
 namespace StockVison.WebAPI.Controllers
 {
@@ -23,9 +25,14 @@ namespace StockVison.WebAPI.Controllers
         [HttpGet(Name = "GetCompanies")]
         public async Task<List<Company>> GetCompanies()
         {
-           var r =  _gpwCompositionReader.ReadLinesFromTxtFile();
-            return null;
+           var lines =  _gpwCompositionReader.ReadLinesFromTxtFile();
+           // var companies =_gpwCompositionReader.GetCompaniesFromTxtFile(lines);
+          await  _gpwCompositionReader.GetCompaniesIndexesSectorsFromTxtFile(lines);
 
+
+
+
+            return null;
         }
 
     }

@@ -24,7 +24,7 @@ namespace StockVision.Service.Services
             var lines = File.ReadAllLines("G:\\Moje programy\\Stock Vision\\StockVision\\Companies.txt").ToList();
 
             List<string> output = new List<string>();
-            char[] delimiters = { '(', ')', '|', '\t', };
+            char[] delimiters = { '(', ')', '|', '\t' };
 
             foreach (var element in lines)
             {
@@ -34,10 +34,9 @@ namespace StockVision.Service.Services
                     if (result[i] != ""
                         && result[i] != "Główny Rynek "
                         && decimal.TryParse(result[i], out _) == false
-                        //&& Regex.IsMatch(result[i], @"^\d") == false 
                         && result[i].StartsWith('-') == false
                         && result[i].StartsWith('+') == false
-                        && result[i].StartsWith('0') == false)
+                        && result[i].StartsWith("0,") == false)
                     {
                         output.Add(result[i].Replace("SPÓŁKA AKCYJNA", string.Empty));
                     }
@@ -50,10 +49,94 @@ namespace StockVision.Service.Services
             return output.ToArray();
         }
 
+        public async Task GetCompaniesIndexesSectorsFromTxtFile(string[] data)
+        {
+            int i = 0;
+            while (i <= data.Length - 4)
+            {
+                Company company = new Company()
+                {
+                    Name = data[i],
+                    Symbol = data[i + 1],
+                    OrderBook =  null
+                };
+                await _unitOfWork.Companies.Add(company);
+               // await _unitOfWork.Save();
+                List<StockIndex?> stockIndexes = new List<StockIndex?>();
+                var indexesLines = data[i + 2];
+                var indexesNames = indexesLines.Split('\u002C');
+
+                foreach (var name in indexesNames)
+                {
+                    StockIndex stockIndex = new StockIndex()
+                    {
+                        Name = name,
+                    };
+                    stockIndexes.Add(stockIndex);
+                    if (await _unitOfWork.StockIndexes.GetByName(stockIndex.Name) == null )
+                    {
+                      await  _unitOfWork.StockIndexes.Add(stockIndex);
+                     // await _unitOfWork.Save();
+                    }
+                }
+
+                Sector sector = new Sector()
+                {
+                    Name = data[i + 3]
+                };
+                if( await _unitOfWork.Sectors.GetByName(sector.Name) == null)
+                {
+                    await _unitOfWork.Sectors.Add(sector);
+                    await _unitOfWork.Save();
+                }
+
+                //////////////////
+
+                company = await _unitOfWork.Companies.GetByName(company.Name);
+                List<StockIndex?> companyStockIndexes = new List<StockIndex?>();
+                foreach (string indexName in indexesNames)
+                {
+                    var stockIndex = await _unitOfWork.StockIndexes.GetByName(indexName);
+                    stockIndexes.Add(stockIndex);
+                }
+
+                company.StockIndexes = stockIndexes;
+                company.Sector = sector;
+                _unitOfWork.Companies.Update(company);
+                await _unitOfWork.Save();
+
+                ///////////////////
+                
+                foreach(var stockIndex in stockIndexes)
+                {
+                    stockIndex.Companies.Add(company);
+                    _unitOfWork.StockIndexes.Update(stockIndex);
+                    await _unitOfWork.Save();
+                }
+
+                ///////////////////
+
+                sector = await _unitOfWork.Sectors.GetByName(sector.Name);
+                sector.Companies.Add(company);
+                _unitOfWork.Sectors.Update(sector);
+                await _unitOfWork.Save();
+
+                if (data[i + 2].StartsWith(" WIG") || data[i + 2].StartsWith(" INNOVATOR"))
+                {
+                    i += 4;
+                }
+                else
+                {
+                    i += 3;
+                }
+            }
+        }
+
         public List<Company> GetCompaniesFromTxtFile(string[] data)
         {
             var companies = new List<Company>();
-            for (int i = 0; i <= data.Count(); i = +3)
+            int i = 0;
+            while(i <= data.Length - 4)
             {
                 Company company = new Company()
                 {
@@ -61,7 +144,26 @@ namespace StockVision.Service.Services
                     Symbol = data[i + 1],
                 };
                 companies.Add(company);
+
+                if (data[i + 2].StartsWith(" WIG") || data[i + 2].StartsWith(" INNOVATOR"))
+                {
+                    i += 4;
+                }
+                else
+                {
+                    i += 3;
+                }
             }
+
+            //for (int i = 0; i < data.Count(); i = +4)
+            //{
+            //    Company company = new Company()
+            //    {
+            //        Name = data[i],
+            //        Symbol = data[i + 1],
+            //    };
+            //    companies.Add(company);
+            //}
             return companies;
         }
 

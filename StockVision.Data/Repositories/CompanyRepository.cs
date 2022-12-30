@@ -30,6 +30,12 @@ namespace StockVision.Data.Repositories
         }
 
 
+        public async Task<Company?> GetByName(string name)
+        {
+            return await StockVisionContext.Companies.FirstOrDefaultAsync(s => s.Name == name);
+        }
+
+
         public StockVisionContext StockVisionContext
         {
             get { return Context as StockVisionContext; }

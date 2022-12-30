@@ -123,7 +123,6 @@ namespace StockVision.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     Symbol = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: true),
-                    Branch = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     OrderBookId = table.Column<int>(type: "int", nullable: false),
                     SectorId = table.Column<int>(type: "int", nullable: false)
                 },

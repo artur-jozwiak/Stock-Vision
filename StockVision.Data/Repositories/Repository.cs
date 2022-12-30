@@ -5,6 +5,7 @@ using StockVision.Data.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -28,6 +29,11 @@ namespace StockVision.Data.Repositories
             return await Context.Set<TEntity>().ToListAsync();
         }
 
+        public async Task<IEnumerable<TEntity>> Find(Expression<Func<TEntity, bool>> predicate)
+        {
+            return await Context.Set<TEntity>().Where(predicate).ToListAsync();
+        }
+
         public async Task Add(TEntity entity)
         {
            await Context.Set<TEntity>().AddAsync(entity);
@@ -38,5 +44,9 @@ namespace StockVision.Data.Repositories
            await Context.Set<TEntity>().AddRangeAsync(entities);
         }
 
+        public  void Update(TEntity entity)
+        {
+            Context.Set<TEntity>().Update(entity);
+        }
     }
 }

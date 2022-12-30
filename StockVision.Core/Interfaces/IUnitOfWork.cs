@@ -11,6 +11,8 @@ namespace StockVision.Core.Interfaces
     {
         ICompanyRepository Companies { get; }
         IOrderBookRepository OrderBooks { get; }
+        IStockIndexRepository StockIndexes { get; }
+        ISectorRepository Sectors { get; }
         Task<int> Save();
     }
 }
