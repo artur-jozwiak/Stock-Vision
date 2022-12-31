@@ -57,13 +57,13 @@ namespace StockVision.Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("OrderBookId")
+                    b.Property<int?>("OrderBookId")
                         .HasColumnType("int");
 
-                    b.Property<int>("SectorId")
+                    b.Property<int?>("SectorId")
                         .HasColumnType("int");
 
                     b.Property<string>("Symbol")
@@ -73,7 +73,8 @@ namespace StockVision.Data.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("OrderBookId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[OrderBookId] IS NOT NULL");
 
                     b.HasIndex("SectorId");
 
@@ -195,15 +196,11 @@ namespace StockVision.Data.Migrations
                 {
                     b.HasOne("StockVision.Core.Models.OrderBook", "OrderBook")
                         .WithOne()
-                        .HasForeignKey("StockVision.Core.Models.Company", "OrderBookId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("StockVision.Core.Models.Company", "OrderBookId");
 
                     b.HasOne("StockVision.Core.Models.Sector", "Sector")
                         .WithMany("Companies")
-                        .HasForeignKey("SectorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("SectorId");
 
                     b.Navigation("OrderBook");
 

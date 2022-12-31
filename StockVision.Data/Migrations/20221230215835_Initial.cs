@@ -121,10 +121,10 @@ namespace StockVision.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
                     Symbol = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: true),
-                    OrderBookId = table.Column<int>(type: "int", nullable: false),
-                    SectorId = table.Column<int>(type: "int", nullable: false)
+                    OrderBookId = table.Column<int>(type: "int", nullable: true),
+                    SectorId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -133,14 +133,12 @@ namespace StockVision.Data.Migrations
                         name: "FK_Companies_OrderBooks_OrderBookId",
                         column: x => x.OrderBookId,
                         principalTable: "OrderBooks",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Companies_Sectors_SectorId",
                         column: x => x.SectorId,
                         principalTable: "Sectors",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -171,7 +169,8 @@ namespace StockVision.Data.Migrations
                 name: "IX_Companies_OrderBookId",
                 table: "Companies",
                 column: "OrderBookId",
-                unique: true);
+                unique: true,
+                filter: "[OrderBookId] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Companies_SectorId",

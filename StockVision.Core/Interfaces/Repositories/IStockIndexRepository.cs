@@ -10,5 +10,7 @@ namespace StockVision.Core.Interfaces.Repositories
     public interface IStockIndexRepository : IRepository<StockIndex>
     {
         Task<StockIndex?> GetByName(string name);
+        Task<IEnumerable<StockIndex>> GetAllWithCompanies();
+        Task<StockIndex?> GetWithCompanies(int id);
     }
 }

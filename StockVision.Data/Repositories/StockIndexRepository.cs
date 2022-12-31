@@ -22,6 +22,20 @@ namespace StockVision.Data.Repositories
             return await StockVisionContext.StockIndexes.FirstOrDefaultAsync(i => i.Name == name);
         }
 
+        public async Task<IEnumerable<StockIndex>> GetAllWithCompanies()
+        {
+            return await StockVisionContext.StockIndexes
+                .Include(i => i.Companies)
+                .ToListAsync();
+        }
+
+        public async Task<StockIndex?> GetWithCompanies(int id)
+        {
+            return await StockVisionContext.StockIndexes.Where(i => i.Id == id)
+                .Include(i => i.Companies)
+                .FirstOrDefaultAsync();
+        }
+
         public StockVisionContext StockVisionContext
         {
             get { return Context as StockVisionContext; }

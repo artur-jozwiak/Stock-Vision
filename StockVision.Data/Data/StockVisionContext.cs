@@ -53,7 +53,7 @@ namespace StockVision.Data.Data
             order.Property(o => o.OrdersValue).HasPrecision(13, 4);
             order.Property(o => o.SharePercentage).HasPrecision(5, 2);
 
-            company.Property(c => c.Name).HasMaxLength(50);
+            company.Property(c => c.Name).HasMaxLength(100);
             company.Property(c => c.Symbol).HasMaxLength(10);
             company.HasOne(c => c.OrderBook).WithOne().HasForeignKey<Company>(a => a.OrderBookId);
             company.HasMany(c => c.StockIndexes)

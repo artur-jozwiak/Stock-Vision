@@ -58,31 +58,65 @@ namespace StockVision.Service.Services
                 {
                     Name = data[i],
                     Symbol = data[i + 1],
-                    OrderBook =  null
+                    //OrderBook =  null
                 };
                 await _unitOfWork.Companies.Add(company);
-               // await _unitOfWork.Save();
+                await _unitOfWork.Save();
                 List<StockIndex?> stockIndexes = new List<StockIndex?>();
-                var indexesLines = data[i + 2];
-                var indexesNames = indexesLines.Split('\u002C');
+                string indexesLines = null;
+                List<string> indexesNames = new List<string>();
 
-                foreach (var name in indexesNames)
+                if (data[i + 2].StartsWith(" WIG") || data[i + 2].StartsWith(" INNOVATOR"))
                 {
-                    StockIndex stockIndex = new StockIndex()
+                    indexesLines = data[i + 2];
+                     indexesNames = indexesLines.Split('\u002C').ToList();
+
+                    foreach (var name in indexesNames)
                     {
-                        Name = name,
-                    };
-                    stockIndexes.Add(stockIndex);
-                    if (await _unitOfWork.StockIndexes.GetByName(stockIndex.Name) == null )
-                    {
-                      await  _unitOfWork.StockIndexes.Add(stockIndex);
-                     // await _unitOfWork.Save();
+                        StockIndex stockIndex = new StockIndex()
+                        {
+                            Name = name,
+                        };
+                        stockIndexes.Add(stockIndex);
+                        if (await _unitOfWork.StockIndexes.GetByName(stockIndex.Name) == null)
+                        {
+                            await _unitOfWork.StockIndexes.Add(stockIndex);
+                            await _unitOfWork.Save();
+                        }
                     }
                 }
+           
+               // var indexesLines = data[i + 2];
+                //var indexesNames = indexesLines.Split('\u002C');
 
+                //foreach (var name in indexesNames)
+                //{
+                //    StockIndex stockIndex = new StockIndex()
+                //    {
+                //        Name = name,
+                //    };
+                //    stockIndexes.Add(stockIndex);
+                //    if (await _unitOfWork.StockIndexes.GetByName(stockIndex.Name) == null )
+                //    {
+                //      await  _unitOfWork.StockIndexes.Add(stockIndex);
+                //      await _unitOfWork.Save();
+                //    }
+                //}
+
+                int placeOfSector = 0;
+                if (data[i + 2].StartsWith(" WIG") || data[i + 2].StartsWith(" INNOVATOR"))
+                {
+                    placeOfSector = 3;
+                }
+                else
+                {
+                    placeOfSector = 2;
+                }
                 Sector sector = new Sector()
                 {
-                    Name = data[i + 3]
+                    Name = data[i + placeOfSector]
+
+                    // Name = data[i + 3]
                 };
                 if( await _unitOfWork.Sectors.GetByName(sector.Name) == null)
                 {
