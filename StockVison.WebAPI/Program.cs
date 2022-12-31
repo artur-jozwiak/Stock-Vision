@@ -1,8 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using StockVision.Core.Interfaces;
+using StockVision.Core.Services;
 using StockVision.Data.Data;
-using StockVision.Service.Interfaces;
-using StockVision.Service.Services;
 using StockVison.Scraper;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +20,11 @@ var conectionString = builder.Configuration["ConnectionStrings:StockVisionConnec
 builder.Services.AddDbContext<StockVisionContext>(options => options
     //.UseLazyLoadingProxies()
     .UseSqlServer(conectionString));
+
+builder.Services.AddControllersWithViews()
+    .AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
 
 var app = builder.Build();
 

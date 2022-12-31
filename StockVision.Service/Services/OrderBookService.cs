@@ -32,6 +32,8 @@ namespace StockVision.Service.Services
             return orderBook;
         }
 
+        //Usunąć wraz z konstruktorem i Uow 
+        // Pobieranie z API I Z db ma sie odbywac w projekcie web api
         public async Task<OrderBook?> GetOrderBookFromDb()
         {
             OrderBook orderBook = await _unitOfWork.OrderBooks.GetFirstWithAskBidOrderBook();

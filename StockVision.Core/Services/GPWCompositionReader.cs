@@ -1,14 +1,14 @@
 ﻿using StockVision.Core.Interfaces;
 using StockVision.Core.Interfaces.Repositories;
 using StockVision.Core.Models;
-using StockVision.Service.Interfaces;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockVision.Service.Services
+namespace StockVision.Core.Services
 {
     public class GPWCompositionReader : IGPWCompositionReader
     {
@@ -146,75 +146,6 @@ namespace StockVision.Service.Services
                     i += 3;
                 }
             }
-        }
-
-        public List<Company> GetCompaniesFromTxtFile(string[] data)
-        {
-            var companies = new List<Company>();
-            int i = 0;
-            while(i <= data.Length - 4)
-            {
-                Company company = new Company()
-                {
-                    Name = data[i],
-                    Symbol = data[i + 1],
-                };
-                companies.Add(company);
-
-                if (data[i + 2].StartsWith(" WIG") || data[i + 2].StartsWith(" INNOVATOR"))
-                {
-                    i += 4;
-                }
-                else
-                {
-                    i += 3;
-                }
-            }
-
-            return companies;
-        }
-
-
-        public List<Company> MapDataFromFileToCompaniesList( string[] data)
-        {   
-            var companiesList = new List<Company>();
-            for (int i = 0; i <= data.Count()/4; i++)
-            {
-                Company company = new Company()
-                {
-                    Name = data[i],
-                    Symbol = data[i + 1],
-                    StockIndexes = GetIndexesFromLine(data[i + 2]),
-                    Sector = new Sector()
-                    {
-                       
-                        Name = data[3]
-                    }
-                };
-                companiesList.Add(company);
-            }
-            return companiesList;
-        }
-
-        public ICollection<StockIndex> GetIndexesFromLine(string line)
-        {
-            var indexes = new List<StockIndex>();
-            var indexesNames = line.Split(',');
-            foreach(var name in indexesNames)
-            {
-                var index = new StockIndex()
-                {
-                    Name = name,
-                };
-                indexes.Add(index);
-            }
-            return indexes;
-        }
-
-       public async void AddCompaniesToDb(IEnumerable<Company> companies)
-        {
-           await _unitOfWork.Companies.AddRange(companies);
-           await _unitOfWork.Save();
         }
     }
 }

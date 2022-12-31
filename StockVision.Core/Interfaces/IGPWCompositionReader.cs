@@ -6,16 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockVision.Service.Interfaces
+namespace StockVision.Core.Interfaces
 {
     public interface IGPWCompositionReader
     {
         string[] ReadLinesFromTxtFile();
         Task GetCompaniesIndexesSectorsFromTxtFile(string[] data);
-        List<Company> GetCompaniesFromTxtFile(string[] data);
-        List<Company> MapDataFromFileToCompaniesList(string[] data);
-        ICollection<StockIndex> GetIndexesFromLine(string line);
-        void AddCompaniesToDb(IEnumerable<Company> companies);
-
     }
 }

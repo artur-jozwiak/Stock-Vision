@@ -11,10 +11,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IOrderBookService, OrderbookService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<ISectorService, SectorService>();
+
 var conectionString = builder.Configuration["ConnectionStrings:StockVisionConnectionString"];
-builder.Services.AddDbContext<StockVisionContext>(options => options
-    //.UseLazyLoadingProxies()
-    .UseSqlServer(conectionString));
+builder.Services.AddDbContext<StockVisionContext>(options => options.UseSqlServer(conectionString));
 
 // Add services to the container.
 builder.Services.AddRazorPages();

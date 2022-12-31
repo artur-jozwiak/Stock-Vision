@@ -1,4 +1,5 @@
 <!-- 
+-Usunąc referencje pomiędzy projektami fron i backend
 -Wszystkie dane w blazor server mają pochodzić z API
 -Podpiąć pod przycisk aktualizowanie listy spółek
 -Stworzyc klase Index, Branch

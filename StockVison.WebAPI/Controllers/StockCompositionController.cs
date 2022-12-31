@@ -10,29 +10,22 @@ namespace StockVison.WebAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class CompaniesController : ControllerBase
+    public class StockCompositionController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IGPWCompositionReader _gpwCompositionReader;
  
-        public CompaniesController(ISheetScrapper scrapper, IUnitOfWork unitOfWork, IGPWCompositionReader gpwCompositionReader)
+        public StockCompositionController(ISheetScrapper scrapper, IUnitOfWork unitOfWork, IGPWCompositionReader gpwCompositionReader)
         {
             _unitOfWork = unitOfWork;
             _gpwCompositionReader = gpwCompositionReader;
-
         }
 
-        [HttpGet(Name = "GetCompanies")]
-        public async Task<List<Company>> GetCompanies()
+        [HttpGet(Name = "GetComposition")]
+        public async Task GetStockComposition()
         {
-           var lines =  _gpwCompositionReader.ReadLinesFromTxtFile();
-           // var companies =_gpwCompositionReader.GetCompaniesFromTxtFile(lines);
+          var lines =  _gpwCompositionReader.ReadLinesFromTxtFile();
           await  _gpwCompositionReader.GetCompaniesIndexesSectorsFromTxtFile(lines);
-
-
-
-
-            return null;
         }
 
     }

@@ -4,7 +4,9 @@
 
 @using StockVision.Core.Interfaces
 @using StockVision.Core.Models
+@using StockVision.Service.Interfaces
 @using StockVision.WebApp.Data
+@inject ISectorService SectorService
 @inject IUnitOfWork UnitOfWork
 
 <h1>Sectors</h1>
@@ -44,8 +46,11 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        var data = await UnitOfWork.Sectors.GetAllWithCompanies();
-        var dataWithoutDuplicates = data.DistinctBy(s => s.Name);
-        sectors = dataWithoutDuplicates.Cast<Sector>().ToArray();
+        var data = await SectorService.GetSectorsFromAPI();
+        sectors = data.Cast<Sector>().ToArray();
+
+        //var data = await UnitOfWork.Sectors.GetAllWithCompanies();
+        //var dataWithoutDuplicates = data.DistinctBy(s => s.Name);
+        //sectors = dataWithoutDuplicates.Cast<Sector>().ToArray();
     }
 }

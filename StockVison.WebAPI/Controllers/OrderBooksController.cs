@@ -7,11 +7,11 @@ namespace StockVison.WebAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class OrderBookController : ControllerBase
+    public class OrderBooksController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
         private ISheetScrapper _scrapper;
-        public OrderBookController(ISheetScrapper scrapper, IUnitOfWork unitOfWork)
+        public OrderBooksController(ISheetScrapper scrapper, IUnitOfWork unitOfWork)
         {   
             _scrapper = scrapper;
             _unitOfWork = unitOfWork;
@@ -23,10 +23,17 @@ namespace StockVison.WebAPI.Controllers
             companyName = "cdr";
             skipLast = 350;
             OrderBook orderBook = await _scrapper.GetOrderbook(companyName, skipLast);
-            await _unitOfWork.OrderBooks.Add(orderBook);
-            await _unitOfWork.Save();
 
             return orderBook;
         }
+
+        [HttpPost(Name = "SaveOrderBookInDb")]//Nie testowane
+        public async Task SaveOrderBookInDb(string companyName, int skipLast)
+        {
+            OrderBook orderBook = await _scrapper.GetOrderbook(companyName, skipLast);
+            await _unitOfWork.OrderBooks.Add(orderBook);
+            await _unitOfWork.Save();
+        }
+        //dodać wystawienie Orderbook z bazy po id firmy i dacie
     }
 }
