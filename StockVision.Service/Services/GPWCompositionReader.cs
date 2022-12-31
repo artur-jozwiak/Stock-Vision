@@ -85,23 +85,6 @@ namespace StockVision.Service.Services
                         }
                     }
                 }
-           
-               // var indexesLines = data[i + 2];
-                //var indexesNames = indexesLines.Split('\u002C');
-
-                //foreach (var name in indexesNames)
-                //{
-                //    StockIndex stockIndex = new StockIndex()
-                //    {
-                //        Name = name,
-                //    };
-                //    stockIndexes.Add(stockIndex);
-                //    if (await _unitOfWork.StockIndexes.GetByName(stockIndex.Name) == null )
-                //    {
-                //      await  _unitOfWork.StockIndexes.Add(stockIndex);
-                //      await _unitOfWork.Save();
-                //    }
-                //}
 
                 int placeOfSector = 0;
                 if (data[i + 2].StartsWith(" WIG") || data[i + 2].StartsWith(" INNOVATOR"))
@@ -115,9 +98,8 @@ namespace StockVision.Service.Services
                 Sector sector = new Sector()
                 {
                     Name = data[i + placeOfSector]
-
-                    // Name = data[i + 3]
                 };
+
                 if( await _unitOfWork.Sectors.GetByName(sector.Name) == null)
                 {
                     await _unitOfWork.Sectors.Add(sector);
@@ -189,23 +171,10 @@ namespace StockVision.Service.Services
                 }
             }
 
-            //for (int i = 0; i < data.Count(); i = +4)
-            //{
-            //    Company company = new Company()
-            //    {
-            //        Name = data[i],
-            //        Symbol = data[i + 1],
-            //    };
-            //    companies.Add(company);
-            //}
             return companies;
         }
 
-        /// <summary>
-        /// ///////////////
-        /// </summary>
-        /// <param ></param>
-        /// <returns></returns>
+
         public List<Company> MapDataFromFileToCompaniesList( string[] data)
         {   
             var companiesList = new List<Company>();

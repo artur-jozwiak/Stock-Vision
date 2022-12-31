@@ -1,0 +1,51 @@
+﻿@page "/sectors"
+
+<PageTitle>Sectors</PageTitle>
+
+@using StockVision.Core.Interfaces
+@using StockVision.Core.Models
+@using StockVision.WebApp.Data
+@inject IUnitOfWork UnitOfWork
+
+<h1>Sectors</h1>
+
+@if (sectors == null)
+{
+    <p><em>Loading sectors...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var sector in sectors)
+            {
+                <tr>
+                    <td>@sector.Name</td>
+                
+                    @foreach(var company in sector.Companies)
+                    {
+                        <td>@company.Symbol</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Sector[]? sectors;
+    private WeatherForecast[]? forecasts;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        var data = await UnitOfWork.Sectors.GetAllWithCompanies();
+        var dataWithoutDuplicates = data.DistinctBy(s => s.Name);
+        sectors = dataWithoutDuplicates.Cast<Sector>().ToArray();
+    }
+}

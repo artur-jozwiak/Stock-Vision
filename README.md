@@ -1,4 +1,5 @@
 <!-- 
+-Wszystkie dane w blazor server mają pochodzić z API
 -Podpiąć pod przycisk aktualizowanie listy spółek
 -Stworzyc klase Index, Branch
 -Dodać wyszukiwanie spółek po branchy i po indexach
@@ -44,6 +45,7 @@ Scrapper
     Pomysły:
     -Oblicznie liczby kupujących, sprzedających + wykres (Wzrost liczby kupujących = wzrost ceny)
     -Wyznaczanie odpowiedniego  czasu kupna??
+    -Wyświetlanie nazwy spólki po najechaniu myszką na SYMBOL
 
 
     Propercje:

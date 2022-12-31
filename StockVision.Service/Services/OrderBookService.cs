@@ -37,16 +37,6 @@ namespace StockVision.Service.Services
             OrderBook orderBook = await _unitOfWork.OrderBooks.GetFirstWithAskBidOrderBook();
             return orderBook;
         }
-
-        //public async Task<List<Order>> GetAskOrderBook()
-        //{
-        //    HttpClient httpClient = new HttpClient();
-        //    var response = await httpClient.GetAsync(_baseUrl);
-        //    response.EnsureSuccessStatusCode();
-        //    var order = await response.Content.ReadFromJsonAsync<List<Order>>();
-        //    return order;
-        //}
-
        
     }
 }

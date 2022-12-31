@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="C:\Users\ZŁOMOWIEC\.nuget\packages\chartjs.blazor.fork\2.0.2\contentFiles\any\netstandard2.1\wwwroot\ChartJsBlazorInterop.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="C1.Blazor.Chart" Version="6.0.20223.374" />
     <PackageReference Include="ChartJs.Blazor.Fork" Version="2.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
@@ -19,6 +23,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
     <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="20.3.0.60" />
   </ItemGroup>
 

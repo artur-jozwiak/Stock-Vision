@@ -1,35 +1,13 @@
-﻿@using C1.Chart
-
-@using C1.Blazor.Chart
-@page "/fetchdata"
-
+﻿@page "/fetchdata"
 
 <PageTitle>Weather forecast</PageTitle>
 
-@using StockVision.BlazorServer.Data
+@using StockVision.WebApp.Data
 @inject WeatherForecastService ForecastService
 
 <h1>Weather forecast</h1>
 
 <p>This component demonstrates fetching data from a service.</p>
-
-
-@*<FlexChart ItemsSource="forecasts" BindingX="Date">
-    <SeriesCollection>
-        <Series Binding="TemperatureC" />
-    </SeriesCollection>
-</FlexChart>
-
-<FlexChart ItemsSource="forecasts" Class="chart" BindingX="Date" ChartType="ChartType.SplineSymbols" HeaderContent="5-days forecast" HeaderStyle="font-size:24px">
-    <SeriesCollection>
-        <Series Binding="TemperatureC"/>
-    </SeriesCollection>
-    <AxisCollection>
-        <Axis AxisType="AxisType.X" Position="Position.Bottom" AxisLine="false" Format="MMM-d" MajorTickMarks="TickMark.None"/>
-        <Axis AxisType="AxisType.Y" Position="Position.Left" Title="Temperature, C" AxisLine="false" MajorTickMarks="TickMark.None" MajorGrid="true"/>
-    </AxisCollection>
-</FlexChart>*@
-
 
 @if (forecasts == null)
 {
