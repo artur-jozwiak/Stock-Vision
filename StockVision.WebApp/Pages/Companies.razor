@@ -9,7 +9,7 @@
 @inject ICompanyService CompanyService
 @inject IUnitOfWork UnitOfWork
 
-<h1>Companies</h1>
+<h1 style="font-family:Consolas;">Companies</h1>
 
 @if (companies == null)
 {
@@ -17,47 +17,22 @@
 }
 else
 {
-  @*  <table class="table">
-        <thead>
-            <tr>
-                <th>Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var company in companies)
-            {
-                <tr>
-                    <td>@company.Name</td>
-                    <td>
-                        @if (company.Sector != null)
-                        {
-                            @company.Sector.Name
-                        }
-                    </td>
-                    @foreach (var index in company.StockIndexes)
-                    {
-                        <td>@index.Name</td>
-                    }
-                </tr>
-            }
-        </tbody>
-    </table>*@
-  
+ 
             @foreach (var company in companies)
             {
 
-        <strong> <p style="margin-bottom:0; font-family:Consolas; font-size:18px;"> @company.Name</p></strong>
+            <strong> <p style="margin-bottom:0; font-family:Consolas; font-size:18px;"> @company.Name (@company.Symbol)</p></strong>
        
                         @if (company.Sector != null)
                         {
             <p style="margin-bottom:0; font-family:Consolas"> @company.Sector.Name</p>
                         }
-        <p style="margin-bottom:10; font-family:Consolas">
+            <p style="margin-bottom:10; font-family:Consolas">
                     @foreach (var index in company.StockIndexes)
                     {
                         @index.Name
                     }
-                </p>
+            </p>
             }
    
 }

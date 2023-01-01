@@ -1,5 +1,6 @@
 <!--
--Wallet
+-Dodać date pobrania do orderbook
+-Dodać Wallet
 -Generyczna metoda do pobierania responsa w projekcie service
 -As no tracking wszedzie gdzie się tylko wyświetla 
 -lazy loading

@@ -20,10 +20,10 @@ namespace StockVision.Data.Repositories
         public async Task<Company?> GetWithOrderBook(int id)
         {
           return await  StockVisionContext.Companies.Where(c => c.Id == id)
-                .Include(o => o.OrderBook)
+                .Include(o => o.OrderBooks)
                     .ThenInclude(a => a.AskOrderBook)
                         .ThenInclude(o => o.Orders)
-                .Include(o => o.OrderBook)
+                .Include(o => o.OrderBooks)
                     .ThenInclude(b => b.BidOrderBook)
                         .ThenInclude(o => o.Orders)
                 .AsNoTracking()

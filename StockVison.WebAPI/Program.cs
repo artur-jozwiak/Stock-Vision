@@ -13,6 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ISheetScrapper, SheetScraper>();
+builder.Services.AddScoped<IPriceScrapper, PriceScrapper>();
 builder.Services.AddScoped<IGPWCompositionReader, GPWCompositionReader>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 

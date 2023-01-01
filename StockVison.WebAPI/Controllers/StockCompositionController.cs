@@ -21,12 +21,11 @@ namespace StockVison.WebAPI.Controllers
             _gpwCompositionReader = gpwCompositionReader;
         }
 
-        [HttpGet(Name = "GetComposition")]
+        [HttpPost(Name = "GetComposition")]
         public async Task GetStockComposition()
         {
           var lines =  _gpwCompositionReader.ReadLinesFromTxtFile();
           await  _gpwCompositionReader.GetCompaniesIndexesSectorsFromTxtFile(lines);
         }
-
     }
 }

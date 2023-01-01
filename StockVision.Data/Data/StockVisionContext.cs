@@ -41,10 +41,10 @@ namespace StockVision.Data.Data
         {
             base.OnModelCreating(modelBuilder);
             var fullOrderBook = modelBuilder.Entity<OrderBook>();
-            var askOrderBook = modelBuilder.Entity<AskOrderBook>();
-            var bidOrderBook = modelBuilder.Entity<BidOrderBook>();
             var order = modelBuilder.Entity<Order>();
             var company = modelBuilder.Entity<Company>();
+            var stockIndex = modelBuilder.Entity<StockIndex>();
+            var sector = modelBuilder.Entity<Sector>();
 
             fullOrderBook.HasOne(f => f.AskOrderBook).WithOne().HasForeignKey<OrderBook>(a => a.AskOrderBookId);
             fullOrderBook.HasOne(f => f.BidOrderBook ).WithOne().HasForeignKey<OrderBook>(a => a.BidOrderBookId);
@@ -55,14 +55,17 @@ namespace StockVision.Data.Data
 
             company.Property(c => c.Name).HasMaxLength(100);
             company.Property(c => c.Symbol).HasMaxLength(10);
-            company.HasOne(c => c.OrderBook).WithOne().HasForeignKey<Company>(a => a.OrderBookId);
+            //company.HasOne(c => c.OrderBook).WithOne().HasForeignKey<Company>(a => a.OrderBookId);
             company.HasMany(c => c.StockIndexes)
                    .WithMany(i => i.Companies)
                    .UsingEntity<IndexAssignment>(
                     ci => ci.HasOne(ci => ci.StockIndex).WithMany( i => i.IndexAssignment).HasForeignKey(ci => ci.StockIndexId),
-                    ci => ci.HasOne(ci => ci.Company).WithMany(c => c.IndexAssignment).HasForeignKey(ci => ci.CompanyId)
-                    );
+                    ci => ci.HasOne(ci => ci.Company).WithMany(c => c.IndexAssignment).HasForeignKey(ci => ci.CompanyId));
             company.HasOne( c => c.Sector).WithMany(s => s.Companies).HasForeignKey(c => c.SectorId);
+
+            stockIndex.Property(i => i.Name).HasMaxLength(50);
+
+            sector.Property(s => s.Name).HasMaxLength(50);
         }
     }
 }

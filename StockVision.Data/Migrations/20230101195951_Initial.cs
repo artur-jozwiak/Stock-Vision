@@ -41,7 +41,7 @@ namespace StockVision.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -54,37 +54,11 @@ namespace StockVision.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_StockIndexes", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "OrderBooks",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    AskOrderBookId = table.Column<int>(type: "int", nullable: false),
-                    BidOrderBookId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_OrderBooks", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_OrderBooks_AskOrderBooks_AskOrderBookId",
-                        column: x => x.AskOrderBookId,
-                        principalTable: "AskOrderBooks",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_OrderBooks_BidOrderBooks_BidOrderBookId",
-                        column: x => x.BidOrderBookId,
-                        principalTable: "BidOrderBooks",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -123,17 +97,11 @@ namespace StockVision.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
                     Symbol = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: true),
-                    OrderBookId = table.Column<int>(type: "int", nullable: true),
                     SectorId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Companies", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Companies_OrderBooks_OrderBookId",
-                        column: x => x.OrderBookId,
-                        principalTable: "OrderBooks",
-                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Companies_Sectors_SectorId",
                         column: x => x.SectorId,
@@ -165,12 +133,38 @@ namespace StockVision.Data.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateIndex(
-                name: "IX_Companies_OrderBookId",
-                table: "Companies",
-                column: "OrderBookId",
-                unique: true,
-                filter: "[OrderBookId] IS NOT NULL");
+            migrationBuilder.CreateTable(
+                name: "OrderBooks",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LoadTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    AskOrderBookId = table.Column<int>(type: "int", nullable: false),
+                    BidOrderBookId = table.Column<int>(type: "int", nullable: false),
+                    CompanyId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_OrderBooks", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_OrderBooks_AskOrderBooks_AskOrderBookId",
+                        column: x => x.AskOrderBookId,
+                        principalTable: "AskOrderBooks",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_OrderBooks_BidOrderBooks_BidOrderBookId",
+                        column: x => x.BidOrderBookId,
+                        principalTable: "BidOrderBooks",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_OrderBooks_Companies_CompanyId",
+                        column: x => x.CompanyId,
+                        principalTable: "Companies",
+                        principalColumn: "Id");
+                });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Companies_SectorId",
@@ -195,6 +189,11 @@ namespace StockVision.Data.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
+                name: "IX_OrderBooks_CompanyId",
+                table: "OrderBooks",
+                column: "CompanyId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Orders_AskOrderBookId",
                 table: "Orders",
                 column: "AskOrderBookId");
@@ -212,25 +211,25 @@ namespace StockVision.Data.Migrations
                 name: "IndexAssignment");
 
             migrationBuilder.DropTable(
-                name: "Orders");
+                name: "OrderBooks");
 
             migrationBuilder.DropTable(
-                name: "Companies");
+                name: "Orders");
 
             migrationBuilder.DropTable(
                 name: "StockIndexes");
 
             migrationBuilder.DropTable(
-                name: "OrderBooks");
-
-            migrationBuilder.DropTable(
-                name: "Sectors");
+                name: "Companies");
 
             migrationBuilder.DropTable(
                 name: "AskOrderBooks");
 
             migrationBuilder.DropTable(
                 name: "BidOrderBooks");
+
+            migrationBuilder.DropTable(
+                name: "Sectors");
         }
     }
 }

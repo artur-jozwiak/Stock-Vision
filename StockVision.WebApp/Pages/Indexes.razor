@@ -9,7 +9,7 @@
 @inject IStockIndexService IndexService
 @inject IUnitOfWork UnitOfWork
 
-<h1>Indexes</h1>
+<h1 style="font-family:Consolas;">Indexes</h1>
 
 @if (indexes == null)
 {
@@ -17,17 +17,17 @@
 }
 else
 {
-    <table class="table">
-        <thead>
+    <table class="table" style="font-family:Consolas; width: 100%">
+@*        <thead>
             <tr>
                 <th>Name</th>
             </tr>
-        </thead>
+        </thead>*@
         <tbody>
             @foreach (var index in indexes)
             {
-                <tr>
-                    <td>@index.Name</td>
+                <tr style=" word-wrap:bre">
+                   <td style="font-size:18px; "><strong>@index.Name</strong></td>
 
                     @foreach (var company in index.Companies)
                     {

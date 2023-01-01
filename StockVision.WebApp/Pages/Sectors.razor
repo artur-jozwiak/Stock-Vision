@@ -17,17 +17,18 @@
 }
 else
 {
-    <table class="table">
-        <thead>
+    <table class="table-bordered" style="font-family:Consolas; ">
+@*        <thead>
             <tr>
-                <th>Name</th>
+                <th>Sector</th>
+                <th>Companies</th>
             </tr>
-        </thead>
+        </thead>*@
         <tbody>
             @foreach (var sector in sectors)
             {
                 <tr>
-                    <td>@sector.Name</td>
+                    <td style="font-size:18px"><strong>@sector.Name</strong></td>
                 
                     @foreach(var company in sector.Companies)
                     {
@@ -48,3 +49,8 @@ else
         sectors = data.Cast<Sector>().ToArray();
     }
 }
+//<style>
+//    body {
+//        background-color: ThreeDDarkShadow;
+//    }
+//</style>

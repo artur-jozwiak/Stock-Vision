@@ -60,9 +60,6 @@ namespace StockVision.Data.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int?>("OrderBookId")
-                        .HasColumnType("int");
-
                     b.Property<int?>("SectorId")
                         .HasColumnType("int");
 
@@ -71,10 +68,6 @@ namespace StockVision.Data.Migrations
                         .HasColumnType("nvarchar(10)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("OrderBookId")
-                        .IsUnique()
-                        .HasFilter("[OrderBookId] IS NOT NULL");
 
                     b.HasIndex("SectorId");
 
@@ -149,6 +142,12 @@ namespace StockVision.Data.Migrations
                     b.Property<int>("BidOrderBookId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("CompanyId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("LoadTime")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
 
                     b.HasIndex("AskOrderBookId")
@@ -156,6 +155,8 @@ namespace StockVision.Data.Migrations
 
                     b.HasIndex("BidOrderBookId")
                         .IsUnique();
+
+                    b.HasIndex("CompanyId");
 
                     b.ToTable("OrderBooks");
                 });
@@ -169,7 +170,8 @@ namespace StockVision.Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
@@ -185,7 +187,8 @@ namespace StockVision.Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
@@ -194,15 +197,9 @@ namespace StockVision.Data.Migrations
 
             modelBuilder.Entity("StockVision.Core.Models.Company", b =>
                 {
-                    b.HasOne("StockVision.Core.Models.OrderBook", "OrderBook")
-                        .WithOne()
-                        .HasForeignKey("StockVision.Core.Models.Company", "OrderBookId");
-
                     b.HasOne("StockVision.Core.Models.Sector", "Sector")
                         .WithMany("Companies")
                         .HasForeignKey("SectorId");
-
-                    b.Navigation("OrderBook");
 
                     b.Navigation("Sector");
                 });
@@ -251,6 +248,10 @@ namespace StockVision.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("StockVision.Core.Models.Company", null)
+                        .WithMany("OrderBooks")
+                        .HasForeignKey("CompanyId");
+
                     b.Navigation("AskOrderBook");
 
                     b.Navigation("BidOrderBook");
@@ -269,6 +270,8 @@ namespace StockVision.Data.Migrations
             modelBuilder.Entity("StockVision.Core.Models.Company", b =>
                 {
                     b.Navigation("IndexAssignment");
+
+                    b.Navigation("OrderBooks");
                 });
 
             modelBuilder.Entity("StockVision.Core.Models.Sector", b =>

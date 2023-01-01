@@ -87,42 +87,7 @@ namespace StockVison.Scraper
                 return sheet;
             }
         }
-        public async Task<IEnumerable<IEnumerable<string>>> GetBuyOrderSheet(string companySymbol, bool saleSheet)
-        {
-            string sheetType = String.Empty;
-
-            if (saleSheet)
-            {
-                sheetType = "arkusz_right";
-            }
-            else
-            {
-                sheetType = "arkusz_left";
-            }
-
-            //const string baseurl = $"https://gragieldowa.pl/spolka_arkusz_zl/spolka/";
-            //string endpoint = companySymbol;
-            //string host = "";
-            //string key = "";
-
-
-            string url = $"https://gragieldowa.pl/spolka_arkusz_zl/spolka/{companySymbol}";
-            using (var client = new HttpClient())
-            {
-                var html = await client.GetStringAsync(url);
-                var doc = new HtmlDocument();
-                doc.LoadHtml(html);
-
-                var table = doc.DocumentNode.SelectSingleNode($"//table[@id='{sheetType}']");
-                var sheet = table.Descendants("tr")
-                                 .Skip(1)
-                                 .SkipLast(500)
-                                 .Select(tr => tr.Descendants("td")
-                                            .Select(td => WebUtility.HtmlDecode(td.InnerText))
-                                            .ToList());
-                return sheet;
-            }
-        }
+       
     }
 }
 
