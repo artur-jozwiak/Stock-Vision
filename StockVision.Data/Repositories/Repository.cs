@@ -31,7 +31,7 @@ namespace StockVision.Data.Repositories
 
         public async Task<IEnumerable<TEntity>> Find(Expression<Func<TEntity, bool>> predicate)
         {
-            return await Context.Set<TEntity>().Where(predicate).ToListAsync();
+            return await Context.Set<TEntity>().Where(predicate).AsNoTracking().ToListAsync();
         }
 
         public async Task Add(TEntity entity)

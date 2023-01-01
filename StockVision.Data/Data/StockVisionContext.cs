@@ -22,7 +22,7 @@ namespace StockVision.Data.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-           // optionsBuilder.EnableSensitiveDataLogging();
+          //  optionsBuilder.EnableSensitiveDataLogging();
             //optionsBuilder.UseLazyLoadingProxies();
             optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=StockVision;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true");
             //optionsBuilder.LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);

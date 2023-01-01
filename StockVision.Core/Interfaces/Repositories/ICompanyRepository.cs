@@ -11,7 +11,7 @@ namespace StockVision.Core.Interfaces.Repositories
     {
         Task<Company?> GetWithOrderBook(int id);
         Task<Company?> GetByName(string name);
-        Task<IEnumerable<Company>> GetAllWithCompanies();
+        Task<IEnumerable<Company>> GetAllWithIndexesAndSectors();
         Task<Company?> GetWithCompanies(int id);
     }
 }

@@ -1,4 +1,4 @@
-﻿@page "/sectors"
+﻿@page "/indexes"
 
 <PageTitle>Sectors</PageTitle>
 
@@ -6,14 +6,14 @@
 @using StockVision.Core.Models
 @using StockVision.Service.Interfaces
 @using StockVision.WebApp.Data
-@inject ISectorService SectorService
+@inject IStockIndexService IndexService
 @inject IUnitOfWork UnitOfWork
 
-<h1>Sectors</h1>
+<h1>Indexes</h1>
 
-@if (sectors == null)
+@if (indexes == null)
 {
-    <p><em>Loading sectors...</em></p>
+    <p><em>Loading indexes...</em></p>
 }
 else
 {
@@ -24,12 +24,12 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var sector in sectors)
+            @foreach (var index in indexes)
             {
                 <tr>
-                    <td>@sector.Name</td>
-                
-                    @foreach(var company in sector.Companies)
+                    <td>@index.Name</td>
+
+                    @foreach (var company in index.Companies)
                     {
                         <td>@company.Symbol</td>
                     }
@@ -40,11 +40,11 @@ else
 }
 
 @code {
-    private Sector[]? sectors;
+    private StockIndex[]? indexes;
 
     protected override async Task OnInitializedAsync()
     {
-        var data = await SectorService.GetSectorsFromAPI();
-        sectors = data.Cast<Sector>().ToArray();
+        var data = await IndexService.GetIndexesFromAPI();
+        indexes = data.Cast<StockIndex>().ToArray();
     }
 }

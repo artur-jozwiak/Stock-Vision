@@ -26,14 +26,16 @@ namespace StockVision.Data.Repositories
                 .Include(o => o.OrderBook)
                     .ThenInclude(b => b.BidOrderBook)
                         .ThenInclude(o => o.Orders)
+                .AsNoTracking()
                 .FirstOrDefaultAsync();
         }
 
-        public async Task<IEnumerable<Company>> GetAllWithCompanies()
+        public async Task<IEnumerable<Company>> GetAllWithIndexesAndSectors()
         {
             return await StockVisionContext.Companies
                 .Include(c => c.Sector)
                 .Include(c => c.StockIndexes)
+                .AsNoTracking()
                 .ToListAsync();
         }
 
@@ -42,6 +44,7 @@ namespace StockVision.Data.Repositories
             return await StockVisionContext.Companies.Where(c => c.Id == id)
                 .Include(c => c.Sector)
                 .Include(c => c.StockIndexes)
+                .AsNoTracking()
                 .FirstOrDefaultAsync();
         }
 

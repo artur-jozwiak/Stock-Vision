@@ -12,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IOrderBookService, OrderbookService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ISectorService, SectorService>();
+builder.Services.AddScoped<IStockIndexService, StockIndexService>();
+builder.Services.AddScoped<ICompanyService, CompanyService>();
 
 var conectionString = builder.Configuration["ConnectionStrings:StockVisionConnectionString"];
 builder.Services.AddDbContext<StockVisionContext>(options => options.UseSqlServer(conectionString));

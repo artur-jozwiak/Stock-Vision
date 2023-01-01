@@ -24,6 +24,7 @@ namespace StockVision.Data.Repositories
                     .ThenInclude(o => o.Orders)
                 .Include(b => b.BidOrderBook)
                     .ThenInclude(o => o.Orders)
+                .AsNoTracking()
                 .FirstOrDefaultAsync();
         }
 
@@ -34,6 +35,7 @@ namespace StockVision.Data.Repositories
                     .ThenInclude(o => o.Orders)
                 .Include(b => b.BidOrderBook)
                     .ThenInclude(o => o.Orders)
+                .AsNoTracking()
                 .FirstOrDefaultAsync();
         }
 

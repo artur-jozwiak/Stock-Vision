@@ -1,4 +1,8 @@
-<!-- 
+<!--
+-Wallet
+-Generyczna metoda do pobierania responsa w projekcie service
+-As no tracking wszedzie gdzie się tylko wyświetla 
+-lazy loading
 -Usunąc referencje pomiędzy projektami fron i backend
 -Wszystkie dane w blazor server mają pochodzić z API
 -Podpiąć pod przycisk aktualizowanie listy spółek

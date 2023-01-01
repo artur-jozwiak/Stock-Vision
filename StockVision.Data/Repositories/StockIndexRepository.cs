@@ -26,6 +26,7 @@ namespace StockVision.Data.Repositories
         {
             return await StockVisionContext.StockIndexes
                 .Include(i => i.Companies)
+                .AsNoTracking()
                 .ToListAsync();
         }
 
@@ -33,6 +34,7 @@ namespace StockVision.Data.Repositories
         {
             return await StockVisionContext.StockIndexes.Where(i => i.Id == id)
                 .Include(i => i.Companies)
+                .AsNoTracking()
                 .FirstOrDefaultAsync();
         }
 
