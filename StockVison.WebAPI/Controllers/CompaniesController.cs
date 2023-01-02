@@ -32,9 +32,9 @@ namespace StockVison.WebAPI.Controllers
            var company = await _unitOfWork.Companies.GetWithOrderBook(id);
            var orderBook = await _scrapper.GetOrderbook(company.Symbol, 0);
            await _unitOfWork.OrderBooks.Add(orderBook);
-            await _unitOfWork.Save();
+           await _unitOfWork.Save();
 
-            company.OrderBooks.Add(orderBook);
+           company.OrderBooks.Add(orderBook);
            _unitOfWork.Companies.Update(company);
            await _unitOfWork.Save();
         }

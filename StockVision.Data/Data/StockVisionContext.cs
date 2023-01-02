@@ -22,7 +22,7 @@ namespace StockVision.Data.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-          //  optionsBuilder.EnableSensitiveDataLogging();
+            //optionsBuilder.EnableSensitiveDataLogging();
             //optionsBuilder.UseLazyLoadingProxies();
             optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=StockVision;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true");
             //optionsBuilder.LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
@@ -36,6 +36,8 @@ namespace StockVision.Data.Data
         public DbSet<StockIndex> StockIndexes { get; set; }
         public DbSet<Sector> Sectors { get; set; }
         public DbSet<IndexAssignment> IndexAssignment { get; set; }
+        public DbSet<Forecast> Forecasts { get; set; }
+        public DbSet<Wallet> Wallets { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -45,6 +47,7 @@ namespace StockVision.Data.Data
             var company = modelBuilder.Entity<Company>();
             var stockIndex = modelBuilder.Entity<StockIndex>();
             var sector = modelBuilder.Entity<Sector>();
+            var forecast = modelBuilder.Entity<Forecast>();
 
             fullOrderBook.HasOne(f => f.AskOrderBook).WithOne().HasForeignKey<OrderBook>(a => a.AskOrderBookId);
             fullOrderBook.HasOne(f => f.BidOrderBook ).WithOne().HasForeignKey<OrderBook>(a => a.BidOrderBookId);
@@ -66,6 +69,10 @@ namespace StockVision.Data.Data
             stockIndex.Property(i => i.Name).HasMaxLength(50);
 
             sector.Property(s => s.Name).HasMaxLength(50);
+
+            forecast.Property(c => c.Result).HasPrecision(7,3);
+            forecast.Property(c => c.AskOrderBookDifference).HasPrecision(4, 2);
+            forecast.Property(c => c.BidOrderBookDifference).HasPrecision(4, 2);
         }
     }
 }

@@ -16,6 +16,8 @@ namespace StockVision.Data.Data
         public IOrderBookRepository OrderBooks { get; private set; }
         public IStockIndexRepository StockIndexes { get; private set; }
         public ISectorRepository Sectors { get; private set; }
+        public IForecastRepository Forecasts { get; private set; }
+        public IWalletRepository Wallets { get; private set; }
 
         public UnitOfWork(StockVisionContext context)
         {
@@ -24,6 +26,8 @@ namespace StockVision.Data.Data
             OrderBooks = new OrderBookRepository(_context);
             StockIndexes = new StockIndexRepository(_context);
             Sectors = new SectorRepository(_context);
+            Forecasts = new ForecastRepository(_context);
+            Wallets = new WalletRepository(_context);
         }
 
         public async Task<int> Save()
