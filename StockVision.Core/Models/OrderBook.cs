@@ -9,7 +9,7 @@ namespace StockVision.Core.Models
     public class OrderBook 
     {
         public int Id { get; set; }
-        public DateTime LoadTime { get; set; }
+        public DateTime LoadTime { get; set; } = DateTime.Now;
 
         public virtual AskOrderBook? AskOrderBook { get; set; }  = new AskOrderBook();
         public int AskOrderBookId { get; set; }
