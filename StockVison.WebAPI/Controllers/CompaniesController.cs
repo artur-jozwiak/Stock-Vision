@@ -26,17 +26,37 @@ namespace StockVison.WebAPI.Controllers
             return companies;
         }
 
-        [HttpPost(Name = "LoadOrderBookToCompany")]
-        public  async Task LoadOrderBookToCompany(int id)
-        {
-           var company = await _unitOfWork.Companies.GetWithOrderBook(id);
-           var orderBook = await _scrapper.GetOrderbook(company.Symbol, 0);
-           await _unitOfWork.OrderBooks.Add(orderBook);
-           await _unitOfWork.Save();
+        //[HttpPost(Name = "LoadOrderBookToCompany")]
+        //public  async Task LoadOrderBookToCompany(int id)
+        //{
+        //   var company = await _unitOfWork.Companies.GetWithOrderBook(id);
+        //   var orderBook = await _scrapper.GetOrderbook(company.Symbol, 0);
+        //   await _unitOfWork.OrderBooks.Add(orderBook);
+        //   await _unitOfWork.Save();
 
-           company.OrderBooks.Add(orderBook);
-           _unitOfWork.Companies.Update(company);
-           await _unitOfWork.Save();
+        //   company.OrderBooks.Add(orderBook);
+        //   _unitOfWork.Companies.Update(company);
+        //   await _unitOfWork.Save();
+        //}
+
+        [HttpPost(Name = "LoadOrderBookToCompany")]
+        public async Task LoadOrderBookToCompanies()
+        {
+            int[] ids = new int[] { 1, 80, 193, 199, 15, 303, 233, 297 };
+            for (int i = 0; i < ids.Length; i++)
+            {
+                var company = await _unitOfWork.Companies.GetWithOrderBook(ids[i]);
+                var orderBook = await _scrapper.GetOrderbook(company.Symbol, 0);
+                await _unitOfWork.OrderBooks.Add(orderBook);
+                await _unitOfWork.Save();
+
+                company.OrderBooks.Add(orderBook);
+                _unitOfWork.Companies.Update(company);
+                await _unitOfWork.Save();
+                Random rnd = new Random();
+                int randomMiliseconds = rnd.Next(10000, 60000);
+                Thread.Sleep(40000 + randomMiliseconds);
+            }
         }
     }
 }

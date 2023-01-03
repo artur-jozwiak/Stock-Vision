@@ -20,7 +20,7 @@ namespace StockVision.Service.Services
         {
             _unitOfWork = unitOfWork;
         }
-        const string _baseUrl = "https://localhost:7015/OrderBook?companyName=cdr";
+        const string _baseUrl = "https://localhost:7015/OrderBooks?companyName=cdr";
         private string _companySymbolEndpoint = string.Empty;
 
         public async Task<OrderBook> GetOrderBookFromAPI()

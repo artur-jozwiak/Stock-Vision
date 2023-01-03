@@ -61,6 +61,7 @@ th, td {
                       <Axis AxisType="AxisType.Y" Position="Position.Left" Title="Volume" AxisLine="false" MajorTickMarks="TickMark.None" MajorGrid="true" />
                  </AxisCollection>
                </FlexChart>
+
                  <FlexChart ItemsSource="FullOrderBook.BidOrderBook.Orders"  Class="chart" BindingX="Price" ChartType="ChartType.Line" HeaderContent="Order Book" HeaderStyle="font-size:24px">
                  <SeriesCollection>
                       <Series Binding="Volume" />

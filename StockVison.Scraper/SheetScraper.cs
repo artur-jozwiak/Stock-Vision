@@ -39,7 +39,7 @@ namespace StockVison.Scraper
         public ICollection<Order> MapResponseToOrderSheet(IEnumerable<IEnumerable<string>> sheet)
         {
             ICollection<Order> orderSheet = new List<Order>();
-            sheet = sheet.SkipLast(1);
+            sheet = sheet.SkipLast(1).Skip(1);
 
             foreach (var sheetItem in sheet)
             {
