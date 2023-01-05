@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockVision.Data", "StockVi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockVison.WebAPI", "StockVison.WebAPI\StockVison.WebAPI.csproj", "{995F1934-4767-428E-97A2-B68A671B5302}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockVision.BlazorServer", "StockVision.BlazorServer\StockVision.BlazorServer.csproj", "{1326EEE2-CA7E-449B-ADEE-9B3C0D4C8312}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockVision.Core", "StockVision.Core\StockVision.Core.csproj", "{B56106A9-075A-4DFC-A153-F78E1F4EC5A6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockVision.Service", "StockVision.Service\StockVision.Service.csproj", "{4937090E-17FB-4A8B-874D-C65959D6BE54}"
@@ -35,10 +33,6 @@ Global
 		{995F1934-4767-428E-97A2-B68A671B5302}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{995F1934-4767-428E-97A2-B68A671B5302}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{995F1934-4767-428E-97A2-B68A671B5302}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1326EEE2-CA7E-449B-ADEE-9B3C0D4C8312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1326EEE2-CA7E-449B-ADEE-9B3C0D4C8312}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1326EEE2-CA7E-449B-ADEE-9B3C0D4C8312}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1326EEE2-CA7E-449B-ADEE-9B3C0D4C8312}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B56106A9-075A-4DFC-A153-F78E1F4EC5A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B56106A9-075A-4DFC-A153-F78E1F4EC5A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B56106A9-075A-4DFC-A153-F78E1F4EC5A6}.Release|Any CPU.ActiveCfg = Release|Any CPU

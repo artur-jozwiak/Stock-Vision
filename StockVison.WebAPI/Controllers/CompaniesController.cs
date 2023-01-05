@@ -18,7 +18,7 @@ namespace StockVison.WebAPI.Controllers
             _scrapper = srapper;
         }
 
-        [HttpGet(Name = "GetCompanies")]
+        [HttpGet]
         public async Task<IEnumerable<Company>> GetSectors()
         {
             var companies = await _unitOfWork.Companies.GetAllWithIndexesAndSectors();
@@ -26,20 +26,22 @@ namespace StockVison.WebAPI.Controllers
             return companies;
         }
 
-        //[HttpPost(Name = "LoadOrderBookToCompany")]
-        //public  async Task LoadOrderBookToCompany(int id)
-        //{
-        //   var company = await _unitOfWork.Companies.GetWithOrderBook(id);
-        //   var orderBook = await _scrapper.GetOrderbook(company.Symbol, 0);
-        //   await _unitOfWork.OrderBooks.Add(orderBook);
-        //   await _unitOfWork.Save();
+        // PATCH api/Companies/id
+        [HttpPatch("{id}")]
+        public async Task LoadOrderBookToCompany(int id)
+        {
+            var company = await _unitOfWork.Companies.GetWithOrderBook(id);
+            var orderBook = await _scrapper.GetOrderbook(company.Symbol, 0);
+            await _unitOfWork.OrderBooks.Add(orderBook);
+            await _unitOfWork.Save();
 
-        //   company.OrderBooks.Add(orderBook);
-        //   _unitOfWork.Companies.Update(company);
-        //   await _unitOfWork.Save();
-        //}
+            company.OrderBooks.Add(orderBook);
+            _unitOfWork.Companies.Update(company);
+            await _unitOfWork.Save();
+        }
 
-        [HttpPost(Name = "LoadOrderBookToCompany")]
+        //Test
+        [HttpPatch]
         public async Task LoadOrderBookToCompanies()
         {
             int[] ids = new int[] { 1, 80, 193, 199, 15, 303, 233, 297 };

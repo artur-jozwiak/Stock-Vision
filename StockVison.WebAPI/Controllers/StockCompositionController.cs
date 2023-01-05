@@ -21,7 +21,7 @@ namespace StockVison.WebAPI.Controllers
             _gpwCompositionReader = gpwCompositionReader;
         }
 
-        [HttpPost(Name = "GetComposition")]
+        [HttpPost]
         public async Task GetStockComposition()
         {
           var lines =  _gpwCompositionReader.ReadLinesFromTxtFile();

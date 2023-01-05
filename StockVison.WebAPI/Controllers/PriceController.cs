@@ -15,7 +15,7 @@ namespace StockVison.WebAPI.Controllers
             _priceScrapper = priceScrapper;
         }
 
-        [HttpGet(Name = "GetPrices")]
+        [HttpGet]
         public async Task GetPrices()
         {
           await  _priceScrapper.GetPrice();

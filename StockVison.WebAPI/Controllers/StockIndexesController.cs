@@ -15,7 +15,7 @@ namespace StockVison.WebAPI.Controllers
             _unitOfWork = unitOfWork;
         }
 
-        [HttpGet(Name = "GetStockIndexes")]
+        [HttpGet]
         public async Task<IEnumerable<StockIndex>> GetStockIndexes()
         {
             var indexes = await _unitOfWork.StockIndexes.GetAllWithCompanies();

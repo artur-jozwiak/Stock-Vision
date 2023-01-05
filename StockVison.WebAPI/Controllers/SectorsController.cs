@@ -15,7 +15,7 @@ namespace StockVison.WebAPI.Controllers
             _unitOfWork = unitOfWork;
         }
 
-        [HttpGet(Name = "GetSectors")]
+        [HttpGet]
         public async Task<IEnumerable<Sector>> GetSectors()
         {
             var sectors = await _unitOfWork.Sectors.GetAllWithCompanies();

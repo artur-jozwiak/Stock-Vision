@@ -13,29 +13,40 @@ namespace StockVison.WebAPI.Controllers
         private readonly IUnitOfWork _unitOfWork;
         private ISheetScrapper _scrapper;
         public OrderBooksController(ISheetScrapper scrapper, IUnitOfWork unitOfWork)
-        {   
+        {
             _scrapper = scrapper;
             _unitOfWork = unitOfWork;
         }
 
-        //[HttpGet(Name = "GetOrderBook")]
-        //public async Task<OrderBook> GetOrderBook(string companyName)
-        //{
-        //    companyName = "cdr";
-        //    OrderBook orderBook = await _scrapper.GetOrderbook(companyName,0);
-
-        //    return orderBook;
-        //}
-
-        [HttpPost(Name = "SaveOrderBookInDb")]//Nie testowane
-        public async Task SaveOrderBookInDb(string companyName, int skipLast)
+        [HttpGet("{companySymbol}")]
+        public async Task<OrderBook> GetOrderBook( string companySymbol)
         {
-            OrderBook orderBook = await _scrapper.GetOrderbook(companyName, skipLast);
+            companySymbol = "cdr";
+            OrderBook orderBook = await _scrapper.GetOrderbook(companySymbol, 0);
+
+            return orderBook;
+        }
+
+        [HttpGet("{id}")]
+        public async Task<OrderBook> GetOrderBookByCompanyId(int companyId)
+        {
+            var company = await _unitOfWork.Companies.Get(companyId);
+            string companySymbol = company.Symbol;
+            OrderBook orderBook = await _scrapper.GetOrderbook(companySymbol, 0);
+
+            return orderBook;
+        }
+
+        [HttpPost("{companySymbol, skipLast}")]
+        public async Task SaveOrderBookInDb( string companySymbol, int skipLast)
+        {
+            OrderBook orderBook = await _scrapper.GetOrderbook(companySymbol, skipLast);
             await _unitOfWork.OrderBooks.Add(orderBook);
             await _unitOfWork.Save();
         }
 
-        [HttpGet(Name = "Test")]
+        //Test
+        [HttpPut]
         public async Task<List<decimal>> Test()
         {
             List<decimal> result = new();
