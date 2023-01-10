@@ -22,22 +22,22 @@ namespace StockVision.Data.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            //optionsBuilder.EnableSensitiveDataLogging();
-            //optionsBuilder.UseLazyLoadingProxies();
+            optionsBuilder.EnableSensitiveDataLogging();
+            optionsBuilder.UseLazyLoadingProxies();
             optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=StockVision;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true");
             //optionsBuilder.LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
         }
 
-        public DbSet<OrderBook> OrderBooks { get; set; }
-        public DbSet<AskOrderBook> AskOrderBooks { get; set; }
-        public DbSet<BidOrderBook> BidOrderBooks { get; set; }
-        public DbSet<Order> Orders{ get; set; }
-        public DbSet<Company> Companies { get; set; }
-        public DbSet<StockIndex> StockIndexes { get; set; }
-        public DbSet<Sector> Sectors { get; set; }
-        public DbSet<IndexAssignment> IndexAssignment { get; set; }
-        public DbSet<Forecast> Forecasts { get; set; }
-        public DbSet<Wallet> Wallets { get; set; }
+        public virtual DbSet<OrderBook> OrderBooks { get; set; }
+        public virtual DbSet<AskOrderBook> AskOrderBooks { get; set; }
+        public virtual DbSet<BidOrderBook> BidOrderBooks { get; set; }
+        public virtual DbSet<Order> Orders{ get; set; }
+        public virtual DbSet<Company> Companies { get; set; }
+        public virtual DbSet<StockIndex> StockIndexes { get; set; }
+        public virtual DbSet<Sector> Sectors { get; set; }
+        public virtual DbSet<IndexAssignment> IndexAssignment { get; set; }
+        public virtual DbSet<Forecast> Forecasts { get; set; }
+        public virtual DbSet<Wallet> Wallets { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

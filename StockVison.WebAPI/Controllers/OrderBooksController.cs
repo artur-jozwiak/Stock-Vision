@@ -59,9 +59,9 @@ namespace StockVison.WebAPI.Controllers
                 BidOrderBook? curentBidOrders = company.OrderBooks.OrderByDescending(o => o.LoadTime).Select(o => o.BidOrderBook).FirstOrDefault();
                 decimal currentMinBidPrice = curentBidOrders.Orders.OrderBy(o => o.Price).Select(o => o.Price).FirstOrDefault();
 
-                decimal askRangeLimit = currentMaxAskPrice - (currentMaxAskPrice * 5 / 100);
+                decimal askRangeLimit = currentMaxAskPrice - (currentMaxAskPrice * 2 / 100);
                 int currentAskOrdersVolume = curentAskOrders.Orders.Where(o => o.Price >= askRangeLimit).Sum(o => o.Volume);
-                decimal bidRangeLimit = currentMinBidPrice + (currentMinBidPrice * 5 / 100);
+                decimal bidRangeLimit = currentMinBidPrice + (currentMinBidPrice * 2 / 100);
                 int currentBidOrdersVolume = curentBidOrders.Orders.Where(o => o.Price <= bidRangeLimit).Sum(o => o.Volume);
 
                 //Last
@@ -70,9 +70,9 @@ namespace StockVison.WebAPI.Controllers
                 BidOrderBook? lastBidOrders = company.OrderBooks.OrderByDescending(o => o.LoadTime).Select(o => o.BidOrderBook).ElementAt(1);
                 decimal lastMinBidPrice = lastBidOrders.Orders.OrderBy(o => o.Price).Select(o => o.Price).FirstOrDefault();
 
-                askRangeLimit = lastMaxAskPrice - (lastMaxAskPrice * 5 / 100);
+                askRangeLimit = lastMaxAskPrice - (lastMaxAskPrice * 2 / 100);
                 int lastAskOrdersVolume = lastAskOrders.Orders.Where(o => o.Price >= askRangeLimit).Sum(o => o.Volume);
-                bidRangeLimit = lastMinBidPrice + (lastMinBidPrice * 5 / 100);
+                bidRangeLimit = lastMinBidPrice + (lastMinBidPrice * 2 / 100);
                 int lastBidOrdersVolume = lastBidOrders.Orders.Where(o => o.Price <= bidRangeLimit).Sum(o => o.Volume);
 
                 decimal AskOrdersVolumeDifference = currentAskOrdersVolume - lastAskOrdersVolume;
